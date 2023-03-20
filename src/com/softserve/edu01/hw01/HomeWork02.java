@@ -1,4 +1,4 @@
-package edu01.hw;
+package com.softserve.edu01.hw01;
 
 import java.util.Scanner;
 
