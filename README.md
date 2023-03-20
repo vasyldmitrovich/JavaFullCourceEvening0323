@@ -12,7 +12,7 @@
 
 - create forlder on disk;
 - open cmd and goto to new forlder;
-- clone repository **git clone https://github.com/vasyldmitrovich/JavaFullCourceEv.git**
+- clone repository **git clone https://github.com/vasyldmitrovich/JavaFullCourceEvening0323.git**
 
 - change directory to **JavaCoreEvening0323**;
 - check branch **git branch**
