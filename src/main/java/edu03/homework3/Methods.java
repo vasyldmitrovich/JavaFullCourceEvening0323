@@ -10,6 +10,7 @@ public class Methods {
     public static void output(Person person) {
         System.out.println("Name: " + person.getFirstName() + " LastName: " + person.getLastName() + " Year of birth: " + person.getBirthYear());
     }
+
     public static void changeName(Person person, String ln) {
         person.setFirstName(ln);
         output(person);

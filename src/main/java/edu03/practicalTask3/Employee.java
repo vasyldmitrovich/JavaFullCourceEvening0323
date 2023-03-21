@@ -40,7 +40,6 @@ public class Employee {
         Employee.totalSum = totalSum;
     }
 
-
     public Employee(String name, int rate) {
         this.name = name;
         this.rate = rate;
