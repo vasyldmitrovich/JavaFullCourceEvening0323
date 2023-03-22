@@ -21,15 +21,9 @@ public class Student {
 	}
 	
 	public boolean betterStudent(Student student) {
-		if (student.rating <5 ) {
-			int st = student.getRating();
-			System.out.println(st);
-			return true;
-		}
-		int r1 = student.getRating();
-		int r2 = student.rating;
-		System.out.println(r1 + " - " + r2);
-		return false;
+		int rating1 = this.rating;
+		int rating2 = student.getRating();
+		return rating1 > rating2;
 	}
 	
 	@Override
@@ -64,7 +58,10 @@ public class Student {
 		double avgRating = Student.avgRating(student1, student2, student3);
 		String formattedAvg = String.format("%.2f", avgRating);
 		System.out.println("Average rating of all students is: " + formattedAvg);
-		System.out.println(student1.betterStudent(student2));
+		System.out.println("Student " + student2.getName() + " is better then " + student1.getName() + "?");
+		System.out.println("Answer is: " + student2.betterStudent(student1));
+		System.out.println("Student " + student1.getName() + " is better then " + student2.getName() + "?");
+		System.out.println("Answer is: " + student1.betterStudent(student2));
 	}
 }
 
