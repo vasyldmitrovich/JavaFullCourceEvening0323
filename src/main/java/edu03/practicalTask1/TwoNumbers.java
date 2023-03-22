@@ -19,7 +19,6 @@ public class TwoNumbers {
     private static int getTotal(int first, int second) {
         return first + second;
     }
-
     private static double getAverage(int first, int second) {
         return (first + second) * 0.5;
     }

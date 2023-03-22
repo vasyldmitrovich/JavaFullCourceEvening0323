@@ -35,7 +35,6 @@ public class Employee {
     public static int getTotalSum() {
         return totalSum;
     }
-
     public static void setTotalSum(int totalSum) {
         Employee.totalSum = totalSum;
     }

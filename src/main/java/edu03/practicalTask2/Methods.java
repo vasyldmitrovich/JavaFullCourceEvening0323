@@ -9,7 +9,6 @@ public class Methods {
     public static void toString(Employee employee) {
         System.out.println("Name: " + employee.getName() + " Rate: " + employee.getRate() + " Hours: " + employee.getHours());
     }
-
     public static double getBonuses(Employee employee) {
         return getSalary(employee) * (0.1);
     }

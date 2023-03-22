@@ -10,5 +10,6 @@ public class Main {
         Methods.toString(employee3);
         System.out.print("Total salary ");
         System.out.println((Methods.getSalary(employee1) + Methods.getSalary(employee2) + Methods.getSalary(employee3)));
+
     }
 }

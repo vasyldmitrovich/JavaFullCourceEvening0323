@@ -17,7 +17,6 @@ public class Methods {
         person.setFirstName(ln);
         output(person);
     }
-
     public static Person input(Person person) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Please, enter first name");

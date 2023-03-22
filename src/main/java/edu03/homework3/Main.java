@@ -18,6 +18,5 @@ public class Main {
         person3.setBirthYear(1814);
         Methods.output(person3);
         Methods.changeName(person2, "Tetiana");
-
     }
 }
