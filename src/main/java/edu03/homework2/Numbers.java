@@ -11,7 +11,7 @@ public class Numbers {
         int second = scanner.nextInt();
         System.out.println("Please, enter third number");
         int third = scanner.nextInt();
-        System.out.println("Smallest number is: "+smallestNumber(smallestNumber(first, second),third));
+        System.out.println("Smallest number is: " + smallestNumber(smallestNumber(first, second), third));
     }
 
     private static int smallestNumber(int first, int second) {
