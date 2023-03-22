@@ -8,6 +8,18 @@ public class Person {
     private int birthYear;
     private final Scanner scanner = new Scanner(System.in);
 
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public void setBirthYear(int birthYear) {
+        this.birthYear = birthYear;
+    }
+
     public String getFirstName() {
         return firstName;
     }
