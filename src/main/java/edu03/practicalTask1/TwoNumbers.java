@@ -11,7 +11,6 @@ public class TwoNumbers {
         System.out.println("Average of this numbers");
         System.out.println(getAverage(first, second));
     }
-
     private static int getNumbers(String prompt) {
         System.out.println(prompt);
         Scanner sc = new Scanner(System.in);
