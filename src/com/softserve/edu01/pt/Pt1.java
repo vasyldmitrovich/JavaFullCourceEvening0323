@@ -1,7 +1,9 @@
+package src.com.softserve.edu01.pt;
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class Hw1 {
+public class Pt1 {
     public static void main(String[ ] args) {
         taskOne();
         taskTwo();
