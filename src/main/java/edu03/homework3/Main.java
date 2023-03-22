@@ -2,11 +2,16 @@ package edu03.homework3;
 
 public class Main {
     public static void main(String[] args) {
-        Person person1 = new Person("Tim", "Burton");
-        Person person2 = new Person("Anna", "Karenina");
-        Person person3 = new Person("Taras", "Shevchenko");
-        Person person4 = new Person("Ivan", "Mazepa");
-        Person person5 = new Person("Edgar Alan", "Po");
+        Person person1 = new Person();
+        person1 = Methods.input(person1);
+        Person person2 = new Person();
+        person2 = Methods.input(person1);
+        Person person3 = new Person();
+        person3 = Methods.input(person1);
+        Person person4 = new Person();
+        person4 = Methods.input(person1);
+        Person person5 = new Person();
+        person5 = Methods.input(person1);
         person1.setBirthYear(1958);
         System.out.println(Methods.getAge(person1));
         person3.setBirthYear(1814);

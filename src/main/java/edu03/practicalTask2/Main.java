@@ -1,4 +1,4 @@
-package edu03.practicalTask3;
+package edu03.practicalTask2;
 
 public class Main {
     public static void main(String[] args) {
