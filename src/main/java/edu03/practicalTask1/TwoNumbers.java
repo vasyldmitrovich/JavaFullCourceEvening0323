@@ -16,7 +16,6 @@ public class TwoNumbers {
         Scanner sc = new Scanner(System.in);
         return sc.nextInt();
     }
-
     private static int getTotal(int first, int second) {
         return first + second;
     }
