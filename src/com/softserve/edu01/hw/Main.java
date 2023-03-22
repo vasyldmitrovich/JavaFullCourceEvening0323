@@ -3,9 +3,9 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        HW_1.radius.rad();
-        HW_1.addres.addr();
-        HW_1.calls.call();
+        radius.rad();
+        addres.addr();
+        calls.call();
 
 
     }
