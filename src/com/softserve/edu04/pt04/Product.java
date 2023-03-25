@@ -1,11 +1,9 @@
 package com.softserve.edu04.pt04;
 
-import java.util.*;
-
 public class Product {
-    private String name;
-    private double price;
-    private int quantity;
+    final private String name;
+    final private double price;
+    final private int quantity;
 
     public Product (String name, double price, int quantity) {
         this.name = name;
