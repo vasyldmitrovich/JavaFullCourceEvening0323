@@ -1,13 +1,14 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
-public class pt_4_1 {
+public class hw_4_2 {
     public static void main(String[] args){
-    odd.odds();
+        Num.nums();
+
     }
 }
-
-class odd{
-    public static void odds(){
+class Num{
+    public static void nums(){
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter 1-st number: ");
         int a = sc.nextInt();
@@ -16,21 +17,15 @@ class odd{
         System.out.println("Enter 3-d number: ");
         int c = sc.nextInt();
 
-
-
-        int arr[] = new int [3];
+        int arr[] = new int[3];
         arr[0] = a;
         arr[1] = b;
         arr[2] = c;
         int i = 0;
-        for( int x = 0;x<arr.length;x++ ){
-            if (arr[x]%2 == 0) {
-                i += 1;
 
-            }
-        }
-        System.out.println("The amount of odd numbers is: "+i);
-
+        System.out.println("Max number is: "+Arrays.stream(arr).max());
+        System.out.println("Min number is: "+Arrays.stream(arr).min());
 
     }
+
 }
