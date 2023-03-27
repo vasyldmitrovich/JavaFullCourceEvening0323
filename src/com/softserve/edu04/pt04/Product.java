@@ -39,22 +39,6 @@ public class Product {
         System.out.println("The most expensive product is " + mostExpensiveProduct.getName() +
                 " with quantity " + mostExpensiveProduct.getQuantity());
 
-//        // Find the names of the products with the highest quantity
-//        List<Product> products = Arrays.asList(product1, product2, product3, product4);
-//        Collections.sort(products, new Comparator<Product>() {
-//            @Override
-//            public int compare(Product p1, Product p2) {
-//                return Integer.compare(p2.getQuantity(), p1.getQuantity());
-//            }
-//        });
-//
-//        int highestQuantity = products.get(0).getQuantity();
-//        System.out.print("The products with the highest quantity are: ");
-//        for (Product product : products) {
-//            if (product.getQuantity() == highestQuantity) {
-//                System.out.print(product.getName() + " ");
-//            }
-//        }
         // Find the names of the products with the highest quantity
         int maxQuantity = product1.getQuantity();
         String[] maxQuantityProducts = new String[4];
