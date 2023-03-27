@@ -9,6 +9,10 @@ public class Hw04 {
         //hw3();
         //hw4();
         //hw5();
+        System.out.print("Input county(Ukraine/Canada/Chilie): ");
+        Scanner sc = new Scanner(System.in);
+        Country c = Country.valueOf(sc.nextLine().toUpperCase());
+        System.out.print(c.getCountryContinent());
     }
 
     private static void hw2() {
@@ -49,9 +53,19 @@ public class Hw04 {
         }
     }
 
-//    enum HTTPError {
-//        400,
-//        401,
-//        402
-//    }
+    public enum Country {
+        UKRAINE("Eurasia"),
+        CANADA("North America"),
+        CHILIE("South America");
+        private String continent;
+
+        private Country(String continent) {
+            this.continent = continent;
+        }
+
+        public String getCountryContinent() {
+            return continent;
+        }
+
+    }
 }
