@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class pt_1 {
+public class pt_1_3 {
 
     public static void main(String[] args){
         pract_1.numbers();
