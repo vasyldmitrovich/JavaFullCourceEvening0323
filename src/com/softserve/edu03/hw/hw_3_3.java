@@ -65,7 +65,7 @@ class Person{
         String Name = FirstName;
         String lastname = LastName;
         int year = BirthYear;
-        System.out.println("This Person`s neme is "+Name);
+        System.out.println("This Person`s name is "+Name);
         System.out.println("This Person`s last name is "+lastname);
         System.out.println("This Person`s birth year is "+year);
 
