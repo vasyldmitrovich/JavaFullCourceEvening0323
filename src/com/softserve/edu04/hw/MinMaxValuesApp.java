@@ -2,7 +2,7 @@ package com.softserve.edu04.hw;
 
 import java.util.Scanner;
 
-public class MinAndMaxValues {
+public class MinMaxValuesApp {
 
     public static void main(String[] args) {
         Integer[] numbers = new Integer[3];

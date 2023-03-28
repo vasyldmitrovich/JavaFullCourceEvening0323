@@ -2,7 +2,7 @@ package com.softserve.edu04.hw;
 
 import java.util.Scanner;
 
-public class RangeNumbers {
+public class NumbersInRangeApp {
 
     public static void main(String[] args) {
         Float number1 = getNumber("Input first number: ");
