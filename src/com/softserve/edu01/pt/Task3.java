@@ -25,6 +25,7 @@ public class Task3 {
                 4 - "/"
                 5 - Finish""");
 
+        //Variable I suggest should have name check, not chek
         int chek;
         boolean x = true;
         while (x) {
@@ -52,6 +53,7 @@ public class Task3 {
                     out.println("Once again?");
                 }
                 case 5 -> x = false;
+                //Do not have massage if user entered incorrect number
                 default -> {
                 }
             }

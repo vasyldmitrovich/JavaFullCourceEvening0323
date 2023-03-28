@@ -27,6 +27,7 @@ public class Employee {
         this.hours = hours;
     }
 //methods
+    // Each time when you wrote meths or make some changes in class do Reformat code
     public static int getTotalSum() {return totalSum;}
     public static void setTotalSum(int totalSum){Employee.totalSum = totalSum;}
     public String getName() {return name;}

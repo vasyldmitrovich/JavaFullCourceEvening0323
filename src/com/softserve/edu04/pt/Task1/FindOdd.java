@@ -18,6 +18,7 @@ public class FindOdd {
                 System.out.print(number+"; ");
             }
         }
+        // Specify message please, what it is, print more detail info what it is
         System.out.println("\nIt's " + counter + " out of " + numbers.length);
     }
 }
