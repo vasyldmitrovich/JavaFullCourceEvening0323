@@ -21,6 +21,7 @@ class numb{
         arr[0] = a;
         arr[1] = b;
         arr[2] = c;
+        /*What variable x do? if this variable is not used then delete this variable*/
         int x = 0;
 
         System.out.println("Max number is -- >  " + Arrays.stream(arr).max());

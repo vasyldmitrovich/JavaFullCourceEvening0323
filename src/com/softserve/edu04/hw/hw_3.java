@@ -1,6 +1,8 @@
 import java.util.Scanner;
 
 public class hw_3 {
+    /*Change name to correct for example class enum HttpErr
+    * and move to separate file this enum*/
     enum http_error{
         Error_404("Not Found"),
         Error_410("Gone"),

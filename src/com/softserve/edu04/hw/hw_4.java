@@ -33,12 +33,14 @@ public class hw_4 {
 }
 
 class Faculty{
+    /*Do not correct name of variable, reed java code convention*/
     public int Students_amount;
 
     public Faculty(int students_amount) {
         Students_amount = students_amount;
     }
 
+    /*When you write code use reformat code*/
     public enum Season {
         WINTER( "Winter", 150),
         SPRING( "Spring", 245),

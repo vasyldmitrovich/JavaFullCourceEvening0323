@@ -1,11 +1,15 @@
 import java.util.Scanner;
 
+/*Change name of class to App, and put this class in package 01*/
 public class hw_1{
     public static void main(String[] args) {
     range.find();
 
     }
-}class range{
+}
+
+/*Del class it is not needed and move this method to class App*/
+class range{
     public  static void find(){
 
         Scanner sc = new Scanner(System.in);
