@@ -6,7 +6,6 @@ public class HomeWork01 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Введення 3 чисел з консолі
         System.out.println("Введіть перше число: ");
         int num1 = scanner.nextInt();
 
@@ -18,8 +17,13 @@ public class HomeWork01 {
 
         scanner.close();
 
-        /*All this logic move to some method for example public static void isInRange( int a, int b, int c)
-        * and in main method write isInRange( num1, num2, num3)*/
+        isInRange(num1, num2, num3);
+
+    }
+    /*
+    A method that checks if the number is within the specified range (-5, 5)
+     */
+    public static void isInRange(int num1, int num2, int num3){
         if (num1 >= -5 && num1 <= 5) {
             System.out.println(num1 + " входить в діапазон [-5, 5]");
         } else {
@@ -38,4 +42,5 @@ public class HomeWork01 {
             System.out.println(num3 + " не входить в діапазон [-5, 5]");
         }
     }
+
 }
