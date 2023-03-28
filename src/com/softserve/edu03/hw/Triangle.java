@@ -18,6 +18,7 @@ public class Triangle {
 
 /************* Part I *************/
     private static double getArea(int a, int b, int c){
+        /*Make reformat code, must be spaces between operators -  + / > < etc.*/
         double p = (a+b+c)/2.0;
         double s = Math.sqrt(p*(p - a)*(p - b)*(p - c));
         return (s);

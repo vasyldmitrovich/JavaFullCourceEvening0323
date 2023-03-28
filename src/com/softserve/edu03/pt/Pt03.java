@@ -11,6 +11,7 @@ public class Pt03 {
         System.out.print("Enter second number: ");
         int b = sc.nextInt();
 
+        /*Please print result to screen, when I run main method I do not see result on my monitor */
         getTotal(a,b);
         getAverage(a,b);
 
