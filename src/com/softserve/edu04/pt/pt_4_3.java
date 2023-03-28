@@ -36,6 +36,7 @@ public class pt_4_3 {
         country(String ct){
             this.ct = ct;
         }
+        /*Make reformat code and give correct name of methods*/
         public String getCt(){
             return ct;
         }
