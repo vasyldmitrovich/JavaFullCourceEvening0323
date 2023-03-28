@@ -59,30 +59,9 @@ public class Person {
 	}
 	
 	public void changeName (String fn, String ln) {
+		System.out.println("Changing name and last name of " + this.firstName + " " + this.lastName);
 		this.firstName = fn;
 		this.lastName = ln;
-	}
-	
-	public static void main(String[] args) {
-		Person person1 = new Person();
-		person1.input();
-		System.out.println(person1.output());
-		System.out.println(person1.getFirstName() + " " + person1.getLastName() + " age is " + person1.getAge());
-		System.out.println("Changing name to Anna and last name to Shum");
-		person1.changeName("Anna", "Shum");
-		System.out.println(person1.getFirstName() + " " + person1.getLastName() + " age is " + person1.getAge());
-		
-		Person person2 = new Person();
-		person2.input();
-		System.out.println(person2.output());
-		Person person3 = new Person();
-		person3.input();
-		System.out.println(person3.output());
-		Person person4 = new Person();
-		person4.input();
-		System.out.println(person4.output());
-		Person person5 = new Person();
-		person5.input();
-		System.out.println(person5.output());
+		System.out.println("Now name and last name are: " + firstName + " " + lastName);
 	}
 }
