@@ -1,7 +1,13 @@
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!On your computer
+* how I see
+* folder JavaFullCourceEvening0323 marked blue
+* PLEASE mark directory src in blue colour
+* because I must reformat in each class package*/
 package src.com.softserve.edu03.practic.taskOne;
 
 import java.util.Scanner;
 
+/*Do class name a little shorter */
 public class ForWorkingWithNumbers {
     private Scanner scanner = new Scanner(System.in);
     public void workingWithNumbers(){
@@ -11,6 +17,7 @@ public class ForWorkingWithNumbers {
         int numberTwo = scanner.nextInt();
         System.out.println("Input third number");
         int numberThree = scanner.nextInt();
+        /*I do not see on screen result this method, please add print with message for user*/
         findOddFromThreeNumbers(numberOne,numberTwo,numberThree);
     }
 

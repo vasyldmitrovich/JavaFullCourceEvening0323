@@ -53,6 +53,8 @@ public enum Continent {
     };
 
     public abstract boolean checkContinentWithCountry(String country);
+
+    /*This method must be in another clas, and in main method you should call this method*/
     public static void foundContinent(String countryFromUser){
         String result = "";
         while (true){
