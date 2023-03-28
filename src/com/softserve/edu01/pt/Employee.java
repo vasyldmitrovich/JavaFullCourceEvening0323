@@ -61,10 +61,12 @@ public class Employee {
         return totalSum;
     }
 
+    /*There you have access to variable totalSum, and can use this.totalSum=   , do not use Employee.totalSum*/
     public static void setTotalSum(double totalSum) {
         Employee.totalSum = totalSum;
     }
 
+    /*Please move main method to another class for example to class App*/
     public static void main(String[] args) {
         Employee employee1 = new Employee("John Doe", 15.0, 40);
         Employee employee2 = new Employee("Jane Smith", 20.0, 35);

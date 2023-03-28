@@ -11,6 +11,7 @@ public class HomeWork1 {
         int num1 = getNumber("Enter the first number: ", scanner);
         int num2 = getNumber("Enter the second number: ", scanner);
         int num3 = getNumber("Enter the second number: ", scanner);
+        /*Add some explanation to method println for example: Area of ...*/
         System.out.println(getArea(num1,num2,num3));
     }
     public static int getNumber(String prompt, Scanner scanner) {

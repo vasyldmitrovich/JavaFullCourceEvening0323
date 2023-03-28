@@ -10,6 +10,7 @@ public class PracticalTask1{
         int num1 = getNumber("Enter the first number: ", scanner);
         int num2 = getNumber("Enter the second number: ", scanner);
 
+        /*Move calling method getTotal( to method println*/
         int total = getTotal(num1, num2);
         double average = getAverage(num1, num2);
 
