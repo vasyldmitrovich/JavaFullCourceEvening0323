@@ -1,4 +1,4 @@
-package com.softserve.edu05.pt5;
+package com.softserve.edu05.pt05;
 
 import java.util.Arrays;
 import java.util.Scanner;
