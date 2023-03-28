@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class task2 {
 
-    public static void tru(float a){
+    public static void tru(int a){
         if(a%1==a||a%a==1)
         {
             System.out.println("Number "+a+" is  prime");
@@ -17,7 +17,7 @@ public class task2 {
     public static void main(String[] args) {
         System.out.println(" Enter a positive integer ");
         Scanner br=new Scanner(System.in);
-        float a=br.nextFloat();
+        int a=br.nextInt();
         tru(a);
     }
 }
