@@ -3,6 +3,8 @@ package com.softserve.edu03.pt;
 import java.util.Scanner;
 
 public class TotalAvgApp {
+
+	/*Next two method you can make static, and you should not create object of this class*/
 	public int getTotal(int num1, int num2) {
 		return num1+num2;
 	}

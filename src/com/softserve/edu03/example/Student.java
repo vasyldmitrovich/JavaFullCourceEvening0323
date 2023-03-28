@@ -11,7 +11,8 @@ public class Student {
 		this.name = name;
 		this.rating = rating;
 	}
-	
+
+	/*These methods should be in another class in class App*/
 	public static double avgRating(Student... students) {
 		double rating = 0;
 		for (Student student : students) {
@@ -47,12 +48,13 @@ public class Student {
 	public void setRating(int rating) {
 		this.rating = rating;
 	}
-	
+
+	/*Move main method to another class for example class App*/
 	public static void main(String[] args) {
 		Student student1 = new Student("Nata", 5);
 		Student student2 = new Student("Olga", 4);
 		Student student3 = new Student("Stan", 5);
-		System.out.println(student1.toString());
+		System.out.println(student1.toString());//toString() is not necessary
 		System.out.println(student2.toString());
 		System.out.println(student3.toString());
 		double avgRating = Student.avgRating(student1, student2, student3);

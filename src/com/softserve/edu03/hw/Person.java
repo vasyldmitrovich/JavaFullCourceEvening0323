@@ -62,7 +62,9 @@ public class Person {
 		this.firstName = fn;
 		this.lastName = ln;
 	}
-	
+
+	/*Move main method in another class for example class App
+	* Because in this class should be only method for this Entity */
 	public static void main(String[] args) {
 		Person person1 = new Person();
 		person1.input();
@@ -70,6 +72,7 @@ public class Person {
 		System.out.println(person1.getFirstName() + " " + person1.getLastName() + " age is " + person1.getAge());
 		System.out.println("Changing name to Anna and last name to Shum");
 		person1.changeName("Anna", "Shum");
+		/*Add in method print explanation what and why changed for example, I change name person1 and now it is*/
 		System.out.println(person1.getFirstName() + " " + person1.getLastName() + " age is " + person1.getAge());
 		
 		Person person2 = new Person();

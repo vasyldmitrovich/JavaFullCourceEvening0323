@@ -9,6 +9,7 @@ public class Employee {
 	public Employee() {
 	}
 	//task asked for three constructors, but I think this one is not needed
+	/*This Constructor must write because maybe someone in future will use*/
 	public Employee(String name, int rate) {
 		this.name = name;
 		this.rate = rate;
