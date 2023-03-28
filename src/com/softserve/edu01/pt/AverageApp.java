@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class PracticalTask2 {
+public class AverageApp {
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -18,7 +18,6 @@ public class PracticalTask2 {
         System.out.println("Please, input third number: ");
         Double number3 = Double.valueOf(br.readLine());
 
-        //Double sum = number1 + number2 + number3;
         Double average = (number1 + number2 + number3)/3;
         System.out.println("Average is " + average);
     }

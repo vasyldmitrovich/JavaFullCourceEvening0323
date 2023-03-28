@@ -2,7 +2,7 @@ package com.softserve.edu03.pt;
 
 import java.util.Scanner;
 
-public class PracticalTask1 {
+public class NumbersApp {
 
     public static void main(String[] args) {
         Integer number1 = getNumber("Enter the first number: ");
