@@ -12,7 +12,8 @@ public class SmallestNumber {
 		}
 		return smallest;
 	}
-	
+
+	/*It is good decision move scanner to method and call this method*/
 	public int intReader(String message) {
 		Scanner scanner = new Scanner(System.in);
 		System.out.println(message);
