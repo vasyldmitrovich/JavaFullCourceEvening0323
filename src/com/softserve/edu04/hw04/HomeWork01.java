@@ -18,6 +18,8 @@ public class HomeWork01 {
 
         scanner.close();
 
+        /*All this logic move to some method for example public static void isInRange( int a, int b, int c)
+        * and in main method write isInRange( num1, num2, num3)*/
         // Перевірка чи числа входять в діапазон [-5, 5]
         if (num1 >= -5 && num1 <= 5) {
             System.out.println(num1 + " входить в діапазон [-5, 5]");

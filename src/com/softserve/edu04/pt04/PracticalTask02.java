@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class PracticalTask02 {
     public static void main(String[] args) {
+        /*Respect oll is good, nice*/
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введіть номер дня тижня (1-7):");
         int dayOfWeek = scanner.nextInt();

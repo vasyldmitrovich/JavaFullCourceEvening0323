@@ -8,6 +8,8 @@ public class Faculty {
 
 
     public Faculty() {
+
+        /*No no no, this logic must be in class HomeWork not there*/
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Enter the number of students: ");
@@ -33,6 +35,7 @@ public class Faculty {
         System.out.println("Current season: " + this.currentSeason.getName());
     }
 
+    /*Main method move to another class for example class App*/
     public static void main(String[] args) {
         Faculty faculty = new Faculty();
         faculty.display();

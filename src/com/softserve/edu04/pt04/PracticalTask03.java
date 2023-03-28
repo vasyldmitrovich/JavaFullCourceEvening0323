@@ -10,6 +10,8 @@ public class PracticalTask03 {
 
         Continent continent = null;
 
+        /*Good, you can add this logic to some method, this method must return Continent , and there in main method
+        * you set what return this method to variable continent*/
         if (countryName.equals("Франція") || countryName.equals("Іспанія") || countryName.equals("Німеччина")) {
             continent = Continent.EUROPE;
         } else if (countryName.equals("Китай") || countryName.equals("Індія") || countryName.equals("Японія")) {
