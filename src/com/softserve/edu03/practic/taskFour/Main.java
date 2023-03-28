@@ -2,11 +2,13 @@ package src.com.softserve.edu03.practic.taskFour;
 
 import java.util.Arrays;
 
+
 public class Main {
     public static void main(String[] args) {
         Product productOne = new Product("Banana", 25,20);
         Product productTwo = new Product("Milk",35,10);
         Product productThree = new Product("Tea",30,50);
+        /*Add in print info like that: The most expensive product is: + this method*/
         System.out.println(foundMostExpensive(productOne,productTwo,productThree));
         System.out.println(foundBiggestQuantity(productOne,productTwo,productThree).getName());
     }

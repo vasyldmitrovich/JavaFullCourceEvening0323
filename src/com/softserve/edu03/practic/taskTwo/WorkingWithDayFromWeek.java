@@ -7,6 +7,9 @@ import java.util.Objects;
 import java.util.Scanner;
 
 public class WorkingWithDayFromWeek {
+
+    /*I do not see main method, I can not run this cod because there is no main method, must be in each task class*/
+
     private Scanner scanner = new Scanner(System.in);
     public void processWorkingWithDays(){
         System.out.println("Input number from 1 to 7");

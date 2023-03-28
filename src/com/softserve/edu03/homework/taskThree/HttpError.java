@@ -11,10 +11,12 @@ public enum HttpError {
 
     private int code;
 
+    /*Constructor in enum must be private, not default*/
     HttpError(int code) {
         this.code = code;
     }
 
+    /*Move this method to another class for example class App*/
     public static void foundHttpError(int codeErrorFromUser){
         Optional<HttpError> httpErrorResult = Arrays.stream(HttpError.values()).filter(httpError -> httpError.code == codeErrorFromUser).findFirst();
         if(httpErrorResult.isPresent() == false){
