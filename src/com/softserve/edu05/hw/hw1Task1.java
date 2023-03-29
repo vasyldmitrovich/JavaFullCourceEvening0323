@@ -2,7 +2,7 @@ package com.softserve.edu05.hw;
 
 import java.util.Scanner;
 
-public class task1 {
+public class hw1Task1 {
     public int Month(int a, int b){
         return a;
 

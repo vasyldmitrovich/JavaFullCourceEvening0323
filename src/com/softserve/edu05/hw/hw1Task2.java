@@ -2,7 +2,7 @@ package com.softserve.edu05.hw;
 
 import java.util.Scanner;
 
-public class hwTask2 {
+public class hw1Task2 {
     public int FTrue(int[] array) {
 int count=0;
         int sum = 0;
@@ -55,7 +55,7 @@ int count=0;
 
     public static void main(String[] args) {
         int z=0;
-        hwTask2 obj=new hwTask2();
+        hw1Task2 obj=new hw1Task2();
     int Array[] = new int[10];// масиви
         for (int i = 0; i < Array.length; i++) {
 
