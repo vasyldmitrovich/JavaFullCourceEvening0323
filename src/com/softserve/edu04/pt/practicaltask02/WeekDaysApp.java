@@ -11,6 +11,7 @@ public class WeekDaysApp {
         System.out.println("Input day number (from 1 to 7): ");
         String dayNumber = br.readLine();
 
+        // TODO oreva: update with comment below
         /*This if can put in switch, do cycle and in this cycle our program will wait when user entered correct number*/
         if (Integer.parseInt(dayNumber) > 0 & Integer.parseInt(dayNumber) < 8) {
             System.out.print("Name of day is: ");

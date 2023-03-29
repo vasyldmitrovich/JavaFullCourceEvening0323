@@ -17,10 +17,17 @@ public class EmployeeApp {
         System.out.println("Input department number ");
         Integer input = scanner.nextInt();
 
+        printEmployeeByDepartment(employees, input);
+
+        System.out.println("\n\nArrange workers by the field salary in descending order:");
+        sortAndPrintEmployeesBySalary(employees);
+    }
+
+    private static void printEmployeeByDepartment(Employee[] employees, Integer departmentNumber) {
         boolean found = false;
-        for (Employee empl: employees) {
-            if (empl.getDepartmentNumber().equals(input)) {
-                System.out.println("Worked in department: " + empl);
+        for (Employee e: employees) {
+            if (e.getDepartmentNumber().equals(departmentNumber)) {
+                System.out.println("Worked in department: " + e);
                 found = true;
             }
         }
@@ -28,8 +35,9 @@ public class EmployeeApp {
         if (!found) {
             System.out.println("No employees in entered department or entered wrong department number!");
         }
+    }
 
-        System.out.println("\n\nArrange workers by the field salary in descending order:");
+    private static void sortAndPrintEmployeesBySalary(Employee[] employees) {
         Employee tmp;
         for (int i = 0; i < employees.length - 1; i++) {
             for (int j = i + 1; j < employees.length; j++) {
@@ -40,8 +48,8 @@ public class EmployeeApp {
                 }
             }
         }
-        for (int i = 0; i < employees.length; i++) {
-            System.out.println(employees[i]);
+        for (Employee e: employees) {
+            System.out.println(e);
         }
     }
 

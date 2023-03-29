@@ -6,6 +6,9 @@ public class Car {
     private Integer yearOfProduction;
     private Integer engineCapacity;
 
+    public Car() {
+    }
+
     public Car(String type, Integer yearOfProduction, Integer engineCapacity) {
         this.type = type;
         this.yearOfProduction = yearOfProduction;

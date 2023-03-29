@@ -18,6 +18,16 @@ public class ProductsApp {
         /*Good but you can move this logic to some method*/
         // Output the name and quantity of the most expensive item
         System.out.println("Product which is most expensive: ");
+        Product productWithHighestPrice = getProductWithHighestPrice(products);
+        System.out.println("name: " + productWithHighestPrice.getName());
+        System.out.println("quantity: " + productWithHighestPrice.getQuantity());
+
+        // Output the name of the items, which has the biggest quantity
+        System.out.println("\nProduct which has the biggest quantity: ");
+        System.out.println("name: " + getProductWithBiggestQuantity(products).getName());
+    }
+
+    public static Product getProductWithHighestPrice(ArrayList<Product> products) {
         double highPrice = products.get(0).getPrice();
         Product productWithHighestPrice = products.get(0);
         for (int i = 1; i < 4; i++) {
@@ -26,11 +36,10 @@ public class ProductsApp {
                 productWithHighestPrice = products.get(i);
             }
         }
-        System.out.println("name: " + productWithHighestPrice.getName());
-        System.out.println("quantity: " + productWithHighestPrice.getQuantity());
+        return productWithHighestPrice;
+    }
 
-        // Output the name of the items, which has the biggest quantity
-        System.out.println("Product which has the biggest quantity: ");
+    public static Product getProductWithBiggestQuantity(ArrayList<Product> products) {
         int biggestQuantity = products.get(0).getQuantity();
         Product productWithBiggestQuantity = products.get(0);
         for (int i = 1; i < 4; i++) {
@@ -39,6 +48,6 @@ public class ProductsApp {
                 productWithBiggestQuantity = products.get(i);
             }
         }
-        System.out.println("name: " + productWithBiggestQuantity.getName());
+        return productWithBiggestQuantity;
     }
 }

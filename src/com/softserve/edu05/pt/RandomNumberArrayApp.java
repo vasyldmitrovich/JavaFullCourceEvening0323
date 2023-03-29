@@ -6,30 +6,18 @@ import java.util.Random;
 public class RandomNumberArrayApp {
 
     public static void main(String[] args) {
+
         Integer[] numbers = new Integer[10];
         for (int i = 0; i < numbers.length; i++) {
             numbers[i] = getRandomNumber();
-            //System.out.println(numbers[i]);
         }
         System.out.println("Array of random numbers: " + Arrays.toString(numbers));
 
         // Output the biggest number in the array
-        Integer max = numbers[0];
-        for (int i = 0; i < numbers.length; i++) {
-            if (numbers[i] > max) {
-                max = numbers[i];
-            }
-        }
-        System.out.println("The biggest number in array is: " + max.toString());
+        System.out.println("The biggest number in array is: " + getBiggestNumber(numbers));
 
         // Output the sum of positive numbers
-        Integer sumPositive = 0;
-        for (int i = 0; i < numbers.length; i++) {
-            if (numbers[i] > 0) {
-                sumPositive = sumPositive + numbers[i];
-            }
-        }
-        System.out.println("The sum of positive numbers: " + sumPositive);
+        System.out.println("The sum of positive numbers: " + getSumOfPositiveNumbers(numbers));
 
         // Count the number of negative numbers
         Integer countNegative = countElements(numbers, false);
@@ -46,9 +34,29 @@ public class RandomNumberArrayApp {
         }
     }
 
+    public static Integer getBiggestNumber(Integer[] numbers) {
+        Integer max = numbers[0];
+        for (int i = 0; i < numbers.length; i++) {
+            if (numbers[i] > max) {
+                max = numbers[i];
+            }
+        }
+        return max;
+    }
+
+    public static Integer getSumOfPositiveNumbers(Integer[] numbers) {
+        int sumPositive = 0;
+        for (int i = 0; i < numbers.length; i++) {
+            if (numbers[i] > 0) {
+                sumPositive = sumPositive + numbers[i];
+            }
+        }
+        return sumPositive;
+    }
+
     public static Integer countElements(Integer[] numbers, boolean isPositive) {
-        Integer countPositive = 0;
-        Integer countNegative = 0;
+        int countPositive = 0;
+        int countNegative = 0;
         for (int i = 0; i < numbers.length; i++) {
             if (numbers[i] > 0) {
                 countPositive = countPositive + 1;
