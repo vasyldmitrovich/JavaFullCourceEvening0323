@@ -1,12 +1,6 @@
 package com.softserve.edu05.pt05;
 import java.util.Scanner;
 public class PracticalTask04 {
-
-//        Employee employee1 = new Employee("John Smith", 1, 5000);
-//        Employee employee2 = new Employee("Mary Johnson", 2, 6000);
-//        Employee employee3 = new Employee("David Lee", 1, 8000);
-//        Employee employee4 = new Employee("Karen Brown", 3, 4500);
-//        Employee employee5 = new Employee("Robert Johnson", 2, 7000);
         public static void main(String[] args) {
             Employee[] employees = {
                     new Employee("John", 1, 50000),
