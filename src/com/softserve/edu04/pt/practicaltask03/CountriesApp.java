@@ -12,6 +12,7 @@ public class CountriesApp {
         System.out.println("Input country name: ");
         String country = br.readLine();
 
+        /*Move this switch to some method, there call this method*/
         switch (country) {
             case "Germany":
             case "United Kingdom":

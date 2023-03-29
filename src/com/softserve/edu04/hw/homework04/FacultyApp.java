@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class FacultyApp {
     public static void main(String[] args) {
+        /*Good decision call method in constructor, good*/
         Faculty faculty1 = new Faculty(getStudentsNumber(), getSeason());
 
         System.out.println();

@@ -7,6 +7,7 @@ public class ArraysSortApp {
 
     public static void main(String[] args) {
 
+        /*Nice presentation your decision, it is good that you separate logic to methods and call these methods there*/
         // Create a string array and sort it
         String[] strings = {"string", "practical", "task", "homework", "array"};
 
