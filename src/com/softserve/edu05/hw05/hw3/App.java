@@ -13,9 +13,9 @@ public class App {
         List cars = Arrays.asList(
                 new Car("Model1", 1995, 280),
                 new Car("Model2", 1997, 285),
-                new Car("Model3", 2000, 280),
-                new Car("Model4", 2005, 300));
-        sortOfCars(cars);
+                new Car("Model3", 2005, 280),
+                new Car("Model4", 2000, 300));
+        System.out.println(sortOfCars(cars));
         System.out.println("Input year of car that you would like to find");
         int year = sc.nextInt();
         System.out.println(findByYear(year, cars));

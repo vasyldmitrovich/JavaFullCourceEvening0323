@@ -8,12 +8,13 @@ import java.util.stream.Collectors;
 
 public class CarService {
 
-    public static void sortOfCars(List<Car> cars) {
+    public static List<Car> sortOfCars(List<Car> cars) {
         List sortedList = cars.stream().sorted(Comparator.comparingInt(Car::getYearOfProduction)).collect(Collectors.toList());
-        sortedList.forEach(System.out::println);
+        return sortedList;
     }
 
-    public static List <Car> findByYear (int year, List<Car> carList){
-        List sortedList = carList.stream().filter(m->m.getYearOfProduction()== year).collect(Collectors.toList());
-    return sortedList;}
+    public static List<Car> findByYear(int year, List<Car> carList) {
+        List sortedList = carList.stream().filter(m -> m.getYearOfProduction() == year).collect(Collectors.toList());
+        return sortedList;
+    }
 }
