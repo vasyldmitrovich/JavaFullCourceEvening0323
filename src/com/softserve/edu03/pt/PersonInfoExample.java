@@ -18,6 +18,7 @@ public class PersonInfoExample {
     }
 }
 
+/*Move Student class in separate file, do not write this class there*/
 class Student{
     private String name;
     private double rating;

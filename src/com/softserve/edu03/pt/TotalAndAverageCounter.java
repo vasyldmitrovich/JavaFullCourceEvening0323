@@ -1,3 +1,13 @@
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!On your computer
+ * how I see
+ * you did not mark in blue color folder src
+ * I suggest you marked each folder in blue, it is not good
+ * PLEASE mark directory src in blue colour
+ * because I must reformat in each class package*/
+
+
+
 import java.util.Scanner;
 public class TotalAndAverageCounter {
     public static void main(String[] args) {
@@ -20,6 +30,7 @@ public class TotalAndAverageCounter {
         return a + b;
     }
 
+    /*If you calculate the average in this way, you will have an error in the calculation, a rounding error*/
     static double getAverage(int a, int b){
         return (double)getTotal(a, b) / 2;
     }

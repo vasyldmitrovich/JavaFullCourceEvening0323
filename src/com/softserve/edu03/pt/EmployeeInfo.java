@@ -12,7 +12,7 @@ public class EmployeeInfo {
         emp2.setHours(120);
         emp2.setRate(10.45);
 
-        System.out.println(emp1.toString());
+        System.out.println(emp1.toString());// toString() not needed
         System.out.println(emp2.toString());
         System.out.println(emp3.toString());
 

@@ -1,9 +1,12 @@
 import java.util.Scanner;
 public class TriangleAreaCalculator {
+    /*This is bad decision use many static variable, you can use variable like this in main method*/
     static double a,b,c;
     public static void main(String[] args) {
         double s, area;
 
+        /*For Scanner use some method, in this method you send message like parameter
+        * this method print this message, take data from user and return this data*/
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Input side 1: ");
