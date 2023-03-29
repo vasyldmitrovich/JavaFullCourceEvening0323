@@ -8,18 +8,27 @@ public class PracticalTask03 {
         int[] numbers = generateRandomNumbers(10, -1000, 1000);
         System.out.println(Arrays.toString(numbers));
 
-        /*subtask1
-            Print the largest number in an array
-         */
+        // subtask1 - Print the largest number in an array
         int maxNumber = findMaxNumber(numbers);
-        System.out.println("Max number: " + maxNumber);
+        System.out.println("The largest number in the array: " + maxNumber);
 
-        /*
-        subtask2
-            Print the sum of positive integers?
-         */
+        // subtask2 - Print the sum of positive integers?
         int sumPositiveNumber = sumOfPositiveNumber(numbers);
-        System.out.println("sumOfPositiveNumber: " + sumPositiveNumber);
+        System.out.println("Sum of positive numbers: " + sumPositiveNumber);
+
+        //subtask3 - Count the number of negative numbers
+        int negativeCount = negativeCountNumbers(numbers);
+        System.out.println("Count the number of negative numbers: " + negativeCount);
+
+        //subtask4 - Determining which numbers in an array are more negative or positive
+        int positiveCount = positiveCountNumbers(numbers);
+        if(negativeCount > positiveCount) {
+            System.out.println("There are more negative values in the array.");
+        } else if (negativeCount < positiveCount) {
+            System.out.println("There is more positive values in the array");
+        } else {
+            System.out.println("The array contains an equal number of positive and negative values");
+        }
 
     }
 
@@ -52,5 +61,23 @@ public class PracticalTask03 {
         return sum;
     }
 
+    public static int negativeCountNumbers (int[] numbers) {
+        int negativeCount = 0;
+        for (int number : numbers) {
+            if (number < 0) {
+                negativeCount++;
+            }
+        }
+        return negativeCount;
+    }
 
+    public static int positiveCountNumbers (int[] numbers) {
+        int positiveCount = 0;
+        for (int number : numbers) {
+            if (number > 0) {
+                positiveCount++;
+            }
+        }
+        return positiveCount;
+    }
 }
