@@ -2,7 +2,6 @@ package com.softserve.edu05.hw05.hw3;
 
 import java.util.Arrays;
 import java.util.List;
-
 import static com.softserve.edu05.hw05.hw3.CarService.sortOfCars;
 
 public class App {

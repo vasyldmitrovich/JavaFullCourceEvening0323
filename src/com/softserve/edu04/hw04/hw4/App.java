@@ -1,5 +1,6 @@
 package com.softserve.edu04.hw04.hw4;
 
+
 import java.util.Scanner;
 
 public class App {

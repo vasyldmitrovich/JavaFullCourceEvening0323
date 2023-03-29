@@ -1,5 +1,6 @@
 package com.softserve.edu04.pt04.pt2;
 
+
 import java.util.Scanner;
 
 public class NameOfTheDay {

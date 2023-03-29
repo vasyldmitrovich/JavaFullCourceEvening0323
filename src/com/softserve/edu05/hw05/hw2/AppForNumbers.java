@@ -1,5 +1,6 @@
 package com.softserve.edu05.hw05.hw2;
 
+
 import java.util.Scanner;
 
 public class AppForNumbers {

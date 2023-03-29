@@ -1,5 +1,5 @@
 package com.softserve.edu01.pt01;
-
+ 
 import java.util.Scanner;
 
 public class PracticalTask4 {

@@ -1,5 +1,6 @@
 package com.softserve.edu03.pt03.pt2;
 
+
 public class Methods {
 
     public static int getSalary(Employee employee) {

@@ -1,7 +1,6 @@
 package com.softserve.edu03.hw03.hw2;
 
 import java.util.Scanner;
-
 public class Numbers {
 
     public static void main(String[] args) {

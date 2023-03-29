@@ -1,5 +1,6 @@
 package com.softserve.edu04.hw04.hw5;
 
+
 public class Dog {
     private String name;
     private Breed breed;

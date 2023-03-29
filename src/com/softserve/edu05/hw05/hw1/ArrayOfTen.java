@@ -1,5 +1,6 @@
 package com.softserve.edu05.hw05.hw1;
 
+
 public class ArrayOfTen {
     public static int sumOfFirstFive(int array[]) {
         int sum = 0;

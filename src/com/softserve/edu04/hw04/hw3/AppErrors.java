@@ -1,5 +1,6 @@
 package com.softserve.edu04.hw04.hw3;
 
+
 public class AppErrors {
     public static void main(String[] args) {
         HTTPError httpError1 = HTTPError.ERROR400;

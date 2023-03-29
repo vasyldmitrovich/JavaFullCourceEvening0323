@@ -1,7 +1,5 @@
 package com.softserve.edu03.hw03.hw3;
 
-
-
 public class App {
     public static void main(String[] args) {
         Person person1 = new Person();

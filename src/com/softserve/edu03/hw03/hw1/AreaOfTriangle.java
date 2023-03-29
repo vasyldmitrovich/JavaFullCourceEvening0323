@@ -1,7 +1,6 @@
 package com.softserve.edu03.hw03.hw1;
 
 import java.util.Scanner;
-
 public class AreaOfTriangle {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

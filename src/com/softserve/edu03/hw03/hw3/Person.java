@@ -1,5 +1,4 @@
 package com.softserve.edu03.hw03.hw3;
-
 public class Person {
 
     private String firstName;

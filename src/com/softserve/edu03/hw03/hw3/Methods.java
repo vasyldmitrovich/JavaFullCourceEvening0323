@@ -1,7 +1,6 @@
 package com.softserve.edu03.hw03.hw3;
 
 import java.util.Scanner;
-
 public class Methods {
     private static final int currentYear = 2023;
 

@@ -1,5 +1,6 @@
 package com.softserve.edu04.hw04.hw2;
 
+
 import java.util.Arrays;
 import java.util.Scanner;
 

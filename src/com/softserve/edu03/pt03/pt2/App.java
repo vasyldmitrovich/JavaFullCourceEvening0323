@@ -1,5 +1,6 @@
 package com.softserve.edu03.pt03.pt2;
 
+
 public class App {
     public static void main(String[] args) {
         Employee employee1 = new Employee("Ivan", 100, 192);

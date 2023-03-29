@@ -1,5 +1,6 @@
 package com.softserve.edu05.hw05.hw1;
 
+
 public class ArrayOfFive {
     public static int positionOfPosNumber(int array[]) {
         int culc = 0;

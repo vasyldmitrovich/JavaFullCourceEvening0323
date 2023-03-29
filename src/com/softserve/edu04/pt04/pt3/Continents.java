@@ -1,5 +1,6 @@
 package com.softserve.edu04.pt04.pt3;
 
+
 public enum Continents {
     ASIA("Asia", "China", "Japan", "Thailand", "Bali"),
     EUROPE("Europe", "Ukraine", "Italy", "France", "Germany"),

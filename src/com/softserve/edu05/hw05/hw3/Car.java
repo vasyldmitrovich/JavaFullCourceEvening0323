@@ -1,5 +1,6 @@
 package com.softserve.edu05.hw05.hw3;
 
+
 public class Car {
     String type;
     int yearOfProduction;

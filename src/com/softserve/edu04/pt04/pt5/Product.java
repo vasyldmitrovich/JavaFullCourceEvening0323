@@ -1,6 +1,5 @@
 package com.softserve.edu04.pt04.pt5;
 
-
 public class Product {
     private String name;
     private double price;

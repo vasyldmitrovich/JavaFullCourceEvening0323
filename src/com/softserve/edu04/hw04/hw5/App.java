@@ -1,5 +1,6 @@
 package com.softserve.edu04.hw04.hw5;
 
+
 public class App {
     public static void main(String[] args) {
         Dog[] arrayOfDogs = new Dog[3];

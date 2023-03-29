@@ -1,5 +1,6 @@
 package com.softserve.edu03.pt03.pt1;
 
+
 import java.util.Scanner;
 
 public class TwoNumbers {

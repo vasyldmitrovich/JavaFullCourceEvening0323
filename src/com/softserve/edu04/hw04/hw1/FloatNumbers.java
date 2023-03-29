@@ -1,7 +1,6 @@
 package com.softserve.edu04.hw04.hw1;
 
 import java.util.Scanner;
-
 public class FloatNumbers {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

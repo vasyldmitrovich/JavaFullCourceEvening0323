@@ -1,5 +1,6 @@
 package com.softserve.edu01.hw01;
 
+
 import java.util.Scanner;
 
 public class PhoneCalls {
