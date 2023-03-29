@@ -3,6 +3,8 @@ package com.softserve.edu4.pt;
 import java.util.Scanner;
 
 public class Task1 {
+
+    /*PLEASE USE REFORMAT CODE because i it is bad write code like that*/
     public static void main(String[] args) {
       /*  System.out.println("Введіть 1 число");
         numbers Num1 = new numbers();
@@ -15,6 +17,10 @@ System.out.println("Введіть 2 число");
     }
 }
 
+/*it is not necessary create class and write in this class one method, write this method in that class
+* where is main method
+*
+* PLEASE REWRITE ALL YOUR CODE*/
 class numbers{
     public numbers() {
         float a;

@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class task2 {
 
+    /*What this method do? because I do not understand what it does, I read name of method       tru   and do not understand what that means?*/
     public static void tru(int a){
         if(a%1==a||a%a==1)
         {

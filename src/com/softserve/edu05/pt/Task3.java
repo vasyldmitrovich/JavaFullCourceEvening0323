@@ -55,10 +55,14 @@ public class Task3 {
     }
     public static void main(String[] args) {
         int Array[] = new int[10];// масиви
+
+        /*Where is two spaces before loop  for(int */
 for(int i=0;i<Array.length;i++) {
     int a = (int) (Math.random() *(200+1)) - 100;
     Array[i]=a;
          }
+
+/*Add space of comment between different logic*/
         int MAX=max(Array);
         int SUM=sum(Array);
         int NegativNumbers= CountNumber(Array);

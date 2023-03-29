@@ -4,7 +4,10 @@ import java.util.Scanner;
 //Firth task
 
 public class Array {
+    /*Move this method  under the main method
+    * And rename this method, because name of method can not start from upercase*/
     public int Avarage(int [] array) {
+        /*Use reformat code because need add spaces before + and another operators*/
         int avereg  ;
         int sum=0;
         int k=1;
@@ -18,6 +21,7 @@ public class Array {
     }
     public static void main(String[] args) {
 
+        /*Do not correct name of variable, must be from lowercase*/
         int Array[] = new int[10];// масиви
         for (int i = 0; i < Array.length; i++) {
 
@@ -29,6 +33,8 @@ public class Array {
 
         System.out.println("Avarage the array is::"+br1.Avarage(Array)/Array.length);
 
+
+        /*If next code is not needed then delete this code*/
         //Input
        /* for (int i = 0; i <Array.length; i++) {
             System.out.println(Array[i]);
