@@ -3,6 +3,8 @@ package com.softserve.edu4.pt;
 public class Task3 {
     public static void main(String[] args) {
 
+        /*All this code is not correct, rewrite code, please read task what you must do*/
+
    HTTPERROR myVar = HTTPERROR.BAD_REQUEST;
 
     switch(myVar) {
