@@ -25,7 +25,7 @@ public class WorkWithArrays {
         int number = sc.nextInt();
         System.out.println("You're number is in array:");
         System.out.println(Arrays.stream(arrayInt).anyMatch(temp -> temp == number));
-        System.out.println(Arrays.asList(arrayInt).contains(number));
+        //System.out.println(Arrays.asList(arrayInt).contains(number));
 
     }
 }
