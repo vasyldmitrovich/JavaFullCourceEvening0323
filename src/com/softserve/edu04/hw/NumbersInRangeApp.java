@@ -18,6 +18,7 @@ public class NumbersInRangeApp {
         }
     }
 
+    /*It is good use method for read data from user*/
     public static Float getNumber(String input) {
         Scanner scanner = new Scanner(System.in);
         System.out.print(input);

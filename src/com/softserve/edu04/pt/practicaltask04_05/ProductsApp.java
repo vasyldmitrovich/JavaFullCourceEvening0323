@@ -15,6 +15,7 @@ public class ProductsApp {
         products.add(product3);
         products.add(product4);
 
+        /*Good but you can move this logic to some method*/
         // Output the name and quantity of the most expensive item
         System.out.println("Product which is most expensive: ");
         double highPrice = products.get(0).getPrice();
