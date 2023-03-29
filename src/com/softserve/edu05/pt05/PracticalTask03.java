@@ -44,9 +44,9 @@ public class PracticalTask03 {
 
     public static int sumOfPositiveNumber (int[] numbers) {
         int sum = 0;
-        for (int i = 0; i < numbers.length; i++){
-            if(numbers[i] > 0) {
-                sum = sum + numbers[i];
+        for (int number : numbers) {
+            if (number > 0) {
+                sum = sum + number;
             }
         }
         return sum;
