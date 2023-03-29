@@ -40,6 +40,23 @@ public class Employee {
             + '}';
   }
 
+ /* public static void sort(Employee employee,Employee employee1,Employee employee2){
+    int b=employee.DepartmentNumber;
+    int k=employee1.DepartmentNumber;
+    int c=employee2.DepartmentNumber;
+
+    for(int i=0;i<3;i++) {
+      if (k > b) {
+        System.out.println(employee1.toString());
+      }
+      if (k < b) {
+        System.out.println(employee.toString());
+      }
+      if (c < b) {
+        System.out.println(employee.toString());
+      }
+    }
+  }*/
   public static void main(String[] args) {
     Employee employer1 = new Employee("S.B.B", 30000, 1008);
     Employee employer2 = new Employee("S.B.V", 50000, 1008);
@@ -57,7 +74,6 @@ public class Employee {
     if(employer3.DepartmentNumber==d){
       System.out.println( employer1.toString());
     }
-
 
 
 
