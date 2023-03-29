@@ -1,4 +1,4 @@
-package src.com.softserve.edu02.practic.taskTwo;
+package com.softserve.edu02.practic.taskTwo;
 
 public class Employee {
     private String name;
@@ -52,11 +52,13 @@ public class Employee {
         this.name = name;
         this.hours = hours;
     }
-    public double getSalary(){
+
+    public double getSalary() {
         return rate * hours;
     }
-    public double getBonuses(){
-        return ((rate * hours)*10)/100;
+
+    public double getBonuses() {
+        return ((rate * hours) * 10) / 100;
     }
 
     @Override

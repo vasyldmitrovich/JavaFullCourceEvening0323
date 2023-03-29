@@ -1,4 +1,4 @@
-package src.com.softserve.edu03.practic.taskFour;
+package com.softserve.edu03.practic.taskFour;
 
 public class Product {
     private String name;

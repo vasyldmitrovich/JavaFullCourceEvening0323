@@ -1,4 +1,4 @@
-package src.com.softserve.edu03.homework.taskFive;
+package com.softserve.edu03.homework.taskFive;
 
 public class Dog {
     private String name;

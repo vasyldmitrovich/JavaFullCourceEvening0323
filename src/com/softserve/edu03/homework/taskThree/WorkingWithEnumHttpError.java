@@ -1,4 +1,4 @@
-package src.com.softserve.edu03.homework.taskThree;
+package com.softserve.edu03.homework.taskThree;
 
 import java.util.Scanner;
 
@@ -7,6 +7,7 @@ public class WorkingWithEnumHttpError {
     public void processWorking(){
         System.out.print("Input please code error: ");
         int codeFromUser = scanner.nextInt();
-        HttpError.foundHttpError(codeFromUser);
+        App app = new App();
+        app.foundHttpError(codeFromUser);
     }
 }

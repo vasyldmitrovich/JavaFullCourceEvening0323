@@ -1,4 +1,4 @@
-package src.com.softserve.edu02.example;
+package com.softserve.edu02.example;
 
 import java.util.Arrays;
 
@@ -21,10 +21,12 @@ public class Student {
     public void setRating(double rating) {
         this.rating = rating;
     }
-    public static double avrRating(Student ...students){
+
+    public static double avrRating(Student... students) {
         return Arrays.stream(students).mapToDouble(Student::getRating).average().getAsDouble();
     }
-    public static double totalRating(Student ...students){
+
+    public static double totalRating(Student... students) {
         return Arrays.stream(students).mapToDouble(Student::getRating).sum();
     }
 
@@ -35,7 +37,8 @@ public class Student {
         this.name = name;
         this.rating = rating;
     }
-    public boolean betterStudent(Student studentForComparing){
+
+    public boolean betterStudent(Student studentForComparing) {
         return studentForComparing.getRating() > this.getRating() ? true : false;
     }
 

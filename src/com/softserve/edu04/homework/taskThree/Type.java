@@ -1,5 +1,5 @@
-package src.com.softserve.edu04.homework.taskThree;
+package com.softserve.edu04.homework.taskThree;
 
 public enum Type {
-    MICRO, SEDAN,SUPERCAR,COUPE,LIMOUSINE;
+    MICRO, SEDAN, SUPERCAR, COUPE, LIMOUSINE;
 }

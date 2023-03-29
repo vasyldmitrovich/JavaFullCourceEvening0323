@@ -1,10 +1,11 @@
-package src.com.softserve.edu01.practic.taskTwo;
+package com.softserve.edu01.practic.taskTwo;
 
 import java.util.Scanner;
 
 public class WorkingWithNumber {
     private Scanner scanner = new Scanner(System.in);
-    public void processWorkingWithNumbers(){
+
+    public void processWorkingWithNumbers() {
         System.out.println("Input first number:");
         double numberOneFromConsole = scanner.nextDouble();
         System.out.println("Input second number:");
@@ -13,7 +14,8 @@ public class WorkingWithNumber {
         double numberThreeFromConsole = scanner.nextDouble();
         foundAverageFromThreeNumbers(numberOneFromConsole, numberTwoFromConsole, numberThreeFromConsole);
     }
-    private void foundAverageFromThreeNumbers(double numberOne, double numberTwo, double numberThree){
-        System.out.println("Average is "+((numberOne+numberTwo+numberThree)/3));
+
+    private void foundAverageFromThreeNumbers(double numberOne, double numberTwo, double numberThree) {
+        System.out.println("Average is " + ((numberOne + numberTwo + numberThree) / 3));
     }
 }

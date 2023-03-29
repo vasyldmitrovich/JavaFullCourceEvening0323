@@ -1,4 +1,4 @@
-package src.com.softserve.edu02.homework.taskThree;
+package com.softserve.edu02.homework.taskThree;
 
 public class Main {
     public static void main(String[] args) {

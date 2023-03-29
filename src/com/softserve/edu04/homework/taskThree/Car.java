@@ -1,4 +1,4 @@
-package src.com.softserve.edu04.homework.taskThree;
+package com.softserve.edu04.homework.taskThree;
 
 import java.util.Date;
 

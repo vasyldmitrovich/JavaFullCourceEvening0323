@@ -1,4 +1,4 @@
-package src.com.softserve.edu02.example;
+package com.softserve.edu02.example;
 
 public class Main {
     public static void main(String[] args) {

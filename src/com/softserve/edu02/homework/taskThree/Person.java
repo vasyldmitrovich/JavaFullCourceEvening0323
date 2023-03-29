@@ -1,4 +1,4 @@
-package src.com.softserve.edu02.homework.taskThree;
+package com.softserve.edu02.homework.taskThree;
 
 import java.util.Scanner;
 
@@ -48,14 +48,17 @@ public class Person {
         this.lastName = lastName;
         this.birthYear = birthYear;
     }
-    public int getAge(){
-        return 2023-birthYear;
+
+    public int getAge() {
+        return 2023 - birthYear;
     }
-    public void changeName(String firstName, String lastName){
+
+    public void changeName(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
     }
-    public void input(){
+
+    public void input() {
         System.out.print("Input first name: ");
         this.firstName = scanner.nextLine();
         System.out.print("Input last name: ");
@@ -63,7 +66,8 @@ public class Person {
         System.out.println("Input birth year: ");
         this.birthYear = scanner.nextInt();
     }
-    public void output(){
+
+    public void output() {
         System.out.println("Person{" +
                 "firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +

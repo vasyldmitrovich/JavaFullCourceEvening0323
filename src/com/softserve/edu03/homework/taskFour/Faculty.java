@@ -1,4 +1,4 @@
-package src.com.softserve.edu03.homework.taskFour;
+package com.softserve.edu03.homework.taskFour;
 
 public class Faculty {
     private int countStudent;
