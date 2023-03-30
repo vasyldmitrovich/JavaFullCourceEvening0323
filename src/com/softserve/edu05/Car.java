@@ -1,7 +1,8 @@
 package com.softserve.edu05;
 
 import java.util.Arrays;
-
+import java.util.Scanner;
+import org.junit.function.ThrowingRunnable;
 public class Car {
 
 
@@ -29,6 +30,13 @@ public class Car {
             System.out.println(arr[i]);
         }
     }
+    public static void seach(int a,Car car){
+         if(a==car.yeaproduction){
+            System.out.println(car.type);
+
+        }
+
+    }
     public int getA() {
         return enginecapacity;
     }
@@ -36,7 +44,7 @@ public class Car {
     public static void main(String[] args) {
 
         Car car1=new Car("Mazda",2020,3721 );
-        Car car2=new Car("Opel",2014,2721 );
+        Car car2=new Car("Opel",2020,2721 );
         Car car3=new Car("Mitsubisi",2009,1721 );
         Car car4=new Car("Nissan",2015,2841 );
         int Array[] = new int[4];// масиви
@@ -46,6 +54,13 @@ public class Car {
         Array[3]=car4.getA();
         Arrays.sort(Array);
        sort(Array);
+        Scanner br = new Scanner(System.in);
+        int a = br.nextInt();
+        seach(a,car1);
+        seach(a,car2);
+        seach(a,car3);
+        seach(a,car4);
+
 
     }
 }
