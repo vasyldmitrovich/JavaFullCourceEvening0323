@@ -14,12 +14,12 @@ public class Calculation {
         int numberOne = scanner.nextInt();
         System.out.println("Input two number");
         int numberTwo = scanner.nextInt();
-        System.out.println("result operation = " + new Calculation().chooseOperationAndStartOperation(numberOne, numberTwo));
-    }
-
-    private int chooseOperationAndStartOperation(int numberOne, int numberTwo) {
         System.out.println("Choose please operation:\n1)a * b\n2)a + b\n3)a - b\n4)a / b");
         int chooseOperation = scanner.nextInt();
+        System.out.println("result operation = " + new Calculation().chooseOperationAndStartOperation(numberOne, numberTwo, chooseOperation));
+    }
+
+    public int chooseOperationAndStartOperation(int numberOne, int numberTwo, int chooseOperation) {
         return switch (chooseOperation) {
             case 1 -> multiplicationNumbers(numberOne, numberTwo);
             case 2 -> plusNumber(numberOne, numberTwo);
@@ -29,19 +29,19 @@ public class Calculation {
         };
     }
 
-    private int multiplicationNumbers(int numberOne, int numberTwo) {
+    public int multiplicationNumbers(int numberOne, int numberTwo) {
         return numberOne * numberTwo;
     }
 
-    private int divisionNumbers(int numberOne, int numberTwo) {
+    public int divisionNumbers(int numberOne, int numberTwo) {
         return numberOne / numberTwo;
     }
 
-    private int minusNumbers(int numberOne, int numberTwo) {
+    public int minusNumbers(int numberOne, int numberTwo) {
         return numberOne - numberTwo;
     }
 
-    private int plusNumber(int numberOne, int numberTwo) {
+    public int plusNumber(int numberOne, int numberTwo) {
         return numberOne + numberTwo;
     }
 }

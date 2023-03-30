@@ -10,10 +10,16 @@ public class WorkingWithSimpleNumber {
         System.out.print("Input please number:");
         int numberFromUser = scanner.nextInt();
         BigInteger bigIntegerForCheck = BigInteger.valueOf((long) (numberFromUser));
-        System.out.println(checkNumberOnSimple(numberFromUser, bigIntegerForCheck) == true ? "Is a prime number" : "Is not prime number");
+        System.out.println(checkNumberOnSimple(numberFromUser) == true ? "Is a prime number" : "Is not prime number");
     }
 
-    private boolean checkNumberOnSimple(int numberFromUser, BigInteger bigIntegerForCheck) {
-        return bigIntegerForCheck.isProbablePrime(numberFromUser);
+    public boolean checkNumberOnSimple(int numberFromUser) {
+        int countDiv = 0;
+        for(int i = 1; i<=numberFromUser; i++){
+            if(numberFromUser % i == 0){
+                countDiv++;
+            }
+        }
+        return countDiv == 2 ?  true : false;
     }
 }

@@ -10,6 +10,14 @@ public class WorkingWithInputFromUser {
     private int[] numbersForTwoTask = new int[10];
     private int[] numbersForThreeTask = new int[5];
 
+    public void setNumbersForTwoTask(int[] numbersForTwoTask) {
+        this.numbersForTwoTask = numbersForTwoTask;
+    }
+
+    public void setNumbersForThreeTask(int[] numbersForThreeTask) {
+        this.numbersForThreeTask = numbersForThreeTask;
+    }
+
     public void foundDaysInMonth() {
         System.out.print("Input number month: ");
         int numberFromUserForMoth = scanner.nextInt();
@@ -37,25 +45,30 @@ public class WorkingWithInputFromUser {
             System.out.print("Input " + i + " number: ");
             numbersForThreeTask[i] = scanner.nextInt();
         }
-        foundIndexTwoPositiveNumberInArray();
-        foundMinValueElementInArray();
-        multiAllEvenNumbers();
-    }
-
-    private void multiAllEvenNumbers() {
-        System.out.println("Multi all even numbers = " + Arrays.stream(numbersForThreeTask)
-                .filter(number -> number != 0)
-                .filter(number -> number % 2 == 0)
-                .reduce((n1, n2) -> n1 * n2).getAsInt());
-    }
-
-    private void foundMinValueElementInArray() {
-        int minElement = Arrays.stream(numbersForThreeTask).min().getAsInt();
+        int indexTwoPositiveNumber = foundIndexTwoPositiveNumberInArray();
+        if (indexTwoPositiveNumber != 0) {
+            System.out.println("Index two positive number = " + indexTwoPositiveNumber);
+        } else {
+            System.out.println("Two positive number not found!");
+        }
+        System.out.println("Multi all even numbers = " + multiAllEvenNumbers());
+        int minElement = foundMinValueElementInArray();
         System.out.println("Min element in array = " + minElement);
         System.out.println("Index in array min elem = " + foundIndexInArrayForMinValue(minElement));
     }
 
-    private int foundIndexInArrayForMinValue(int minValue) {
+    private int multiAllEvenNumbers() {
+         return Arrays.stream(numbersForThreeTask)
+                .filter(number -> number != 0)
+                .filter(number -> number % 2 == 0)
+                .reduce((n1, n2) -> n1 * n2).getAsInt();
+    }
+
+    public int foundMinValueElementInArray() {
+        return Arrays.stream(numbersForThreeTask).min().getAsInt();
+    }
+
+    public int foundIndexInArrayForMinValue(int minValue) {
         int indexForMinValue = 0;
         for (int i = 0; i < numbersForThreeTask.length; i++) {
             if (numbersForThreeTask[i] == minValue) {
@@ -65,7 +78,7 @@ public class WorkingWithInputFromUser {
         return indexForMinValue;
     }
 
-    private void foundIndexTwoPositiveNumberInArray() {
+    public int foundIndexTwoPositiveNumberInArray() {
         int countPositiveNumber = 0;
         int indexTwoPositiveNumber = 0;
         for (int i = 0; i < numbersForThreeTask.length; i++) {
@@ -76,10 +89,6 @@ public class WorkingWithInputFromUser {
                 indexTwoPositiveNumber = i;
             }
         }
-        if (indexTwoPositiveNumber != 0) {
-            System.out.println("Index two positive number = " + indexTwoPositiveNumber);
-        } else {
-            System.out.println("Two positive number not found!");
-        }
+        return indexTwoPositiveNumber;
     }
 }

@@ -6,6 +6,6 @@ public class Main {
         System.out.println(workingWithRandomArray.getBigNumberInRandomArray());
         System.out.println(workingWithRandomArray.getCountAllNegativeNumbers());
         System.out.println(workingWithRandomArray.getSumAllPositiveNumbersInArray());
-        workingWithRandomArray.foundWhatMoreNegativeOrPositiveNumberInArray();
+        System.out.println(workingWithRandomArray.foundWhatMoreNegativeOrPositiveNumberInArray());
     }
 }

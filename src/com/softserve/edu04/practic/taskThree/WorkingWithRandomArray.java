@@ -6,6 +6,10 @@ import java.util.Random;
 public class WorkingWithRandomArray {
     private int[] arrayInt;
 
+    public WorkingWithRandomArray(int[] arrayInt) {
+        this.arrayInt = arrayInt;
+    }
+
     public WorkingWithRandomArray() {
         Random random = new Random();
         arrayInt = new int[10];
@@ -27,9 +31,9 @@ public class WorkingWithRandomArray {
         return Arrays.stream(arrayInt).filter(number -> number < 0).count();
     }
 
-    public void foundWhatMoreNegativeOrPositiveNumberInArray() {
+    public String foundWhatMoreNegativeOrPositiveNumberInArray() {
         long countPositive = Arrays.stream(arrayInt).filter(number -> number > 0).count();
         long countNegative = Arrays.stream(arrayInt).filter(number -> number < 0).count();
-        System.out.println(countPositive > countNegative ? "There are more positive values in the array" : countNegative == countPositive ? "There are an equal number of positive and negative values in the array" : "There are more negative values in the array");
+        return countPositive > countNegative ? "There are more positive values in the array" : countNegative == countPositive ? "There are an equal number of positive and negative values in the array" : "There are more negative values in the array";
     }
 }

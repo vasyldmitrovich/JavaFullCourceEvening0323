@@ -7,6 +7,10 @@ public class GuessRandomNumberGame {
     private int guessNumber;
     private Scanner scanner = new Scanner(System.in);
 
+    public void setGuessNumber(int guessNumber) {
+        this.guessNumber = guessNumber;
+    }
+
     public GuessRandomNumberGame() {
         Random random = new Random();
         guessNumber = random.nextInt(0, 15);
@@ -25,7 +29,7 @@ public class GuessRandomNumberGame {
         }
     }
 
-    private String checkNumberForGame(int numberFromUser) {
+    public String checkNumberForGame(int numberFromUser) {
         return numberFromUser > guessNumber ? "Too high, try again" : "Too low, try again";
     }
 }

@@ -10,13 +10,10 @@ public class WorkWithString {
         String worldOneForRead = scanner.nextLine();
         String worldTwoForRead = scanner.nextLine();
         String worldThreeForRead = scanner.nextLine();
-        processOutputString(worldOneForRead, worldTwoForRead, worldThreeForRead);
+        System.out.println(processGetFinalString(worldOneForRead, worldTwoForRead, worldThreeForRead));
     }
 
-    private void processOutputString(String worldForOutputThree, String worldForOutputTwo, String worldForOutputOne) {
-        System.out.println("Output text:");
-        System.out.println(worldForOutputOne);
-        System.out.println(worldForOutputTwo);
-        System.out.println(worldForOutputThree);
+    public String processGetFinalString(String worldForOutputThree, String worldForOutputTwo, String worldForOutputOne) {
+        return "Output text:"+"\n"+worldForOutputOne +"\n"+ worldForOutputTwo+"\n"+worldForOutputThree;
     }
 }

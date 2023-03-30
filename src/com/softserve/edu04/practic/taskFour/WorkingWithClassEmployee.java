@@ -16,20 +16,23 @@ public class WorkingWithClassEmployee {
         Employee employeeFour = new Employee("Eugen", 2, 9000);
         Employee employeeFive = new Employee("Anton", 3, 7900);
         System.out.println("Process found department");
-        foundEmployeeForDepartment(employeeOne, employeeTwo, employeeThree, employeeFour, employeeFive);
-        System.out.println("Process sorted");
-        sortEmployeesWithSalaryDesc(employeeOne, employeeTwo, employeeThree, employeeFour, employeeFive);
-    }
-
-    public static void foundEmployeeForDepartment(Employee... employees) {
         System.out.print("Input number department: ");
         int numberDepartmentFromUser = scanner.nextInt();
-        List<Employee> employeeListAfterFilter = Arrays.stream(employees).filter(employee -> employee.getDepartment_number() == numberDepartmentFromUser)
-                .collect(Collectors.toList());
+        List<Employee> employeeListAfterFilter = foundEmployeeForDepartment(numberDepartmentFromUser,employeeOne, employeeTwo, employeeThree, employeeFour, employeeFive);
         System.out.println(employeeListAfterFilter.size() != 0 ? employeeListAfterFilter : "Not found employees for it is department");
+        System.out.println("Process sorted");
+        Employee[] afterSorted = sortEmployeesWithSalaryDesc(employeeOne, employeeTwo, employeeThree, employeeFour, employeeFive);
+        for(Employee employee : afterSorted){
+            System.out.print(employee+" ");
+        }
     }
 
-    public static void sortEmployeesWithSalaryDesc(Employee... employees) {
-        Arrays.stream(employees).sorted(Comparator.comparingDouble(Employee::getSalary).reversed()).collect(Collectors.toList()).forEach(System.out::println);
+    public static List<Employee> foundEmployeeForDepartment(int numberDepartmentFromUser,Employee... employees) {
+        return Arrays.stream(employees).filter(employee -> employee.getDepartment_number() == numberDepartmentFromUser)
+                .collect(Collectors.toList());
+    }
+
+    public static Employee[] sortEmployeesWithSalaryDesc(Employee... employees) {
+        return Arrays.stream(employees).sorted(Comparator.comparingDouble(Employee::getSalary).reversed()).toArray(Employee[]::new);
     }
 }

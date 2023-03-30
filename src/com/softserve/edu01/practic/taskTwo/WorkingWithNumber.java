@@ -12,10 +12,10 @@ public class WorkingWithNumber {
         double numberTwoFromConsole = scanner.nextDouble();
         System.out.println("Input three number:");
         double numberThreeFromConsole = scanner.nextDouble();
-        foundAverageFromThreeNumbers(numberOneFromConsole, numberTwoFromConsole, numberThreeFromConsole);
+        System.out.println("Average is " + foundAverageFromThreeNumbers(numberOneFromConsole, numberTwoFromConsole, numberThreeFromConsole));
     }
 
-    private void foundAverageFromThreeNumbers(double numberOne, double numberTwo, double numberThree) {
-        System.out.println("Average is " + ((numberOne + numberTwo + numberThree) / 3));
+    public double foundAverageFromThreeNumbers(double numberOne, double numberTwo, double numberThree) {
+        return (numberOne + numberTwo + numberThree) / 3;
     }
 }

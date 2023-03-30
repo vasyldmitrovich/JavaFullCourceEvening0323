@@ -15,13 +15,11 @@ public class WorkingWithArray {
         return Arrays.stream(doubleArray).average().orElse(0);
     }
 
-    public void checkArrayOnContainString(String[] arrayString) {
-        System.out.print("Input your string: ");
-        String strFromUser = scanner.nextLine();
-        System.out.println(processCheckArrayString(arrayString, strFromUser) == true ? "value = " + strFromUser + " contains in array!" : "value = " + strFromUser + " not contains in array!");
+    public String checkArrayOnContainString(String[] arrayString, String strFromUser) {
+        return processCheckArrayString(arrayString, strFromUser) == true ? "value = " + strFromUser + " contains in array!" : "value = " + strFromUser + " not contains in array!";
     }
 
-    private boolean processCheckArrayString(String[] arrayString, String strFromUser) {
+    public boolean processCheckArrayString(String[] arrayString, String strFromUser) {
         return Arrays.stream(arrayString).anyMatch(str -> str.equals(strFromUser) == true);
     }
 }
