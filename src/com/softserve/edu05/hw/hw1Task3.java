@@ -17,6 +17,21 @@ public class hw1Task3 {
             }
         }
     }
+
+
+    public void evennumbers(int [] array){
+
+        int product =1;
+        for (int i = 0; i < 5; i++) {
+            if( array[i] % 2==0) {
+                product =array[i]*product ;
+
+            }
+
+        }
+System.out.println("product "+product );
+
+    }
     public  void min(int []arr){
         int min=arr[0];
         int count=0;
@@ -40,6 +55,7 @@ public class hw1Task3 {
         }
        obj.pos0fsec(Array);
         obj.min(Array);
+        obj.evennumbers(Array);
 
     }
 }
