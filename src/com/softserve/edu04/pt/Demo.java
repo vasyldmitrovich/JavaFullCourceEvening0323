@@ -21,14 +21,17 @@ public class Demo {
 		}
 		System.out.println("This country is situated on " + continents.getContinentByCountry(country) + " continent.");
 		//pt4
-		//TODO would be interesting to make it print several (equal) max values
-		Product pen = new Product("Pen", 4.5, 6);
+		Product pen = new Product("Pen", 4.5, 5);
 		Product pencil = new Product("Pencil", 3.0, 5);
 		Product notebook = new Product("Notebook", 20.5, 2);
 		Product eraser = new Product("Eraser", 2.5, 1);
-		Product theMostExpensive = helper.getMostExpensiveProduct(pen, pencil, notebook, eraser);
-		System.out.println("The most expensive item is: " + theMostExpensive.getName() + ", it's quantity is: " + theMostExpensive.getQuantity());
-		Product biggestQuantity = helper.getBiggestQuantityProduct(pen, pencil, notebook, eraser);
-		System.out.println(biggestQuantity.getName() + " has the biggest quantity");
+		Product[] biggestQuantityProducts = helper.getAllBiggestQuantityProducts(pen, pencil, notebook, eraser);
+		for (Product p : biggestQuantityProducts) {
+			System.out.println(p.getName() + " has the biggest quantity");
+		}
+		Product[] allMostExpensiveProducts = helper.getAllMostExpensiveProducts(pen, pencil, notebook, eraser);
+		for (Product p : allMostExpensiveProducts) {
+			System.out.println("The most expensive item is: " + p.getName() + ", it's quantity is: " + p.getQuantity());
+		}
 	}
 }
