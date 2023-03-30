@@ -1,14 +1,16 @@
+package com.softserve.edu03.hw;
+
 import java.util.Scanner;
 
-public class hw_2{
+/*
+Write Java console application with method to find the smallest number among three integer numbers.
+*/
+public class App_H_3_2 {
     public static void main(String[] args) {
-        number.smallest();
-
+        SmallestNumber();
     }
-}
 
-class number{
-    public static void smallest(){
+    public static void SmallestNumber() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter first number --> ");
         int a = sc.nextInt();
@@ -17,14 +19,13 @@ class number{
         System.out.println("Enter third number -->  ");
         int c = sc.nextInt();
 
-        if (a<b && a<c){
+        if (a < b && a < c) {
             System.out.println("The smalles number is -->  " + a);
-        }
-        else if (b<a && b<c){
+        } else if (b < a && b < c) {
             System.out.println("The smalles number is -->  " + b);
-        }else if(c<a && c<b){
+        } else if (c < a && c < b) {
             System.out.println("The smalles number is --> " + c);
-        }else{
+        } else {
             System.out.println("Maybe you enter two or three same numbers ???");
         }
 

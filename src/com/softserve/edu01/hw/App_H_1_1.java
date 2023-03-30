@@ -1,16 +1,16 @@
+package com.softserve.edu01.hw;
+
 import java.util.Scanner;
 
-public class Main {
-    public static void main(String[] args) {
-        rad.radius();
-        adr.adress();
-        ph.phone();
+public class App_H_1_1 {
+    public static void main(String[] args){
+
+        radius();
+        adress();
+        phone();
 
     }
 
-
-}
- class  adr{
     public static void adress(){
         Scanner n = new Scanner(System.in);
         System.out.println("Enter your name -->  ");
@@ -21,9 +21,7 @@ public class Main {
         System.out.println("Hi " + name + " your adress is " + adress);
         System.out.println();
     }
-}
 
-class rad{
     public static  void radius(){
         float p = 3.14f;
         Scanner radius = new Scanner(System.in);
@@ -31,8 +29,7 @@ class rad{
         double r = radius.nextDouble();
         System.out.println("Radius is: " + 2*p*r);
     }
-}
-class ph{
+
     public static void phone(){
         Scanner duration = new Scanner(System.in);
         System.out.println("Enter duraion of first call --> ");
@@ -53,10 +50,6 @@ class ph{
         System.out.println("Cost of second call --> " + t3*c3);
         double amount  =  t1*c1 + t2*c2 + t3*c3;
         System.out.println("Cost of all calls --> " + amount);
-
-
-
-
-
     }
+
 }

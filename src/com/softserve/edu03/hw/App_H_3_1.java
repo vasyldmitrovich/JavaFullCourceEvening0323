@@ -1,15 +1,14 @@
+package com.softserve.edu03.hw;
+
 import java.util.Scanner;
 
 import static java.lang.Math.sqrt;
 
-public class hw_1{
-    public static void main(String[] args) {
-    triangle.area();
-
+public class App_H_3_1 {
+    public static void main(String[] args){
+        TriangleArea();
     }
-}
-class triangle{
-    public static void area(){
+    public static void TriangleArea(){
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter 1 side --->  ");
         double a = sc.nextDouble();
@@ -21,7 +20,7 @@ class triangle{
         double p = (a+b+c)/2;
         double result = sqrt(p*(p-a)*(p-b)*(p-c));
 
-        System.out.println("Your result is --->  "+ result);
+        System.out.println("Your area is --->  "+ result);
 
     }
 }
