@@ -21,7 +21,7 @@ public class hw2 {
 
             System.out.println("If you want try again input 1");
             int k = br.nextInt();
-            k=i;
+            i=k;
         } while (i==1);
 
 
