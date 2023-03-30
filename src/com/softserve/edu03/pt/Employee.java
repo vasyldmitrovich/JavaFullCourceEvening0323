@@ -13,6 +13,7 @@ public class Employee {
         totalSum = totalSum + this.getSalary();
     }
 
+    /*Firstly must be field after that constructors and after that getters and setters and the last one should be another methods*/
     private String name;
     private int rate;
     private int hours;
