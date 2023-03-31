@@ -32,7 +32,7 @@ public class Employee {
 
     public int getSalary() {
         int Salary = getHours() * getRate();
-        System.out.println("The Salary is " + getHours() * getRate());
+        System.out.println("The Salary is " + Salary);
         return Salary;
     }
 
