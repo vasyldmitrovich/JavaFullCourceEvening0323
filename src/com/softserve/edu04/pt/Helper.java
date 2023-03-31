@@ -1,5 +1,7 @@
 package com.softserve.edu04.pt;
 
+import com.softserve.edu04.hw.Dog;
+
 import java.util.Scanner;
 
 public class Helper {
@@ -15,8 +17,14 @@ public class Helper {
 		return scanner.nextLine();
 	}
 	
+	public float inputFloatReader(String message) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println(message);
+		return scanner.nextFloat();
+	}
+	
 	public static Product getMostExpensiveProduct(Product... products) {
-		Product product = null;
+		Product product = new Product();
 		double max = 0;
 		for (Product p : products) {
 			if (p.getPrice() > max) {
@@ -28,7 +36,7 @@ public class Helper {
 	}
 	
 	public static Product getBiggestQuantityProduct(Product... products) {
-		Product product = null;
+		Product product = new Product();
 		int max = 0;
 		for (Product p : products) {
 			if (p.getQuantity() > max) {
@@ -85,5 +93,28 @@ public class Helper {
 			}
 		}
 		return prN;
+	}
+	
+	public boolean noNameRepeat(String... names) {
+		for (int i = 0; i < names.length; i++) {
+			for (int j = i+1; j < names.length; j++) {
+				if (j!=i && names[j].equals(names[i])) {
+					return false;
+				}
+			}
+		}
+		return true;
+	}
+	
+	public Dog getOldest(Dog... dogs) {
+		int maxAge = 0;
+		Dog dog = new Dog();
+		for (Dog d : dogs) {
+			if (d.getAge() > maxAge) {
+				maxAge = d.getAge();
+				dog = d;
+			}
+		}
+	return dog;
 	}
 }
