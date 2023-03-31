@@ -1,13 +1,15 @@
+package com.softserve.edu03.hw;
+
 import java.util.Scanner;
 
 import static java.lang.Math.sqrt;
 
-public class hw_3 {
+public class Hw_3 {
     public static void main(String[] args){
-    triangle.area();
+    area();
     }
-}
-class triangle{
+
+
     public static void area(){
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter side a: ");

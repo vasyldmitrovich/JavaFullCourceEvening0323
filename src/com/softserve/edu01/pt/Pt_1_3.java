@@ -1,15 +1,16 @@
+package com.softserve.edu01.pt;
+
 import java.util.Scanner;
 
-public class pt_1_3 {
+public class Pt_1_3 {
 
-    public static void main(String[] args){
-        pract_1.numbers();
+    public static void main(String[] args) {
+        numbers();
     }
 
 
 
-    }
-    class pract_1 {
+
         public static void numbers() {
             Scanner sc = new Scanner(System.in);
             System.out.println("Enter a: ");

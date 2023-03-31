@@ -1,11 +1,13 @@
+package com.softserve.edu03.pt;
+
 import java.util.Scanner;
 
-public class pt_3_1 {
+public class Pt_3_1 {
     public static void main(String[] args){
-    CALC.calc();
+    calc();
     }
-}
-class CALC{
+
+
     public static void calc(){
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter first number: ");

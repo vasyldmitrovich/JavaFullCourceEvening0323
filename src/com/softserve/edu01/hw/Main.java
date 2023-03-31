@@ -1,16 +1,16 @@
+package com.softserve.edu01.hw;
+
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
 
-        radius.rad();
-        addres.addr();
-        calls.call();
-
-
+        rad();
+        addr();
+        call();
     }
-    class addres {
-        public static void addr() {
+
+        public static void addr () {
             Scanner sc = new Scanner(System.in);
             System.out.println("Enter your name: ");
             String name = sc.nextLine();
@@ -19,18 +19,15 @@ public class Main {
             System.out.println("Hello " + name + " your addres is " + addres);
 
         }
-    }
 
-    class radius {
         public static void rad() {
             Scanner sc = new Scanner(System.in);
             System.out.print("Enter redius: ");
             double a = sc.nextInt();
             System.out.println(2 * a * 3.14);
         }
-    }
 
-    class calls {
+
         public static void call() {
             Scanner sc = new Scanner(System.in);
             System.out.println("Enter phone call price for c1: ");
@@ -56,9 +53,10 @@ public class Main {
 
 
         }
+
     }
 
-}
+
 
 
 

@@ -1,3 +1,4 @@
+package com.softserve.edu04.pt;
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!On your computer
  * maybe each package is marked blue
  * PLEASE mark directory src in blue colour
@@ -5,12 +6,12 @@
 import java.util.Scanner;
 
 /*Do not correct name of class, read java code convention*/
-public class pt_4_2 {
+public class Pt_4_2 {
     public static void main(String[] args){
         System.out.println("Enter number of day (1,2...7): ");
         Scanner sc = new Scanner(System.in);
         /*If variable day is not use then delete this variable*/
-        String day;
+
         int input  = sc.nextInt();
         switch (input){
             case 1:

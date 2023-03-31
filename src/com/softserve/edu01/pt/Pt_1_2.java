@@ -1,11 +1,13 @@
+package com.softserve.edu01.pt;
+
 import java.util.Scanner;
 
-public class pt_1_2 {
+public class Pt_1_2 {
     public static void main(String[] args){
-    average.aver();
+    aver();
     }
-}
-class average{
+
+
     public static void aver(){
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter 1-st number");

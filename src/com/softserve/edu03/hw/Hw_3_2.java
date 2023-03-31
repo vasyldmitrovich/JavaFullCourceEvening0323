@@ -1,11 +1,13 @@
+package com.softserve.edu03.hw;
+
 import java.util.Scanner;
 
-public class hw_3_2 {
+public class Hw_3_2 {
     public static void main(String[] args){
-    smallest.small();
+    small();
     }
-}
-class smallest{
+
+
     public static void small(){
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter First number ");

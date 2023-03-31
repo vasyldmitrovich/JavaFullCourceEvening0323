@@ -1,11 +1,13 @@
+package com.softserve.edu01.pt;
+
 import java.util.Scanner;
 
-public class pt_1_1 {
+public class Pt_1_1 {
     public static void main(String[] args){
-        revers.rev();
+        rev();
     }
-}
-class revers{
+
+
     public static void rev(){
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter first word: ");
