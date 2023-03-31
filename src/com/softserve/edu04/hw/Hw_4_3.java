@@ -24,6 +24,9 @@ public class Hw_4_3 {
             case 301:
                 System.out.println("Error meaning: " + Http_error.Error_301.getUrl());
                 break;
+            default:
+                System.out.println("No such an error!!");
+                break;
         }
     }
 }
