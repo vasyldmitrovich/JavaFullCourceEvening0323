@@ -1,10 +1,9 @@
-package edu06.shape;
+package com.softserve.edu06.pt01.shape;
 
-public class Parallelogram extends Shape {
-
-    private int width;
-    private int height;
-    private int angle;
+public class Parallelogram extends edu06.shape.Shape {
+    private final int width;
+    private final int height;
+    private final int angle;
 
     public Parallelogram(int width, int height, int angle) {
         this.width = width;

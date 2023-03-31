@@ -1,6 +1,6 @@
-package edu06.shape;
+package com.softserve.edu06.pt01.shape;
 
-public class Square extends Shape {
+public class Square extends edu06.shape.Shape {
     private double side;
 
     public Square(double side) {

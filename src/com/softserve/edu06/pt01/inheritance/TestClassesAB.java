@@ -1,6 +1,7 @@
-package edu06.inheritance;
+package com.softserve.edu06.pt01.inheritance;
 
 import com.softserve.edu06.pt01.inheritance.ClassA;
+import edu06.inheritance.ClassB;
 
 public class TestClassesAB {
 	public static void main(String[] args) {
@@ -21,12 +22,12 @@ public class TestClassesAB {
 		b.m3();
 		b.m4();
 
-		ClassA b0 = new edu06.inheritance.ClassB();
+		ClassB b0 = new edu06.inheritance.ClassB();
 		System.out.println("Test_0 ClassB:");
 		b0.m1();
 		b0.m2();
 		b0.m3();
 		b0.m4();
-		((edu06.inheritance.ClassB) b0).m5();
+		b0.m5();
 	}
 }
