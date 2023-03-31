@@ -5,7 +5,7 @@ import java.util.Scanner;
 /*
 Write Java console application with method to find the smallest number among three integer numbers.
 */
-public class App_H_3_2 {
+public class AppH_3_2 {
     public static void main(String[] args) {
         SmallestNumber();
     }

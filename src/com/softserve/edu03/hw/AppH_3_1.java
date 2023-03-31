@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 import static java.lang.Math.sqrt;
 
-public class App_H_3_1 {
+public class AppH_3_1 {
     public static void main(String[] args){
         TriangleArea();
     }

@@ -13,7 +13,7 @@ Write a Java console application with methods that accept two numbers as argumen
 */
 
 
-public class App_P_3_1 {
+public class AppP_3_1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter first number --> ");

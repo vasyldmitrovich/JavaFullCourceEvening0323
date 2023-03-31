@@ -1,6 +1,6 @@
 package com.softserve.edu03.hw;
 
-public class App_H_3_3 {
+public class AppH_3_3 {
     public static void main(String[] args){
         Person p1 = new Person();
         Person p2 = new Person();

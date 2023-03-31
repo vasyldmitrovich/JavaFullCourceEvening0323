@@ -2,7 +2,7 @@ package com.softserve.edu01.pt;
 
 import java.util.Scanner;
 
-public class App_P_1_3 {
+public class AppP_1_3 {
     public static void main(String[] args){
         numbers();
     }

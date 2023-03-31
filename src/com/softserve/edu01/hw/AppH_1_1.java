@@ -2,7 +2,7 @@ package com.softserve.edu01.hw;
 
 import java.util.Scanner;
 
-public class App_H_1_1 {
+public class AppH_1_1 {
     public static void main(String[] args){
 
         radius();

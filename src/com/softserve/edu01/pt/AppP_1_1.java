@@ -2,7 +2,7 @@ package com.softserve.edu01.pt;
 
 import java.util.Scanner;
 
-public class App_P_1_1 {
+public class AppP_1_1 {
     public static void main(String[] args) {
         reverse();
     }

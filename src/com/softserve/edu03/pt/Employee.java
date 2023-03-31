@@ -19,12 +19,14 @@ public class Employee {
     private String Name;
     private int rate;
     private int hours;
-    static  int totalSum;
+    static int totalSum;
     private float bonuses = 0.1f;
-    Employee(){
+
+    Employee() {
 
     }
-    Employee( String Name, int rate, int hours){
+
+    Employee(String Name, int rate, int hours) {
         this.Name = Name;
         this.rate = rate;
         this.hours = hours;
@@ -38,17 +40,18 @@ public class Employee {
         return hours;
     }
 
-    public  void output(){
+    public void output() {
         System.out.println("Name --> " + Name + "Rate --> " + rate + "Hours --> " + hours);
     }
 
-    public  int getSalary(){
-        int Salary = getRate()*getHours();
-        System.out.println("Salary of this person is --> "+ Salary);
+    public int getSalary() {
+        int Salary = getRate() * getHours();
+        System.out.println("Salary of this person is --> " + Salary);
         return Salary;
     }
-    public void getBonuses(){
-        System.out.println("Bonuses for this person is --. "+(getRate()*getHours())*0.1);
+
+    public void getBonuses() {
+        System.out.println("Bonuses for this person is --. " + (getRate() * getHours()) * 0.1);
     }
 
 }
