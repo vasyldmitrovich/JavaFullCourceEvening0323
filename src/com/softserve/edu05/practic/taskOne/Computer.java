@@ -20,9 +20,6 @@ class DesktopComputer extends Computer {
 }
 
 class LaptopComputer extends Computer {
-    public void bootUp() {
-        System.out.println("Turning on laptop computer...");
-    }
 
     @Override
     public void turnOn() {
