@@ -1,6 +1,5 @@
 package com.softserve.edu05.hm05;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class HomeWork01Part2 {
