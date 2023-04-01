@@ -22,7 +22,8 @@ public class Helper {
 		System.out.println(message);
 		return scanner.nextFloat();
 	}
-	
+	//I think that such kind of methods should be in Product/Dog/... class, right?
+	//in edu05 I did that way
 	public static Product getMostExpensiveProduct(Product... products) {
 		Product product = new Product();
 		double max = 0;
