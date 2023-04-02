@@ -1,16 +1,13 @@
+package com.softserve.edu01.pt;
+
 import java.util.Scanner;
 public class Calculator {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int a, b;
 
-        System.out.println("Input value of a variable:");
-        a = Integer.parseInt(sc.next());
-        System.out.println("Input value of b variable:");
-        b = Integer.parseInt(sc.next());
+        int a = getNumber("Input value of A variable:");
+        int b = getNumber("Input value of B variable:");
 
-        System.out.println("Choose the operation (input the sign)");
-        String sign = sc.next();
+        String sign = getOperation("Choose the operation (input the sign)");
 
         switch (sign){
             case "+":
@@ -26,6 +23,18 @@ public class Calculator {
                 division(a, b);
                 break;
         }
+    }
+
+    static int getNumber(String message){
+        Scanner sc = new Scanner(System.in);
+        System.out.println(message);
+        return sc.nextInt();
+    }
+
+    static String getOperation(String message){
+        Scanner sc = new Scanner(System.in);
+        System.out.println(message);
+        return sc.next();
     }
 
     static void addition (int a, int b){

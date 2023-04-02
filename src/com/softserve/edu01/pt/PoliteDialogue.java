@@ -1,3 +1,5 @@
+package com.softserve.edu01.pt;
+
 import java.util.Scanner;
 public class PoliteDialogue {
     public static void main(String[] args) {

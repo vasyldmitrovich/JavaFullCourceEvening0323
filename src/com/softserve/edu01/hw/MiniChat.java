@@ -1,14 +1,17 @@
+package com.softserve.edu01.hw;
+
 import java.util.Scanner;
 public class MiniChat {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        System.out.println("What is your name?");
-        String name = sc.nextLine();
-
-        System.out.println("Where do you live, " + name + "?");
-        String address = sc.nextLine();
+        String name = getPrompt("What is your name?");
+        String address = getPrompt("Where do you live, " + name + "?");
 
         System.out.println(name + " lives in " + address + ".");
+    }
+
+    static String getPrompt(String message){
+        Scanner sc = new Scanner(System.in);
+        System.out.println(message);
+        return sc.nextLine();
     }
 }

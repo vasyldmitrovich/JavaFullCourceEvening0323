@@ -1,3 +1,5 @@
+package com.softserve.edu03.pt;
+
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!On your computer
  * how I see
@@ -32,6 +34,7 @@ public class TotalAndAverageCounter {
 
     /*If you calculate the average in this way, you will have an error in the calculation, a rounding error*/
     static double getAverage(int a, int b){
-        return (double)getTotal(a, b) / 2;
+        return Math.round((getTotal(a, b) / 2) + 100) / 100d;//changed.
     }
 }
+

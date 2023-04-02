@@ -1,5 +1,5 @@
-import java.sql.SQLOutput;
-import java.util.Arrays;
+package com.softserve.edu01.pt;
+
 import java.util.Scanner;
 
 public class ReversTheString {
@@ -20,3 +20,4 @@ public class ReversTheString {
 
     }
 }
+

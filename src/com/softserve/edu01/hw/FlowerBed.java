@@ -1,3 +1,5 @@
+package com.softserve.edu01.hw;
+
 import java.util.Scanner;
 public class FlowerBed {
     public static void main(String[] args) {
