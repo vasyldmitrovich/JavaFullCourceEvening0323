@@ -43,7 +43,7 @@ public class Car {
 
     public static void main(String[] args) {
 
-        Car car1=new Car("Mazda",2020,3721 );
+        Car car1=new Car("Мазда",2020,3721 );
         Car car2=new Car("Opel",2020,2721 );
         Car car3=new Car("Mitsubisi",2009,1721 );
         Car car4=new Car("Nissan",2015,2841 );
