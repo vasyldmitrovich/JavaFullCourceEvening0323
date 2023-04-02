@@ -2,7 +2,7 @@ package com.softserve.edu04.pt;
 
 public class Product {
     String name;
-    Double price;
+    double price;
     int quantity;
 
     public String getName() {
