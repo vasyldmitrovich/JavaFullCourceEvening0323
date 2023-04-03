@@ -19,12 +19,4 @@ public class SmallestNumber {
 		System.out.println(message);
 		return scanner.nextInt();
 	}
-	
-	public static void main(String[] args) {
-		SmallestNumber smallestNumber = new SmallestNumber();
-		int num1 = smallestNumber.intReader("Input the first number: ");
-		int num2 = smallestNumber.intReader("Input the second number: ");
-		int num3 = smallestNumber.intReader("Input the third number: ");
-		System.out.println("The smallest number is " + smallestNumber.smallestNumFinder(num1, num2, num3));
-	}
 }

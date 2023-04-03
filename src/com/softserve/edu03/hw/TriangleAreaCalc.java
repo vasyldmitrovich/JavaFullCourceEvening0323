@@ -15,12 +15,4 @@ public class TriangleAreaCalc {
 		System.out.println(message);
 		return scanner.nextInt();
 	}
-	
-	public static void main(String[] args) {
-		TriangleAreaCalc triangleAreaCalc = new TriangleAreaCalc();
-		int side1 = triangleAreaCalc.inputNumberReader("Input side 1: ");
-		int side2 = triangleAreaCalc.inputNumberReader("Input side 2: ");
-		int side3 = triangleAreaCalc.inputNumberReader("Input side 3: ");
-		System.out.println("The area of the triangle is: " + triangleAreaCalc.triangleArea(side1, side2, side3));
-	}
 }

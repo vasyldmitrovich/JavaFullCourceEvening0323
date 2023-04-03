@@ -43,7 +43,7 @@ public class Person {
 		return 2023 - birthYear;
 	}
 	
-	public void input() {
+	public void getPersonDataFromConsole() {
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Enter first name: ");
 		this.firstName = scanner.nextLine();
