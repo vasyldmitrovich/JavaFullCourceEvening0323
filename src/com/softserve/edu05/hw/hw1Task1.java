@@ -11,7 +11,7 @@ public class hw1Task1 {
         int [] Array1=new int[30];
         int [] Array2=new int[31];
         int [] Array3=new int[28];
-        System.out.println("Input nomber of month");
+        System.out.println("Input nomber ");
         Scanner k =new Scanner(System.in);
        int number= k.nextInt();
 
