@@ -48,15 +48,15 @@ public class Employee {
 	
 	public Employee[] getAllEmployeesFromCurrentDepartment(Employee[] employees, int department) {
 		int length = getQuantityOfEmployeesAtCurrentDepartment(employees, department);
-		Employee[] empl = new Employee[length];
+		Employee[] employee = new Employee[length];
 		int count = 0;
 		for (Employee e : employees) {
 			if (e.departmentNumber == department) {
-				empl[count] = e;
+				employee[count] = e;
 				count++;
 			}
 		}
-		return empl;
+		return employee;
 	}
 	
 	public int getQuantityOfEmployeesAtCurrentDepartment(Employee[] employees, int department) {

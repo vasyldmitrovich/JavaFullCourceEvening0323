@@ -14,9 +14,9 @@ public class RandomIntArray {
 		return arr;
 	}
 	
-	public int getMaxValue() {
+	public int getMaxValue(int[] intArray) {
 		int max = 0;
-		for (int num : arr) {
+		for (int num : intArray) {
 			if (num > max) {
 				max = num;
 			}
@@ -24,9 +24,9 @@ public class RandomIntArray {
 		return max;
 	}
 	
-	public int getSumOfPositiveNumbers() {
+	public int getSumOfPositiveNumbers(int[] intArray) {
 		int sum = 0;
-		for (int num : arr) {
+		for (int num : intArray) {
 			if (num >= 0) {
 				sum += num;
 			}
@@ -34,9 +34,9 @@ public class RandomIntArray {
 		return sum;
 	}
 	
-	public int countNegativeNumbers() {
+	public int countNegativeNumbers(int[] intArray) {
 		int count = 0;
-		for (int num : arr) {
+		for (int num : intArray) {
 			if (num < 0) {
 				count++;
 			}
@@ -44,9 +44,9 @@ public class RandomIntArray {
 		return count;
 	}
 	
-	public int countPositiveNumbers() {
+	public int countPositiveNumbers(int[] intArray) {
 		int count = 0;
-		for (int num : arr) {
+		for (int num : intArray) {
 			if (num >= 0) {
 				count++;
 			}
@@ -54,17 +54,15 @@ public class RandomIntArray {
 		return count;
 	}
 	
-	public void negativePositiveValuesBalance() {
-		int countNegative = countNegativeNumbers();
-		int countPositive = countPositiveNumbers();
+	public String negativePositiveValuesBalance(int[] intArray) {
+		int countNegative = countNegativeNumbers(intArray);
+		int countPositive = countPositiveNumbers(intArray);
 		if (countNegative > countPositive) {
-			System.out.println("There are more negative values in the array.");
+			return "There are more negative values in the array.";
 		}
 		if (countNegative < countPositive) {
-			System.out.println("There are more positive values in the array.");
+			return "There are more positive values in the array.";
 		}
-		if (countNegative == countPositive) {
-			System.out.println("There are equal number of positive and negative values in the array.");
-		}
+		return "There are equal number of positive and negative values in the array.";
 	}
 }

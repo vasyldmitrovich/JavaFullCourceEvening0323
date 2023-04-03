@@ -1,17 +1,17 @@
 package com.softserve.edu05.pt;
 
 public class PrimeNumber {
-	private PrimeNumber() {
+	PrimeNumber() {
 	}
 	
-	public static String outputMessageAfterCheck(boolean b) {
+	public String outputMessageAfterCheck(boolean b) {
 		if (b) {
 			return "Is a prime number.";
 		}
 		return "Is not a prime number.";
 	}
 	
-	public static String isPrimeNumber(int num) {
+	public String isPrimeNumber(int num) {
 		if (num == 0 || num == 1) {
 			return outputMessageAfterCheck(false);
 		}

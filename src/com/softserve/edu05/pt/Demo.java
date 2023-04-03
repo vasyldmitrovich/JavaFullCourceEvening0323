@@ -7,32 +7,34 @@ public class Demo {
 		ArrayPractice arrayPractice = new ArrayPractice();
 		String[] stringArr = {"sort", "find", "best"};
 		System.out.print("1.1. We have a String array: ");
-		utils.stringArrayPrint(stringArr);
+		System.out.print(utils.getStringOfStringArray(stringArr));
 		System.out.print("\nResult of sorting it: ");
-		utils.stringArrayPrint(arrayPractice.stringArraySorter(stringArr));
+		System.out.print(utils.getStringOfStringArray(arrayPractice.stringArraySorter(stringArr)));
 		//pt1.2
-		int[] intArray = {6, 7, 9, 13, 7};
+		int[] intArrayOfFive = {6, 7, 9, 13, 7};
 		System.out.print("\n1.2. We have an array of numbers: ");
-		utils.intArrayPrint(intArray);
+		System.out.print(utils.getStringOfIntArray(intArrayOfFive));
 		System.out.print("\nThe average value is: ");
-		System.out.print(arrayPractice.getAverageOfIntArrayValues(intArray));
+		System.out.print(arrayPractice.getAverageOfIntArrayValues(intArrayOfFive));
 		//pt1.3
 		String input = utils.inputStringReader("\n1.3. Enter any value, int or Staring, " +
 				"to check if it's in any of those two arrays");
 		System.out.println("Result of check is: " +
-				arrayPractice.isElementPresentInOneOfTwoArrays(stringArr, intArray, input));
+				arrayPractice.isElementPresentInOneOfTwoArrays(stringArr, intArrayOfFive, input));
 		//pt2
+		PrimeNumber primeNumber = new PrimeNumber();
 		int num = utils.inputIntReader("\n2. Enter any positive number to check if it's prime: ");
-		System.out.println(PrimeNumber.isPrimeNumber(num));
+		System.out.println(primeNumber.isPrimeNumber(num));
 		//pt3
 		System.out.print("\n3. We have a random generated int array: ");
 		RandomIntArray randomIntArray = new RandomIntArray();
-		utils.intArrayPrint(randomIntArray.getTenRandomIntArray());
-		System.out.print("\nThe biggest number in the array is: " + randomIntArray.getMaxValue());
-		System.out.print("\nThe sum of all positive numbers is: " + randomIntArray.getSumOfPositiveNumbers());
-		System.out.print("\nCount of all negative numbers is: " + randomIntArray.countNegativeNumbers());
+		int[] intArrayOfTen = randomIntArray.getTenRandomIntArray();
+		System.out.print(utils.getStringOfIntArray(intArrayOfTen));
+		System.out.print("\nThe biggest number in the array is: " + randomIntArray.getMaxValue(intArrayOfTen));
+		System.out.print("\nThe sum of all positive numbers is: " + randomIntArray.getSumOfPositiveNumbers(intArrayOfTen));
+		System.out.print("\nCount of all negative numbers is: " + randomIntArray.countNegativeNumbers(intArrayOfTen));
 		System.out.print("\nResult of check between positive and negative numbers count is: \n");
-		randomIntArray.negativePositiveValuesBalance();
+		System.out.print(randomIntArray.negativePositiveValuesBalance(intArrayOfTen));
 		//pt4
 		Employee employee1 = new Employee("Nata", 3, 200000);
 		Employee employee2 = new Employee("Jane", 6, 60000);
