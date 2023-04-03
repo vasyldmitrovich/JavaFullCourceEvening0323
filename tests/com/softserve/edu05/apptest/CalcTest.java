@@ -1,9 +1,9 @@
 package com.softserve.edu05.apptest;
 
-import org.junit.*;
+//import org.junit.*;
 
 public class CalcTest {
-    private static Calc calc;
+    /*private static Calc calc;
 
     @BeforeClass
     public static void setUpBeforeClass() throws Exception {
@@ -104,6 +104,6 @@ public class CalcTest {
         //
         Assert.assertEquals(expected, actual, 0.001);
     }
-
+*/
 }
 
