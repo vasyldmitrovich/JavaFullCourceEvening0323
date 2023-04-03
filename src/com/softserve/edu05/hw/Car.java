@@ -55,14 +55,28 @@ public class Car {
 		}
 		return "There is no car";
 	}
-	
-	public Car[] getSortedByYearOfProduction(Car[] cars) {
+	//rewrote this method, left for check by Vasyl
+	public Car[] getSortedByYearOfProductionWithComparator(Car[] cars) {
 		Arrays.sort(cars, new Comparator<>() {
 			@Override
 			public int compare(Car c1, Car c2) {
 				return Integer.compare(c2.yearOfProduction, c1.yearOfProduction);
 			}
 		});
+		return cars;
+	}
+	
+	public Car[] getSortedByYearOfProduction(Car[] cars) {
+		Car temp;
+		for (int i = 0; i < cars.length; i++) {
+			for (int j = i+1; j < cars.length; j++) {
+				if (cars[i].getYearOfProduction() < cars[j].getYearOfProduction()) {
+					temp = cars[i];
+					cars[i] = cars[j];
+					cars[j] = temp;
+				}
+			}
+		}
 		return cars;
 	}
 }

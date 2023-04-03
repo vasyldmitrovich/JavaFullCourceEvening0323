@@ -1,8 +1,5 @@
 package com.softserve.edu05.pt;
 
-import java.util.Arrays;
-import java.util.Comparator;
-
 public class Employee {
 	private String name;
 	private int departmentNumber;
@@ -68,14 +65,20 @@ public class Employee {
 		}
 		return quantity;
 	}
-	
+
 	public Employee[] getAllInDescendingOrderBySalaryField(Employee[] employees) {
-		Arrays.sort(employees, new Comparator<>() { //don't want to replace it by lambda as Sonar suggests
-			@Override
-			public int compare(Employee e1, Employee e2) {
-				return Integer.compare(e2.salary, e1.salary);
+		Employee temp;
+		for (int i = 0; i < employees.length; i++) {
+			for (int j = i+1; j < employees.length; j++) {
+				if (employees[i].getSalary() < employees[j].getSalary()) {
+					temp = employees[i];
+					employees[i] = employees[j];
+					employees[j] = temp;
+				}
 			}
-		});
+		}
 		return employees;
 	}
+	
+	
 }
