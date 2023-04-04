@@ -3,7 +3,7 @@ package com.softserve.edu05.hw;
 
 import java.util.Scanner;
 
-public class Integer {
+public class lnteger {
     public static void main(String[] args) {
         operation();
     }
