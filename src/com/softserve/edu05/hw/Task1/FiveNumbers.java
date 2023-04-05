@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class FiveNumbers {
     public static void main(String[] args) {
         int[] array = new int[5];
+        
         array = fillArray(array);
         int[] answers = tasks(array);
         System.out.println("position of second positive number: " + answers[0]);
