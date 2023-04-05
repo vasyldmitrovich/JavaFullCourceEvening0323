@@ -47,14 +47,6 @@ public class Employee {
         return getSalary() * 0.1;
     }
 
-    public double getTotalSum() {
-        return totalSum;
-    }
-
-    public void setTotalSum(double totalSum) {
-        this.totalSum = totalSum;
-    }
-
     @Override
     public String toString() {
         return "Employee{" +
@@ -65,23 +57,24 @@ public class Employee {
                 '}';
     }
 
+    public static double getTotalSum() {
+        return totalSum;
+    }
 
+    public static void setTotalSum(double totalSum) {
+        Employee.totalSum = totalSum;
+    }
+
+    public static void main(String[] args) {
+        Employee employee1 = new Employee("John Doe", 15.0, 40);
+        Employee employee2 = new Employee("Jane Smith", 20.0, 35);
+        Employee employee3 = new Employee("Bob Johnson", 25.0, 45);
+
+        setTotalSum(employee1.getSalary() + employee2.getSalary() + employee3.getSalary());
+
+        System.out.println(employee1);
+        System.out.println(employee2);
+        System.out.println(employee3);
+        System.out.println("Total Salary: " + getTotalSum());
+    }
 }
-
-class App{
-        public static void main(String[] args) {
-            Employee employee=new Employee();
-            Employee employee1 = new Employee("John Doe", 15.0, 40);
-            Employee employee2 = new Employee("Jane Smith", 20.0, 35);
-            Employee employee3 = new Employee("Bob Johnson", 25.0, 45);
-            employee.setTotalSum(employee1.getSalary() + employee2.getSalary() + employee3.getSalary());
-            System.out.println(employee1);
-            System.out.println(employee2);
-            System.out.println(employee3);
-            System.out.println("Total Salary: " + employee.getTotalSum());
-        }
-
-}
-
-
-
