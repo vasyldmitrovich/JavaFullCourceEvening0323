@@ -87,12 +87,13 @@ public void  run(){
      public static void main(String[] args) {
 
 
-         car[] abc = new car [3];
+         car[] abc = new car [4];
          abc[0] = new Truck(323,2019, "truk2");
          abc[1] = new Truck(323,2019, "truk3");
          abc[2] = new Truck(230,2022,"truck1");
+         abc[3] = new Sedan(230,2022,"SEDAN");
+        for (int i = 0; i<4; i++) {
 
-        for (int i = 0; i<3; i++) {
 
             System.out.println("Max_Speed: " + abc[i].GetmaxSpeed());
             System.out.println("Year of Production: " + abc[i].yearOfProduction());
