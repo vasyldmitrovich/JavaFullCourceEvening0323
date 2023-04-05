@@ -29,7 +29,7 @@ public class HomeWork1Task3 {
         int min = arr[0];
         int position = 0;
         for (int i = 0; i < arr.length; i++) {
-            if(arr[i]<min){
+            if (arr[i] < min) {
                 min = arr[i];
                 position = i;
             }
@@ -37,8 +37,8 @@ public class HomeWork1Task3 {
         System.out.println("Minimum value is " + min + " and his position " + position);
 
         int product = 1;
-        for (int arrs: arr){
-            if(arrs !=0 && arrs%2==0){
+        for (int arrs : arr) {
+            if (arrs != 0 && arrs % 2 == 0) {
                 product *= arrs;
             }
         }
