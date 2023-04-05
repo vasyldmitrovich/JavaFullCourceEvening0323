@@ -11,7 +11,7 @@ public class HomeWork1 {
         int num1 = getNumber("Enter the first number: ", scanner);
         int num2 = getNumber("Enter the second number: ", scanner);
         int num3 = getNumber("Enter the second number: ", scanner);
-        System.out.println(getArea(num1,num2,num3));
+        System.out.println("Area of "+getArea(num1,num2,num3));
     }
     public static int getNumber(String prompt, Scanner scanner) {
         System.out.print(prompt);
