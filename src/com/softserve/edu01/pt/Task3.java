@@ -26,12 +26,12 @@ public class Task3 {
                 5 - Finish""");
 
         //Variable I suggest should have name check, not chek
-        int chek;
+        int cheсk;
         boolean x = true;
         while (x) {
 
-            chek = Integer.parseInt(scanner.nextLine());
-            switch (chek) {
+            cheсk = Integer.parseInt(scanner.nextLine());
+            switch (cheсk) {
                 case 1 -> {
                     int sum = Integer.parseInt(arr.get(0)) + Integer.parseInt(arr.get(1));
                     out.println("a + b = " + sum);
@@ -55,6 +55,7 @@ public class Task3 {
                 case 5 -> x = false;
                 //Do not have massage if user entered incorrect number
                 default -> {
+                    out.println("You entered incorrect value!");
                 }
             }
         }

@@ -11,7 +11,7 @@ public class Task2 {
         int y = Integer.parseInt(scanner.nextLine());
         int z = Integer.parseInt(scanner.nextLine());
         //Please add in print info what this number is, not only number, because if this code will run some person he does not know what that means
-        System.out.println((double) ((x + y + z))/ 3);
+        System.out.println("Arithmetic average: " + (double) ((x + y + z))/ 3);
 
     }
 }

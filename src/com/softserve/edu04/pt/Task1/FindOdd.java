@@ -25,6 +25,6 @@ public class FindOdd {
             }
         }
         // Specify message please, what it is, print more detail info what it is
-        System.out.println("\nIt's " + counter + " out of " + numbers.length);
+        System.out.println("\nIt's " + counter + " values out of " + numbers.length + "entered");
     }
 }
