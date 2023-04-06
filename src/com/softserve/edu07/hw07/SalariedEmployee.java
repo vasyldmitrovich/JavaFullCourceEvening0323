@@ -1,15 +1,18 @@
 package com.softserve.edu07.hw07;
 
-public class SalariedEmployee extends Employee implements Payment{
-    private final double salary;
+public class SalariedEmployee extends Employee implements Payment {
 
-    public SalariedEmployee(String employeeId, double salary, int socialSecurityNumber) {
-        super(employeeId);
-        this.salary = salary;
+double hourlyRate;
+    int hoursWorked;
+
+    public SalariedEmployee(String employeeId, double hourlyRate, int hoursWorked, String socialSecurityNumber, String name) {
+        super(employeeId, socialSecurityNumber, name);
+        this.hourlyRate = hourlyRate;
+        this.hoursWorked = hoursWorked;
     }
 
     @Override
     public double calculatePay() {
-        return salary;
+        return hourlyRate * hoursWorked;
     }
 }

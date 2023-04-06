@@ -1,18 +1,15 @@
 package com.softserve.edu07.hw07;
 
 public class ContractEmployee extends Employee implements Payment{
-    protected final double hourlyRate;
-    protected double hoursWorked;
-    protected int federalTaxIdMember;
+    double fixedSalary;
 
-    public ContractEmployee(String employeeId, double hourlyRate, double hoursWorked) {
-        super(employeeId);
-        this.hourlyRate = hourlyRate;
-        this.hoursWorked = hoursWorked;
+    public ContractEmployee(String employeeId, double fixedSalary, String socialSecurityNumber, String name) {
+        super(employeeId, socialSecurityNumber, name);
+        this.fixedSalary = fixedSalary;
     }
 
     @Override
     public double calculatePay() {
-        return hourlyRate * hoursWorked;
+        return fixedSalary;
     }
 }
