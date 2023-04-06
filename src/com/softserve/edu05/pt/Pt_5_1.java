@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.Objects;
 import java.util.Scanner;
 
-public class Pt_5_1_1 {
+public class Pt_5_1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         //______1
