@@ -6,8 +6,8 @@ public class Faculty {
     enum Season {
         WINTER("Winter"), SPRING("Spring"), SUMMER("Summer"), FALL("Fall");
 
-        private String name;
-        private int age;
+        private final String name;
+
 
         Season(String name) {
             this.name = name;
@@ -16,26 +16,19 @@ public class Faculty {
         public String getName() {
             return name;
         }
-
-        public int getAge() {
-            return age;
-        }
-
-        public void setAge(int age) {
-            this.age = age;
-        }
     }
 
-    private String nameOfStudents;
+    private final String nameOfStudents;
 
-    private int ageOfStudent;
+    private final int ageOfStudent;
 
-    private Season currentSeason;
+    private final Season currentSeason;
 
     public Faculty(String nameOfStudents, Season currentSeason, int ageOfStudent) {
         this.nameOfStudents = nameOfStudents;
-        this.currentSeason = currentSeason;
         this.ageOfStudent = ageOfStudent;
+        this.currentSeason = currentSeason;
+
     }
 
     public static void main(String[] args) {
@@ -50,21 +43,14 @@ public class Faculty {
 
         Season currentSeason;
         switch (seasonChoice) {
-            case 1:
-                currentSeason = Season.WINTER;
-                break;
-            case 2:
-                currentSeason = Season.SPRING;
-                break;
-            case 3:
-                currentSeason = Season.SUMMER;
-                break;
-            case 4:
-                currentSeason = Season.FALL;
-                break;
-            default:
+            case 1 -> currentSeason = Season.WINTER;
+            case 2 -> currentSeason = Season.SPRING;
+            case 3 -> currentSeason = Season.SUMMER;
+            case 4 -> currentSeason = Season.FALL;
+            default -> {
                 System.out.println("Invalid season choice. Using default season: Winter");
                 currentSeason = Season.WINTER;
+            }
         }
 
         Faculty faculty = new Faculty(nameOfStudents, currentSeason, ageOfStudent);
