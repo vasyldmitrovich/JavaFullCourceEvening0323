@@ -1,4 +1,4 @@
-package com.softserve.edu07.hw07;
+package com.softserve.edu07.hw07.task1;
 
 public class Employee {
     String employeeId;

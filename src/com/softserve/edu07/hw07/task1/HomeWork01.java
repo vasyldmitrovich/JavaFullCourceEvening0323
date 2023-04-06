@@ -1,4 +1,4 @@
-package com.softserve.edu07.hw07;
+package com.softserve.edu07.hw07.task1;
 
 import java.util.Arrays;
 import java.util.Comparator;
