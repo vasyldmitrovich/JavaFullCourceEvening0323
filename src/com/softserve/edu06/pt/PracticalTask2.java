@@ -6,7 +6,7 @@ public class PracticalTask2 {
         Car car[] = new Car[4];
         car[0] = new Truck("Ford", 250, 2010);
         car[1] = new Truck("Toyota", 280, 2018);
-        car[2] = new Sedan("Audi", 220, 2008);
+        car[2] = new Sedan("Reno", 220, 2008);
         car[3] = new Sedan("Mercedes", 290, 2020);
 
         for (Car cars : car) {
