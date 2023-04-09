@@ -29,6 +29,8 @@ public abstract class Employee {
         this.name = name;
     }
 
+    public abstract void print();
+
     @Override
     public String toString() {
         return "Employee{" +

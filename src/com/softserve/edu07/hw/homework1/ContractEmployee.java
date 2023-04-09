@@ -45,9 +45,15 @@ public class ContractEmployee extends Employee implements Payment {
         return hourlyRate * hoursWorked;
     }
 
+    public void print() {
+        System.out.println("Employee: name=" + this.getName() +
+                ", id=" + this.getEmployeeId() + ", salary= " + calculatePay());
+    }
+
     @Override
     public String toString() {
         return "ContractEmployee{" +
+                super.toString() + ", " +
                 "hourlyRate=" + hourlyRate +
                 ", hoursWorked=" + hoursWorked +
                 ", federalTaxIdMember='" + federalTaxIdMember + '\'' +

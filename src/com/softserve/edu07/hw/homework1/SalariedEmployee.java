@@ -2,24 +2,24 @@ package com.softserve.edu07.hw.homework1;
 
 public class SalariedEmployee extends Employee implements Payment {
 
-    private int salaryAmount;
+    private int fixedSalary;
     private String socialSecurityNumber;
 
     public SalariedEmployee() {
     }
 
-    public SalariedEmployee(String employeeId, String name, int salaryAmount, String socialSecurityNumber) {
+    public SalariedEmployee(String employeeId, String name, int fixedSalary, String socialSecurityNumber) {
         super(employeeId, name);
-        this.salaryAmount = salaryAmount;
+        this.fixedSalary = fixedSalary;
         this.socialSecurityNumber = socialSecurityNumber;
     }
 
-    public int getSalaryAmount() {
-        return salaryAmount;
+    public int getFixedSalary() {
+        return fixedSalary;
     }
 
-    public void setSalaryAmount(int salaryAmount) {
-        this.salaryAmount = salaryAmount;
+    public void setFixedSalary(int fixedSalary) {
+        this.fixedSalary = fixedSalary;
     }
 
     public String getSocialSecurityNumber() {
@@ -32,13 +32,19 @@ public class SalariedEmployee extends Employee implements Payment {
 
     @Override
     public int calculatePay() {
-        return salaryAmount;
+        return fixedSalary;
+    }
+
+    public void print() {
+        System.out.println("Employee: name=" + this.getName() +
+                ", id=" + this.getEmployeeId() + ", salary= " + calculatePay());
     }
 
     @Override
     public String toString() {
         return "SalariedEmployee{" +
-                "salaryAmount=" + salaryAmount +
+                super.toString() + ", " +
+                "fixedSalary=" + fixedSalary +
                 ", socialSecurityNumber='" + socialSecurityNumber + '\'' +
                 '}';
     }
