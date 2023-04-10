@@ -3,8 +3,8 @@ package com.softserve.edu06.pt;
 public class ColorLine extends Line{
     private String color;
 
-    public ColorLine(Point startPoint, Point endPoint, String color) {
-        super(startPoint, endPoint);
+    public ColorLine(Point FirstPoint, Point SecondPoint, String color) {
+        super(FirstPoint, SecondPoint);
         this.color = color;
     }
 

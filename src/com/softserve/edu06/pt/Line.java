@@ -1,16 +1,16 @@
 package com.softserve.edu06.pt;
 
 public class Line {
-        private Point startPoint;
-        private Point endPoint;
+        private Point FirstPoint;
+        private Point SecondPoint;
 
-        public Line(Point startPoint, Point endPoint) {
-                this.startPoint = startPoint;
-                this.endPoint = endPoint;
+        public Line(Point FirstPoint, Point SecondPoint) {
+                this.FirstPoint = FirstPoint;
+                this.SecondPoint = SecondPoint;
         }
 
         public String toString() {
-                return "Line  " + startPoint.toString() + " to " + endPoint.toString();
+                return "Line  " + FirstPoint.toString() + " to " + SecondPoint.toString();
         }
 
         public void print() {
