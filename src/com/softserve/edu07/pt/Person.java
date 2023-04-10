@@ -1,4 +1,4 @@
-package com.softserve.edu06.pt;
+package com.softserve.edu07.pt;
 
 abstract class Person {
     public String name;

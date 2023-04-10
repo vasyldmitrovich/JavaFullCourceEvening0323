@@ -1,4 +1,4 @@
-package com.softserve.edu06.pt;
+package com.softserve.edu07.pt;
 
 public class Teacher extends Staff{
     public static final String TYPE_PERSON = "Teacher";

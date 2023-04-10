@@ -1,6 +1,6 @@
-package com.softserve.edu06.pt;
+package com.softserve.edu07.pt;
 
-public class AppP_6_2 {
+public class AppP_7_2 {
     public static void main(String[] args) {
         Person[] arr = new Person[5];
         arr[0] = new Teacher("Ivan");

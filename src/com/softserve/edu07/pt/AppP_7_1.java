@@ -1,6 +1,6 @@
-package com.softserve.edu06.pt;
+package com.softserve.edu07.pt;
 
-public class AppP_6_1 {
+public class AppP_7_1 {
     public static void main(String[] args){
 
        Animal arr[] = new Animal[5];
