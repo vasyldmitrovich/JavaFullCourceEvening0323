@@ -1,6 +1,6 @@
 package com.softserve.edu08.hm08;
 
-public class Main {
+public class Main{
     public static void main(String[] args) {
         // Create first student
         FullName fullName1 = new FullName("John", "Doe");
@@ -18,11 +18,7 @@ public class Main {
 
         // Clone first student and change course
         Student student3 = null;
-        try {
-            student3 = (Student) student1.clone();
-        } catch (CloneNotSupportedException e) {
-            e.printStackTrace();
-        }
+        student3 = (Student) student1.clone();
 
         if (student3 != null) {
             student3.setCourse(303); // Change course for student3

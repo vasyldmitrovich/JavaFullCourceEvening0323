@@ -1,6 +1,6 @@
 package com.softserve.edu08.hm08;
 
-public class Student extends Person{
+public class Student extends Person implements Cloneable{
     int numberCourse;
 
     // Constructor with parameters to initialize all fields
@@ -23,5 +23,16 @@ public class Student extends Person{
     }
 
     public void setCourse(int i) {
+    }
+
+    @Override
+    public Student clone() {
+        try {
+            Student clone = (Student) super.clone();
+            // TODO: copy mutable state here, so the clone can't change the internals of the original
+            return clone;
+        } catch (CloneNotSupportedException e) {
+            throw new AssertionError();
+        }
     }
 }

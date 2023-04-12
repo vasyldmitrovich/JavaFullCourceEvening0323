@@ -1,6 +1,6 @@
 package com.softserve.edu08.hm08;
 
-abstract class Person {
+abstract class Person implements Cloneable{
     private FullName fullName;
     private int age;
 
@@ -31,4 +31,15 @@ abstract class Person {
     public abstract void info();
 
     public abstract String activity();
+
+    @Override
+    public Person clone() {
+        try {
+            Person clone = (Person) super.clone();
+            // TODO: copy mutable state here, so the clone can't change the internals of the original
+            return clone;
+        } catch (CloneNotSupportedException e) {
+            throw new AssertionError();
+        }
+    }
 }
