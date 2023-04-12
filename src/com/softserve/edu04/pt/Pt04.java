@@ -3,25 +3,24 @@
  * folder JavaFullCourceEvening0323 marked blue
  * PLEASE mark directory src in blue colour
  * because I must reformat package in each class*/
-package src.com.softserve.edu04.pt;
+package com.softserve.edu04.pt;
 
 import java.util.Scanner;
 
 /*It is not good name of class*/
 public class Pt04 {
-    public static void main(String[ ] args) {
+    public static void main(String[] args) {
         /*Why you commented this method, when i run main method i do not see anything*/
-    //pt1();
-    //pt2();
-    //pt3();
-    //pt4();
-    //pt5();
+        //pt1();
+        //pt2();
+        //pt3();
+        //pt4();
+        //pt5();
         /*Next variables is not using, if you create its then use they or remove from main method*/
-        Product potato = new Product("potato", 2.60, 200 );
-        Product onion = new Product("onion", 1.50, 100 );
-        Product apple = new Product("apple", 0.60, 300 );
-        Product kiwi = new Product("kiwi", 3.70, 500 );
-
+        Product potato = new Product("potato", 2.60, 200);
+        Product onion = new Product("onion", 1.50, 100);
+        Product apple = new Product("apple", 0.60, 300);
+        Product kiwi = new Product("kiwi", 3.70, 500);
 
 
     }
@@ -43,7 +42,7 @@ public class Pt04 {
         Scanner weekday = new Scanner(System.in);
         System.out.println("Please input day number(1-7): ");
         int day = weekday.nextInt();
-        switch(day){
+        switch (day) {
             case 1:
                 System.out.print("Monday, Понеділок");
                 break;
@@ -68,49 +67,52 @@ public class Pt04 {
             default:
                 System.out.print("That's something new...");
         }
-        
+
     }
+
     private static void pt1() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Please input 3 integer numbers:");
         int a = sc.nextInt();
         int b = sc.nextInt();
         int c = sc.nextInt();
-        int count=0;
+        int count = 0;
         /*Change this variable to StringBuilder it will be correct decision*/
-        String output="";
-        if(a%2!=0){
+        String output = "";
+        if (a % 2 != 0) {
             count++;
-            output= new StringBuilder().append(output).append("a ").toString();
+            output = new StringBuilder().append(output).append("a ").toString();
 
         }
-        if(b%2!=0){
+        if (b % 2 != 0) {
             count++;
-            output= new StringBuilder().append(output).append("b ").toString();
+            output = new StringBuilder().append(output).append("b ").toString();
         }
-        if(c%2!=0){
+        if (c % 2 != 0) {
             count++;
-            output= new StringBuilder().append(output).append("c ").toString();
+            output = new StringBuilder().append(output).append("c ").toString();
         }
         System.out.println("Total of odd numbers: " + count + ". List of numbers: " + output + ".");
     }
 
     /*Move this class in another file, each class must be in unique file like Product.java
-    * It is not good put many classes in one file in one class
-    *
-    * You should have two files for example: Product.java and App.java in App class write main method
-    * and all another method*/
-    public static class Product{
+     * It is not good put many classes in one file in one class
+     *
+     * You should have two files for example: Product.java and App.java in App class write main method
+     * and all another method*/
+    public static class Product {
         /*Field must be private*/
         String name;
         double price;
         int quantity;
 
-        public Product(){}
-        public Product(String name, double price, int quantity){
+        public Product() {
+        }
+
+        public Product(String name, double price, int quantity) {
             this.name = name;
             this.price = price;
-            this.quantity=quantity;
+            this.quantity = quantity;
         }
 
 

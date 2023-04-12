@@ -1,10 +1,10 @@
-package src.com.softserve.edu03.pt;
+package com.softserve.edu03.pt;
 
 import java.util.Scanner;
 
 public class Pt03 {
-    public static void main(String[ ] args) {
-/********************** PART I **********************/
+    public static void main(String[] args) {
+// PART I
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter first number: ");
         int a = sc.nextInt();
@@ -12,19 +12,19 @@ public class Pt03 {
         int b = sc.nextInt();
 
         /*Please print result to screen, when I run main method I do not see result on my monitor */
-        getTotal(a,b);
-        getAverage(a,b);
+        getTotal(a, b);
+        getAverage(a, b);
 
         System.out.print("Enter prompt: ");
         Scanner prmt = new Scanner(System.in);
         String prompt = prmt.nextLine();
         getNumber(prompt);
 
-/********************** PART II **********************/
+// PART II
 
-        Employee man1 = new Employee("Vasia",2,3);
-        Employee man2 = new Employee("Orest",2,3);
-        Employee man3 = new Employee("Miko",2,3);
+        Employee man1 = new Employee("Vasia", 2, 3);
+        Employee man2 = new Employee("Orest", 2, 3);
+        Employee man3 = new Employee("Miko", 2, 3);
 
         System.out.println("getSalary: " + man1.getSalary());
         System.out.println("getBonuses: " + man1.getBonuses());
@@ -32,11 +32,11 @@ public class Pt03 {
     }
 
     private static void getAverage(int a, int b) {
-        System.out.println("Avarage: " + ((double)(a+b)/2));
+        System.out.println("Avarage: " + ((double) (a + b) / 2));
     }
 
     private static void getTotal(int a, int b) {
-        System.out.println("Total: " + (a+b));
+        System.out.println("Total: " + (a + b));
     }
 
     private static void getNumber(String prompt) {
@@ -45,8 +45,8 @@ public class Pt03 {
         int a = prt.nextInt();
         System.out.print("Second " + prompt + ":");
         int b = prt.nextInt();
-        getTotal(a,b);
-        getAverage(a,b);
+        getTotal(a, b);
+        getAverage(a, b);
 
     }
 

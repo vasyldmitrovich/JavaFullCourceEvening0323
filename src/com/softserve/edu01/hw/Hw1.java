@@ -1,11 +1,11 @@
-package src.com.softserve.edu01.hw;
+package com.softserve.edu01.hw;
 
 import java.util.Scanner;
 
 import static java.lang.Math.PI;
 
 public class Hw1 {
-    public static void main(String[ ] args) {
+    public static void main(String[] args) {
         taskOne();
         taskTwo();
         taskThree();
@@ -25,10 +25,10 @@ public class Hw1 {
         int t2 = sc.nextInt();
         System.out.print("Input INT duration of C3: ");
         int t3 = sc.nextInt();
-        System.out.println("Cost of call 1: " + c1*t1);
-        System.out.println("Cost of call 2: " + c2*t2);
-        System.out.println("Cost of call 3: " + c3*t3);
-        System.out.println("Total: " + (c1*t1+c2*t2+c3*t3));
+        System.out.println("Cost of call 1: " + c1 * t1);
+        System.out.println("Cost of call 2: " + c2 * t2);
+        System.out.println("Cost of call 3: " + c3 * t3);
+        System.out.println("Total: " + (c1 * t1 + c2 * t2 + c3 * t3));
     }
 
     private static void taskTwo() {
@@ -45,8 +45,8 @@ public class Hw1 {
         System.out.print("Input the radius: ");
         Scanner sc = new Scanner(System.in);
         double radius = sc.nextDouble();
-        System.out.println("Perimeter: " + 2*PI*radius);
-        System.out.println("Square: " + PI*radius*radius);
+        System.out.println("Perimeter: " + 2 * PI * radius);
+        System.out.println("Square: " + PI * radius * radius);
 
     }
 }
