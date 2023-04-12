@@ -9,7 +9,7 @@ public class task3 {
         lines[1] = new Line(new Point(0, 0), new Point(1, 1));
         lines[2] = new ColorLine(new Point(0, 0), new Point(1, 1),"Blue");
         for (Line line : lines) {
-            line.print();
+           line.print();
         }
     }
 
@@ -30,7 +30,7 @@ class Line{
         return "point1 -" + point1 +"\n"+ " point2- " + point2;
     }
 
-    public void print() {
+   public void print() {
         System.out.println(toString());
     }
 }
@@ -41,12 +41,12 @@ class ColorLine extends Line{
         super(point1,point2);
         this.color=color;
     }
+
+
     @Override
     public String toString() {return "point1 -" + point1 +"\n"+ " point2- " + point2 +"\t"+ "color is  "+ color;
     }
-    public void print() {
-        System.out.println(toString());
-    }
+
 }
 class Point{
     private  int x;
