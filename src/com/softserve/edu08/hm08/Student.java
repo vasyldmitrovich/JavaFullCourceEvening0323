@@ -27,7 +27,6 @@ public class Student extends Person implements Cloneable{
 
     @Override
     public Student clone() {
-        // TODO: copy mutable state here, so the clone can't change the internals of the original
         return (Student) super.clone();
     }
 }
