@@ -35,9 +35,8 @@ abstract class Person implements Cloneable{
     @Override
     public Person clone() {
         try {
-            Person clone = (Person) super.clone();
             // TODO: copy mutable state here, so the clone can't change the internals of the original
-            return clone;
+            return (Person) super.clone();
         } catch (CloneNotSupportedException e) {
             throw new AssertionError();
         }
