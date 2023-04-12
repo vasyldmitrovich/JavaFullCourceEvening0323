@@ -29,4 +29,6 @@ abstract class Person {
 
     // Abstract method for person's activity
     public abstract void info();
+
+    public abstract String activity();
 }
