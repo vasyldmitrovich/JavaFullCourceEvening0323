@@ -12,9 +12,11 @@ public class Main {
 
         Set<String> uniqueNumbers = new HashSet<>(Arrays.asList(splitNumbers));
 
-        for (String numbers : uniqueNumbers){
+        for (String numbers : uniqueNumbers) {
             System.out.print(numbers + ", ");
         }
 
     }
+
+
 }
