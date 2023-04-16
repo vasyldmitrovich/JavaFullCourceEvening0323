@@ -1,4 +1,4 @@
-package com.softserve.edu08.hw.Task1;
+package com.softserve.edu08.hw.Task1_2;
 
 public class Student extends Person implements Cloneable{
     private int course;
@@ -34,7 +34,7 @@ public class Student extends Person implements Cloneable{
 
     @Override
     public String activity() {
-        return "I study at university";
+        return "I am study at university";
     }
 
     @Override

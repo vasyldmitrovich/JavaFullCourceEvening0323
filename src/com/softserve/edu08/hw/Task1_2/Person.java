@@ -1,4 +1,4 @@
-package com.softserve.edu08.hw.Task1;
+package com.softserve.edu08.hw.Task1_2;
 
 public abstract class Person {
     private FullName fullName;

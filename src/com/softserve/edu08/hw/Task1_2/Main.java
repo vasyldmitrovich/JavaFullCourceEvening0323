@@ -1,4 +1,4 @@
-package com.softserve.edu08.hw.Task1;
+package com.softserve.edu08.hw.Task1_2;
 
 public class Main {
     public static void main(String[] args) throws CloneNotSupportedException {
