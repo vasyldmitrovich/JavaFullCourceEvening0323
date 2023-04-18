@@ -88,6 +88,7 @@ public void  run(){
 
 
          car[] abc = new car [4];
+
          abc[0] = new Truck(323,2019, "truk2");
          abc[1] = new Truck(323,2019, "truk3");
          abc[2] = new Truck(230,2022,"truck1");
