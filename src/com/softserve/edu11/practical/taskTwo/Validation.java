@@ -10,7 +10,7 @@ public class Validation {
         return size;
     }
 
-    public static Type checkType (String typeInString) {
+    public static Type checkType (String typeInString) throws TypeException {
         try {
             return Type.valueOf(typeInString);
         } catch (IllegalArgumentException e){
@@ -18,7 +18,7 @@ public class Validation {
         }
     }
 
-    public static Color checkColor (String colorInString){
+    public static Color checkColor (String colorInString) throws ColorException {
         try {
             return Color.valueOf(colorInString);
         } catch (IllegalArgumentException e){
