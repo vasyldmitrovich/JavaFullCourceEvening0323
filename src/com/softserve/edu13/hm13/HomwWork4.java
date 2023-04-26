@@ -4,7 +4,7 @@ import java.time.DayOfWeek;
 import java.time.LocalDate;
 
 public class HomwWork4 {
-    private LocalDate birthday;
+    private final LocalDate birthday;
 
     public HomwWork4() {
         // Set the birthday variable to your own birthday
@@ -26,7 +26,6 @@ public class HomwWork4 {
 
     public static void main(String[] args) {
         HomwWork4 bday = new HomwWork4();
-        LocalDate myBirthday = bday.birthday;
-        bday.printDayOfWeek(myBirthday);
+        bday.printDayOfWeek(bday.birthday);
     }
 }
