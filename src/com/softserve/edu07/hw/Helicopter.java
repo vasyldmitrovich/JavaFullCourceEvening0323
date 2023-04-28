@@ -14,11 +14,11 @@ public class Helicopter extends FlyingVehicle{
 
     @Override
     public void fly() {
-        System.out.printf("The helicopter took %d passengers, %dkg weight and raised on %dm height",getPassengers(),weight,maxHeight);
+        System.out.printf("The helicopter took %d passengers, %dkg weight and raised on %dm height\n",getPassengers(),weight,maxHeight);
     }
 
     @Override
     public void land() {
-        System.out.printf("Helicopter landed");
+        System.out.printf("Helicopter landed\n");
     }
 }

@@ -20,11 +20,11 @@ public class Plane extends FlyingVehicle{
 
     @Override
     public void fly() {
-        System.out.printf("The plane with %d passengers is flying to %d km",getPassengers(),maxDistance);
+        System.out.printf("The plane with %d passengers is flying to %d km\n",getPassengers(),maxDistance);
     }
 
     @Override
     public void land() {
-        System.out.printf("The plane has landed successfully");
+        System.out.printf("The plane has landed successfully\n");
     }
 }

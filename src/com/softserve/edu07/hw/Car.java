@@ -20,6 +20,6 @@ public class Car extends GroundVehicle{
 
     @Override
     public void drive() {
-        System.out.printf("The %s is driving with %d passengers", getPassengers(), model);
+        System.out.printf("The %s is driving with %d passengers\n", model, getPassengers());
     }
 }

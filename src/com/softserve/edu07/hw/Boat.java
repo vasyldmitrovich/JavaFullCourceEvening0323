@@ -20,6 +20,6 @@ public class Boat extends WaterVehicle{
 
     @Override
     public void isSailing() {
-        System.out.printf("%d passengers are sailing on a %d-seat boat",getPassengers(),volume);
+        System.out.printf("%d passengers are sailing on a %d-seat boat\n",getPassengers(),volume);
     }
 }

@@ -20,6 +20,6 @@ public class Motorcycle extends GroundVehicle{
 
     @Override
     public void drive() {
-        System.out.printf("%d passengers are riding a bike. Max speed is %dkm/h", getPassengers(), maxSpeed);
+        System.out.printf("%d passengers are riding a bike. Max speed is %dkm/h\n", getPassengers(), maxSpeed);
     }
 }

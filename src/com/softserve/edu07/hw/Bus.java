@@ -20,6 +20,6 @@ public class Bus extends GroundVehicle{
 
     @Override
     public void drive() {
-        System.out.printf("The bus is heading from %s with %d passengers", getPassengers(), route);
+        System.out.printf("The bus is heading on the route %s with %d passengers\n", route, getPassengers());
     }
 }

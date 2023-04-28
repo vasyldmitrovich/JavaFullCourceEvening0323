@@ -20,6 +20,6 @@ public class Liner extends WaterVehicle{
 
     @Override
     public void isSailing() {
-        System.out.printf("%d passengers are sailing on a %d-story liner",getPassengers(),floors);
+        System.out.printf("%d passengers are sailing on a %d-story liner\n",getPassengers(),floors);
     }
 }
