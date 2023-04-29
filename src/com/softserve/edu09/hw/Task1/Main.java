@@ -125,8 +125,9 @@ public class Main {
             System.out.println("The min element is at the end");
         } else {
             list.remove(minIndex + 1);
+            System.out.println("\nRemoved the element following the first minimum in the list");
+            System.out.println("Was deleted element " + element + " at position: " + minIndex + 1);
         }
-        System.out.println("\nRemoved the element following the first minimum in the list");
-        System.out.println("Was deleted element " + element + " at position: " + minIndex + 1);
+
     }
 }
