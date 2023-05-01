@@ -14,7 +14,7 @@ public class App {
         students.add(new Student("Julia Barannik", 1, 1, new ArrayList<>(Arrays.asList(1, 1, 1, 2, 3))));
         students.add(new Student("Stas Sidorenko", 3, 2, new ArrayList<>(Arrays.asList(3, 7, 9, 11, 11))));
         students.add(new Student("Tanya Gulivez", 1, 1, new ArrayList<>(Arrays.asList(4, 5, 6, 3, 2))));
-        StudentService studentService = new StudentService();
+        StudentService studentService = new StudentService();//Nice, good
         System.out.println("Students which average grade more than 3 upper their course");
         System.out.println(studentService.removeByGrade(students));
         System.out.println();

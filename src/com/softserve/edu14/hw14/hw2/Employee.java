@@ -9,6 +9,7 @@ import java.util.stream.Stream;
 public class Employee {
     private String name;
 
+    //Firstly must be fields, after that constructors, getters and setters and the last methods
     @Override
     public String toString() {
         return "Employee{" +
@@ -28,6 +29,7 @@ public class Employee {
         this.name = name;
     }
 
+    //Move this method to Main.java
     public static Optional<String> mostPopularName(Stream<Employee> employees) {
         Map<String, Long> nameCounts = employees.collect(Collectors.groupingBy(Employee::getName, Collectors.counting()));
         if (nameCounts.isEmpty()) {

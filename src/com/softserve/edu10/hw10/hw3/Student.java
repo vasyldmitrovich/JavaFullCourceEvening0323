@@ -38,6 +38,7 @@ public class Student implements Comparable<Student> {
                 '}';
     }
 
+    //Move this method to Main.java
     public void printStudents(List<Student> students, int course) {
         Iterator<Student> listIterator = students.listIterator();
         while (listIterator.hasNext()) {
@@ -62,6 +63,7 @@ public class Student implements Comparable<Student> {
         return Objects.hash(name, course);
     }
 
+    //If you do not use this method than why they there?
     public boolean compareByName(Student s1, Student s2) {
         if (s1.getName().equals(s2.getName())) {
             System.out.println("Names are same");

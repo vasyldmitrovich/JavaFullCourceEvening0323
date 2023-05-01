@@ -7,7 +7,7 @@ public class Task1 {
         Scanner sc = new Scanner(System.in);
         System.out.println("Input sentence of five words");
         String sentence = sc.nextLine();
-        longestWord(sentence);
+        longestWord(sentence);//Good
         System.out.println();
         wordInReverse(sentence);
     }

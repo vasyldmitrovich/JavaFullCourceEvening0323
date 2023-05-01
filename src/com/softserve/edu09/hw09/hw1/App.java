@@ -4,6 +4,7 @@ import java.util.*;
 
 public class App {
     public static void main(String[] args) {
+        //Divide logic to separate methods
         System.out.println("Enter 10 numbers, separated by commas");
         Scanner scanner = new Scanner(System.in);
         String nums = scanner.nextLine();

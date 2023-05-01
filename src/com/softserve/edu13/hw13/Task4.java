@@ -10,6 +10,7 @@ public class Task4 {
         showDays(localDate);
     }
 
+    //Good
     private static void showDays (LocalDate localDate){
         LocalDate newDate1 = localDate.plusMonths(6);
         LocalDate newDate2 = localDate.plusMonths(12);

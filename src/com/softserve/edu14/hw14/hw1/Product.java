@@ -4,6 +4,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 public class Product {
+    //Overridden method usually write in bottom of class, not in top
     @Override
     public String toString() {
         return "Product{" +
@@ -49,6 +50,7 @@ public class Product {
         this.category = category;
     }
 
+    //This method must be in class Main.java not there
     public static List<Product> createList() {
         List<Product> productList = Arrays.asList(new Product(Category.PHONE, 3000, 12),
                 new Product(Category.PHONE,3200,2),
@@ -58,6 +60,7 @@ public class Product {
         return productList;
     }
 
+    //And this method must be in Main.java too
     public static List<Product> sortedList(List<Product> list) {
         return list.stream().filter(p -> p.getCategory().equals(Category.PHONE)).filter(n -> n.getPrice() > 3000)
                 .filter(b -> b.getDateOfManufacture() > 1).sorted(Comparator.comparingInt(Product::getPrice)).collect(Collectors.toList());

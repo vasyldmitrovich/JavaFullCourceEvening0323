@@ -5,6 +5,7 @@ import java.util.Set;
 
 public class AppSet {
     public static void main(String[] args) {
+        //Ok all is ok
         Set<Integer> integerSet1 = new HashSet<>();
         integerSet1.add(1);
         integerSet1.add(4);

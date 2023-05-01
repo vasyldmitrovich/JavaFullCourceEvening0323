@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 public class Task1 {
     public static void main(String[] args) {
+        //Move all logic: read data from user to some method, and after that call this method there
         Scanner sc = new Scanner(System.in);
         System.out.println("Input a string");
         String str = sc.nextLine();

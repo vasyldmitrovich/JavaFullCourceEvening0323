@@ -7,6 +7,7 @@ public class Task2 {
         readNumber(34, 67);
     }
 
+    //Good
     private static int readNumber(int start, int end) throws Exception {
         Scanner sc = new Scanner(System.in);
         System.out.println("Input number");

@@ -14,6 +14,9 @@ public class Task1 {
         System.out.println(toUppercase(listNew));
     }
 
+    //Perfectly will be if all this operations what is in next three method be in one method
+    //But if you want divide each operation in separate methods you can work with Stream<String>
+    //Do not need collect every time to List
     private static long countEmpty(List<String> list) {
         return list.stream()
                 .filter(string -> string.isEmpty())

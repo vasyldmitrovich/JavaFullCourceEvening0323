@@ -5,6 +5,7 @@ import java.util.List;
 
 public class App {
     public static void main(String[] args) {
+        //Too mach code in mein method
         List<Object> heavyBoxList = new ArrayList<>();
         heavyBoxList.add(new HeavyBox(3, "toy1"));
         heavyBoxList.add(new HeavyBox(2, "toy2"));

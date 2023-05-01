@@ -10,6 +10,7 @@ public class Task1 {
     }
 
     private static boolean ifSubString(String s1, String s2) {
+        //Right decision with value -1, nice to see something like that
         if (s1.indexOf(s2) != -1) {
             System.out.println("Result - contain");
             return false;

@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Task1 {
     public static void main(String[] args) {
+        //Ok
         Scanner sc = new Scanner(System.in);
         try {
             System.out.println("Input first integer parameters 'a'");

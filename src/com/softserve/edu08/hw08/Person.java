@@ -44,6 +44,7 @@ public abstract class Person {
                 '}';
     }
 
+    //Do not need using words public abstract, java add this words to method by default
     public abstract String activity();
 
 }

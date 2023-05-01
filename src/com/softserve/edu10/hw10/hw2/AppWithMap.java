@@ -6,6 +6,7 @@ public class AppWithMap {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Map<String, String> persons = new HashMap<>();
+        //This code is nice, respect
         for (int i = 0; i < 3; i++) {
             persons = populateMap(persons);
         }

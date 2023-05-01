@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Task3 {
     public static void main(String[] args) {
+        //Please create some method and call this method there, method should print message and return data from user
         Scanner sc = new Scanner(System.in);
         System.out.println("Input first user name (should be between 3 to 15 characters and can contain only Latin alphabet, numbers, and underscores)");
         String firstUserName = sc.nextLine();
