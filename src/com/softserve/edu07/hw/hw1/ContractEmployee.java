@@ -1,6 +1,8 @@
 package com.softserve.edu07.hw.hw1;
 
 public class ContractEmployee extends Employee implements Payment {
+	//Why you create field id in this class, you can use field id from Employee class
+	//And in salaried class do the same
 	private int id;
 	private String name;
 	private String federalTaxIdMember;

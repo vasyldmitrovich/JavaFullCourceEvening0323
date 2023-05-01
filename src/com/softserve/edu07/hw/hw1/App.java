@@ -5,6 +5,7 @@ import java.util.Comparator;
 
 public class App {
 	public static void main(String[] args) {
+		//Too mach code there, move all this object in some method, and there call this method
 		SalariedEmployee salariedEmployee1 =
 				new SalariedEmployee(100, "John Smith", "SS234567", 100000);
 		SalariedEmployee salariedEmployee2 =
@@ -20,6 +21,7 @@ public class App {
 		Employee[] employees = new Employee[]{salariedEmployee1, salariedEmployee2,
 				salariedEmployee3, contractEmployee1, contractEmployee2, contractEmployee3};
 		//didn't want to use ArrayList, so I used Arrays.sort with Comparator
+		//Ok good, but put this code to some method, and call this method there
 		Arrays.sort(employees, new Comparator<Employee>() { // don't want to use lambda yet
 			@Override
 			public int compare(Employee o1, Employee o2) {

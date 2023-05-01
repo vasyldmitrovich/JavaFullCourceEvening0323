@@ -2,6 +2,7 @@ package com.softserve.edu07.hw.hw2;
 
 public class App {
 	public static void main(String[] args) {
+		//Do there the same logic what i wrote in hw1, separate creating object to some method
 		Liner liner = new Liner(3, 300);
 		liner.isSailing();
 		Boat boat = new Boat(3000, 200);

@@ -46,7 +46,8 @@ public class Car {
 		return "Car type " + type + ", " + "year of production - " + yearOfProduction +
 				 ", engine capacity - " + engineCapacity;
 	}
-	
+
+	//Move this method and all the following to main class
 	public String getTypeByCurrentYear(int year, Car... cars) {
 		for (Car car : cars) {
 			if (car.getYearOfProduction() == year) {
@@ -55,7 +56,7 @@ public class Car {
 		}
 		return "There is no car";
 	}
-	//rewrote this method, left for check by Vasyl
+	//I recommend write inner class for solve comparing objects
 	public Car[] getSortedByYearOfProductionWithComparator(Car[] cars) {
 		Arrays.sort(cars, new Comparator<>() {
 			@Override

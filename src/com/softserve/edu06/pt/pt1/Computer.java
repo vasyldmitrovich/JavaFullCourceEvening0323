@@ -14,7 +14,7 @@ abstract class Computer {
         System.out.println("Computer brand: " + brand);
     }
 }
-
+//Separate each class to files, for example class DesktopComputer should be in file DesktopComputer.java
 class DesktopComputer extends Computer {
     @Override
     public void turnOn() {

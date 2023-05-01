@@ -8,6 +8,7 @@ public class App {
 		Sedan sedan2 = new Sedan("Mazda", 200, 2005);
 		Car[] cars = new Car[]{truck1, truck2, sedan1, sedan2};
 		for (Car car : cars) {
+			//There call method run and stop
 			System.out.println(car);
 		}
 		

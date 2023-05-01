@@ -37,7 +37,8 @@ public abstract class Car {
 	public void setYearOfProduction(int yearOfProduction) {
 		this.yearOfProduction = yearOfProduction;
 	}
-	
+
+	//Method run and stop must be like here void run(){} and in subclass you must realize this methods
 	public void run(){}
 	
 	public void stop(){}

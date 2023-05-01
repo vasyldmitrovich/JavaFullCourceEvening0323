@@ -1,6 +1,7 @@
 package com.softserve.edu06.hw.hw1;
 
 public abstract class Bird {
+	//Fields should have access modifier private, not default
 	String feathers;
 	String layEggs;
 	

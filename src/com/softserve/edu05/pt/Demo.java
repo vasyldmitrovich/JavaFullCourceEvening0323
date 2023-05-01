@@ -2,6 +2,7 @@ package com.softserve.edu05.pt;
 
 public class Demo {
 	public static void main(String[] args) {
+		//Too big main method, separate tasks to methods
 		Utils utils = new Utils();
 		//pt1.1
 		ArrayPractice arrayPractice = new ArrayPractice();

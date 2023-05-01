@@ -2,6 +2,7 @@ package com.softserve.edu07.hw.hw2;
 
 public class Plane extends FlyingVehicle {
 	private int maxDistance;
+	//field passengers could be in abstract class, because this field using in all subclass, it can be shared by all subclasses
 	private int passengers;
 	
 	public Plane() {

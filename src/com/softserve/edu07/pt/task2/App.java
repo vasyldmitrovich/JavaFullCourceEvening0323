@@ -3,6 +3,7 @@ package com.softserve.edu07.pt.task2;
 public class App {
 	public static void main(String[] args) {
 		System.out.println("We have 6 persons:");
+		//Make method and this method must return array of Person, after that set it to array persons
 		Teacher teacher1 = new Teacher();
 		Teacher teacher2 = new Teacher();
 		Cleaner cleaner1 = new Cleaner();

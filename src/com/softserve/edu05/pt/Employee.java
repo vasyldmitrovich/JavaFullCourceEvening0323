@@ -42,7 +42,8 @@ public class Employee {
 	public String toString() {
 		return "Employee " + name + " is from department " + departmentNumber + " with salary: " + salary;
 	}
-	
+
+	//Move this method and all the following to main class
 	public Employee[] getAllEmployeesFromCurrentDepartment(Employee[] employees, int department) {
 		int length = getQuantityOfEmployeesAtCurrentDepartment(employees, department);
 		Employee[] employee = new Employee[length];

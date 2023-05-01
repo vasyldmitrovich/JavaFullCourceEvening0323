@@ -13,7 +13,7 @@ public class FiveIntegerArrayPractice {
 		return intArray;
 	}
 	
-	
+	//Good decision use separated method for solving tasks like that
 	public int getSecondPositiveNumber(int[] intArray) {
 		int value = 0;
 		int count = 0;
