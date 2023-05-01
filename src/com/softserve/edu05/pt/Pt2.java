@@ -11,6 +11,8 @@ public class Pt2 {
         System.out.println("Your number is Prime? ");
         System.out.println(isPrime(n));
     }
+
+    //Create method like this is good decision
     public static boolean isPrime(int n) {
         if (n < 2) {
             return false;

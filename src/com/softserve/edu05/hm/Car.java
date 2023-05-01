@@ -28,6 +28,7 @@ public class Car {
     }
 
 
+    //main method move to some class like App.java
     public static void main(String[] args) {
         Car[] car = {
                 new Car("Sports car", 1994, 3.2),
@@ -35,6 +36,7 @@ public class Car {
                 new Car("Buss", 1999, 2.2),
                 new Car("Sports car", 2000, 6.0)
         };
+        //Scanner move to some method and there call this method
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter model year - ");
         int modelYear = scanner.nextInt();

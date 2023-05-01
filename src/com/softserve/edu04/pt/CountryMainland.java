@@ -14,6 +14,7 @@ public class CountryMainland {
 
         Continent continent;
         switch (country) {
+            //Egypt kenya etc... must be in constructor of enum
             case "EGYPT", "KENYA", "SOUTH AFRICA" -> continent = Continent.AFRICA;
             case "ANTARCTICA" -> continent = Continent.ANTARCTICA;
             case "CHINA", "INDIA", "JAPAN" -> continent = Continent.ASIA;

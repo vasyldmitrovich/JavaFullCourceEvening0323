@@ -11,6 +11,7 @@ public class HomeWorkSecondPoint {
         for (int i = 0; i < 10; i++) {
             nums[i] = scanner.nextInt();
         }
+        //Divide all this logic to separate method and call methods there
         int sum = 0;
         boolean allPositive = true;
         for (int i = 0; i < 5; i++) {

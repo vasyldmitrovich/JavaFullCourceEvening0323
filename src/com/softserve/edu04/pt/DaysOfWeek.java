@@ -7,6 +7,7 @@ public class DaysOfWeek {
         Scanner sc = new Scanner(System.in);
         System.out.println("Write the number day of week?)");
         int number = sc.nextInt();
+        //Day of the weak must be enum not string
         var result = switch (number) {
             case 1 -> "Monday";
             case 2 -> "Tuesday";

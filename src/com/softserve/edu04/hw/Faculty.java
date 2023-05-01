@@ -3,6 +3,7 @@ package com.softserve.edu04.hw;
 import java.util.Scanner;
 
 public class Faculty {
+    //Enum should be in unique file not in this class or some another class
     enum Season {
         WINTER("Winter"), SPRING("Spring"), SUMMER("Summer"), FALL("Fall");
 
@@ -31,6 +32,7 @@ public class Faculty {
 
     }
 
+    //Main method must be in class like App.java, because this class describe some entity
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 

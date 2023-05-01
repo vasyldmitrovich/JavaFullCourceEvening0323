@@ -3,6 +3,7 @@ package com.softserve.edu04.hw;
 import java.util.Arrays;
 import java.util.Scanner;
 
+//Too big name of class
 public class TheBiggestAndSmallestNumber {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);

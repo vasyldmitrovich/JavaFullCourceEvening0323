@@ -28,6 +28,8 @@ public class Employee {
 
     public static void main(String[] args) {
         // Створення 5 об'єктів Employee
+
+        //Make method that return array of Employee, and there in this line call method
         Employee[] employees = {
                 new Employee("John Doe", 1, 2500.0),
                 new Employee("Jane Smith", 1, 3000.0),
@@ -40,6 +42,7 @@ public class Employee {
         System.out.print("Write a number department: ");
         int department = scanner.nextInt();
 
+        // Make method and this logic move to this method
         System.out.println("List of employees of the department " + department + ":");
         for (Employee employee : employees) {
             if (employee.getDepartment() == department) {
@@ -49,6 +52,7 @@ public class Employee {
 
         Arrays.sort(employees, (e1, e2) -> Double.compare(e2.getSalary(), e1.getSalary()));
 
+        //With this logic do the same, create method put in method list and in method print what you want
         System.out.println("List of employees by field salaries:");
         for (Employee employee : employees) {
             System.out.println(employee.getName() + ", salary: " + employee.getDepartment() + ", salary: " + employee.getSalary());
