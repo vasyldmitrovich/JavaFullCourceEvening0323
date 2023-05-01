@@ -1,5 +1,6 @@
 package com.softserve.edu06.hw;
 
+//Move to file and rename to Bird.java
 abstract  class birds {
    private String feathers;
    private String layEggs;
@@ -21,6 +22,7 @@ abstract  class birds {
     }
 
 }
+//Move to file FlyingBird.java, and do the same with another classes
 class FlyingBird extends birds{
     public FlyingBird(String feathers, String layEggs) {
         super(feathers, layEggs);

@@ -9,6 +9,8 @@ public class Employee {
         this.age=age;
         this.salary=salary;
     }
+
+    //Getters do not have correct naming
     public int getage() {
         return age;
     }

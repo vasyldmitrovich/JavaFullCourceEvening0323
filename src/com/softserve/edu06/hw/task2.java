@@ -3,6 +3,7 @@ package com.softserve.edu06.hw;
 
 public class task2 {
     public static void main(String[] args) throws CloneNotSupportedException {
+        //Do not correct name of variable, could start from Upper case, must start from Lower case
          birds[] ArrayBirds = new birds[5];
         ArrayBirds[0] = new Penguin("No","Yes");
         ArrayBirds[1] = new Eagle("Yes"," Yes");

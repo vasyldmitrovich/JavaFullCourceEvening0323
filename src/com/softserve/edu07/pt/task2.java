@@ -27,6 +27,7 @@ public class task2 {
     }
 }
 
+//Move to file Person.java
 abstract class Person{
     private String name;
    public Person(String name){
@@ -37,10 +38,13 @@ abstract class Person{
         return name;
     }
 
+    //Word abstract and public do not need, this method have abstract and public by default
     abstract public void print();
 }
 
+//Move to file Student.java
 class Student extends Person{
+    //Type can be Enum not String, and not static
     public static final String TYPE_PERSON = "Student";
 
     public Student(String name) {

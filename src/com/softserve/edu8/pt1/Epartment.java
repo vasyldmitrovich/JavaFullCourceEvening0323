@@ -1,7 +1,10 @@
 package com.softserve.edu8.pt1;
 
+//Maybe name of class must be Department ??? Where is class like App.class and main method there
 class Epartment implements  Cloneable{
+    //Make class Adres public or private, and name of class must be Address not Adres
     class  Adres{
+        //Name of variable must start from lower case
         private String Street;
         private String Sity;
 
@@ -20,6 +23,8 @@ class Epartment implements  Cloneable{
             return  ( Sity+"\n"+Street);
         }
     }
+
+    //Where is spaces between fields and methods???
     private String name;
     private  Adres adres;
     public Epartment(){

@@ -1,8 +1,10 @@
 package com.softserve.edu06.pt;
 
+//Name must start for Upper case
 abstract class car {
     private int maxSpeed;
     private  int yearOfProduction;
+    //Firstly must go constructors and after that getters and setters, and after that methods
     @Override
     public String toString() {
         return   maxSpeed+" "+yearOfProduction;
@@ -14,6 +16,7 @@ abstract class car {
     }
 
 
+    //Please generate getters and setters automatic, because naming there is not correct
     public int GetmaxSpeed(){
 
         return maxSpeed ;
@@ -31,11 +34,15 @@ abstract class car {
         this.yearOfProduction=yearOfProduction;
 
     }
+    //Why do not have space before method???
 public void  run(){
 System.out.println("car is runing");
 }
+//Without word abstract, this word java add by default
    abstract void stop();
 }
+
+//Move class to file Track.java and do the same with another classes
  class Truck extends car{
      private String names;
 
@@ -82,7 +89,7 @@ public void  run(){
         }
 
 
-
+//Please rename class to Test
  class test{
      public static void main(String[] args) {
 
