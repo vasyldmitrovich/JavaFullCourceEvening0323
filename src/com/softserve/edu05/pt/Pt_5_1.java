@@ -8,6 +8,7 @@ import java.util.Scanner;
 public class Pt_5_1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        //Divide each task to unique method, there call these methods
         //______1
         String[] array = {"Tesla", "BMW ", "Porsche ", "Volkswagen ", "AUDI "};
         Arrays.sort(array);

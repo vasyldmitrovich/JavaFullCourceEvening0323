@@ -6,7 +6,7 @@ import java.util.List;
 public class Hw_7_1 {
     public static void main(String[] args) {
         List<Employee> employees = new ArrayList<>();
-
+        //Ok
         // Add salaried employees
         SalariedEmployee salariedEmployee1 = new SalariedEmployee("1", "Max", "111-11-1111", 4000.0);
         SalariedEmployee salariedEmployee2 = new SalariedEmployee("2", "Ivan", "222-22-2222", 5000.0);

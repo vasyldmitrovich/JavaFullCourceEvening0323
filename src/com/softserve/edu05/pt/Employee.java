@@ -1,6 +1,7 @@
 package com.softserve.edu05.pt;
 
 public class Employee {
+    //Name of fields must start from lower case, not Upper case
     private String Name;
     private int DepartmentNumber;
     private int Salary;

@@ -7,6 +7,7 @@ abstract class Person {
         this.name = name;
     }
 
+    //Do not write worlds public abstract, it is there by default
     public abstract void print();
 
 }

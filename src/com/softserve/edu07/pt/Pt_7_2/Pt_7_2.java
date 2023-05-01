@@ -1,15 +1,8 @@
 package com.softserve.edu07.pt.Pt_7_2;
 
-
-
-
-
-
-
-
-
 public class Pt_7_2 {
     public static void main(String[] args) {
+        //Create some method which return array of Person
         Person[] people = new Person[5];
         people[0] = new Teacher("John");
         people[1] = new Teacher("Mary");
