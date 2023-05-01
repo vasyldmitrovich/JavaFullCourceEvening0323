@@ -5,6 +5,7 @@ import java.util.Comparator;
 
 public class AppH_7_1 {
     public static void main(String[] args){
+        //Create some method, this method must return array Employee, there call this method to set this array to variable employees
         Employee[] employees = {
                 new SalariedEmployee("E001 Sam", "111-11-1111", 5000),
                 new ContractEmployee("E002 Tom", "222-22-2222", 20, 160),

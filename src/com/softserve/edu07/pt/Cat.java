@@ -12,6 +12,7 @@ public class Cat implements Animal {
 
     }
 
+    //Why constructor have access modifier package-private ??? How you can create Cat from another package???
      Cat() {
     }
 }

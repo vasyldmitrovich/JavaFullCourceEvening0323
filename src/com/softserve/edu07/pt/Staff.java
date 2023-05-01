@@ -5,6 +5,7 @@ abstract class Staff  extends Person{
         super(name);
     }
 
+    //The same with this method, del public and abstract
     public abstract int salary();
 
 }

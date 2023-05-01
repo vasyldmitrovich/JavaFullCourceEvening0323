@@ -2,6 +2,7 @@ package com.softserve.edu08.pt;
 
 public class AppP_8_1 {
     public static void main(String[] args) {
+        //Good
         Department.Address address = new Department.Address("Ternopil", "Valova", 11);
         Department department = new Department("Sales", address);
 

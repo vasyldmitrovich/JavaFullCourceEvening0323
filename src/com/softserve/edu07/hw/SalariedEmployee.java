@@ -1,6 +1,7 @@
 package com.softserve.edu07.hw;
 
 public class SalariedEmployee extends Employee implements Payment {
+    //What reason that you make fields package-private? why not private?
     String socialSecurityNumber;
     double monthlySalary;
 

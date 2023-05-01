@@ -27,6 +27,8 @@ public class AppP_5_3 {
         }
         System.out.println("Max number is --> " + Arrays.stream(arr).max());
 
+
+        //Divide some different logic to separate methods
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] > 0) {
                 sum += arr[i];

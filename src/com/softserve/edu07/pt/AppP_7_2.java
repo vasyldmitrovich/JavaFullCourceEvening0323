@@ -9,6 +9,7 @@ public class AppP_7_2 {
         arr[3] = new Teacher("Sam");
         arr[4] = new Cleaner("Tom");
 
+        //Use foreach loop instead classical for
         for(int i = 0; i< arr.length; i++){
             arr[i].print();
             if(arr[i] instanceof Staff){

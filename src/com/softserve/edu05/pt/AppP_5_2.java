@@ -10,6 +10,7 @@ public class AppP_5_2 {
         isPrimeNumber(number);
     }
 
+    //Good
     public static void isPrimeNumber(int number) {
         for (int i = 2; i < number; i++) {
             if ((number % i) == 0) {
