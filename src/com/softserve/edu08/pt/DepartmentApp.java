@@ -3,6 +3,7 @@ package com.softserve.edu08.pt;
 public class DepartmentApp {
 
     public static void main(String[] args) throws CloneNotSupportedException {
+        //All good
         Department department1 = new Department("Department1", new Department.Address("Dnipro", "Yavornitskogo", 54));
         System.out.println("Created departments: ");
         System.out.println(department1);

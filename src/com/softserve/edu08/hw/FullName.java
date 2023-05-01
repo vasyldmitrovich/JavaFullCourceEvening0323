@@ -1,5 +1,7 @@
 package com.softserve.edu08.hw;
 
+//If this class do not have sense without class like Person, that means you can make this class inner
+//But you are author and this is your decision, do how you want
 public class FullName implements Cloneable {
 
     private String firstName;

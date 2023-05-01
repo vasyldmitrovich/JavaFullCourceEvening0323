@@ -5,7 +5,7 @@ import java.util.List;
 
 public class BoxApp {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) {//Cool, nice to see code like this
         // Create dynamic array contains objects of HeavyBox class
         List<HeavyBox> boxes = new ArrayList<>();
         boxes.add(new HeavyBox(6, "toys"));
