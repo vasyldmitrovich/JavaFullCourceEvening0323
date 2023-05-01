@@ -1,5 +1,6 @@
 package com.softserve.edu08.hw;
 
+//If this class do not have sense without class Student, then make this class inner
 public class FullName implements Cloneable{
     private String firstName;
     private String lastName;

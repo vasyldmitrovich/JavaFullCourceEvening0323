@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class FirstTaskPrompter {
     public static void main(String[] args) {
+        //All there is good ;-)
         int amountOfDays = DaysInMonth.getAmountOfDays(getNumber("Input number of the month: "));
         System.out.println(amountOfDays);
 

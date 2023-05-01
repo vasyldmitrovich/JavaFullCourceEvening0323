@@ -25,10 +25,13 @@ public class FirstTaskOddNumbersCounter {
 
     }
 
+    //Good
     static int getNumber(String message, Scanner sc){
         System.out.print(message + " ");
         return sc.nextInt();
     }
+
+    //Good
     static int getAmountOfOdds(int num1, int num2, int num3){
         int amountOfOdd = 0;
 

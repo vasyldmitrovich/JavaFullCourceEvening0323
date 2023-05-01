@@ -18,6 +18,7 @@ public class FirstTaskArrays {
         bubbleSort(numbers);
         System.out.println("Sorted array of numbers: " + Arrays.toString(numbers));
 
+        //Good
         binarySearch(numbers, words);
 
     }
@@ -79,6 +80,7 @@ public class FirstTaskArrays {
         }
     }
 
+    //Oo nice to see binary search there
     public static void binarySearch(int[]numbers, String[]words){
         System.out.print("\nInput the search value: ");
         Scanner sc = new Scanner(System.in);

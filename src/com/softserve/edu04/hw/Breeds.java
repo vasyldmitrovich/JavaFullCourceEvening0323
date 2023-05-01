@@ -1,5 +1,6 @@
 package com.softserve.edu04.hw;
 
+//Name without ending ***s
 public enum Breeds {
 
     FRENCH_BULLDOG("French bulldog"),

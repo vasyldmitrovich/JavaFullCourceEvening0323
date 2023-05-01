@@ -12,6 +12,7 @@ public class SecondTaskMaxMinValue {
     }
 
     static int getMinValue(int...args){
+        //Use max value is good decision
         int minValue = Integer.MAX_VALUE;
 
         for(int i : args){

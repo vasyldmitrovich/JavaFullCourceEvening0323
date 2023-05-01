@@ -29,7 +29,7 @@ public class SecondTaskVehicles {
 
         Arrays.sort(vehicles, new CompareVehiclesByPassengers());
 
-
+        //Good respect
         System.out.println("Sorted array by passenger capacity:");
         System.out.println();
         for(Passengers vehicle: vehicles){

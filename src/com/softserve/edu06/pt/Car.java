@@ -23,6 +23,7 @@ public abstract class Car {
         return yearOfProduction;
     }
 
+    //Delete word public, method have this access by default
     public void run(){}
 
     public void stop(){}

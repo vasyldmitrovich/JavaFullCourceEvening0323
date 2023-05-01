@@ -11,6 +11,8 @@ public class FourthTaskFaculty {
         }
 
         String textSeason = getSeason();
+        //Use string if you work with enum is bad decision, for example what you will do if in enum be 1000 value
+        // and on next day in enum put another 10 value, you must remember that you should change in all places where is condition like that
         if (!(textSeason.equals("WINTER") || textSeason.equals("SPRING")
             || textSeason.equals("SUMMER") || textSeason.equals("AUTUMN"))){
             errors = errors + "Incorrect name of the season";

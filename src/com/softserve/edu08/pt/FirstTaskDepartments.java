@@ -2,6 +2,7 @@ package com.softserve.edu08.pt;
 
 public class FirstTaskDepartments {
     public static void main(String[] args) {
+        //Good
         Department department1 = new Department("IT", "Kalush", "Promyslova", 12);
         System.out.println(department1);
         try {

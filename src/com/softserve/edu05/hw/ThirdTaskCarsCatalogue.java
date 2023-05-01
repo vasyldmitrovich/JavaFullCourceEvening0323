@@ -15,6 +15,7 @@ public class ThirdTaskCarsCatalogue {
         }
     }
 
+    //Nice this method is good
     static Car[] fillTheArray(){
         System.out.print("Input number of cars: ");
         int size = new Scanner(System.in).nextInt();

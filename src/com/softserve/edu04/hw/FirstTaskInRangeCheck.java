@@ -14,6 +14,7 @@ public class FirstTaskInRangeCheck {
 
     }
 
+    //Good
     static float getTheNumber(String textNumber){
         System.out.print("Input the " + textNumber + " number: ");
         Scanner sc = new Scanner(System.in);

@@ -11,6 +11,7 @@ public class FirstTaskStudents {
         System.out.println(student2.activity());
 
         try {
+            //Create variable like student3 outside try catch block, in this block set data to var
             Student student3 = (Student) student2.clone();
             student3.setFullName(new FullName("Petro", "Incognito"));
             System.out.println(student3.info());
