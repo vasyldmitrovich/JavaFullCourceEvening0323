@@ -29,7 +29,6 @@ public class Department implements Cloneable {
     @Override
     public Department clone() throws CloneNotSupportedException {
         Department cloned = (Department) super.clone();
-        cloned.address = this.address.clone();
         return cloned;
     }
 
