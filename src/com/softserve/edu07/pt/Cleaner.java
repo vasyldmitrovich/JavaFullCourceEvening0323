@@ -9,6 +9,7 @@ package com.softserve.edu07.pt;
  * @author rgonchar
  */
 public class Cleaner extends Staff {
+    //Use Enum for type it is better decision
     final String TYPE_PERSON = "Cleaner";
 
     public Cleaner() {

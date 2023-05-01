@@ -15,6 +15,7 @@ public class Hw06 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        //If you finished implement logic, that means you must delete TO DO
         Employee emp = new Employee("Oleg", 32, 60000.00);
         Developer dev = new Developer("Masha", 22, 80000.00, "HR");
         System.out.println(emp.report());

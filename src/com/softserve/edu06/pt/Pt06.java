@@ -10,11 +10,13 @@ public class Pt06 {
         Truck iveco = new Truck("Stralis", 120, 2002);
         Truck renault = new Truck("Magnum", 140, 1990);
         Sedan mazda = new Sedan("6", 240, 2019);
+        //NO no no use array and loop for logic like that
         volvo.run();
         iveco.run();
         renault.run();
         mazda.stop();
 
+        //Do the same use loop, and separate this task to unique method in this class
         //Task 2
         Point point1 = new Point(1, 0);
         Point point2 = new Point(0, 1);

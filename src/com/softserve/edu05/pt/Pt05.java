@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 public class Pt05 {
     public static void main(String[] args) {
+        //Do the same there, separate code to methods
         //Task_1.1
         String[] strArr = {"test", "ab", "bc", "abc", "test", "sort"};
         System.out.print("Source array: ");
