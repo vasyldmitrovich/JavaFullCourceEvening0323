@@ -32,6 +32,7 @@ public class FullName extends Person implements Cloneable{
     public String activity() {
         return null;
     }
+
     @Override
     public FullName clone() throws CloneNotSupportedException {
         FullName cloned = (FullName) super.clone();

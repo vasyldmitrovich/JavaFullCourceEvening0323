@@ -34,5 +34,7 @@ abstract class Person implements Cloneable{
         return "First name:"+ "<"+ getFullName().getFirstName() +">" + "Last name:" + "<" + getFullName().getLastName()+ ">"+
                 "Age:" + "<"+ getAge() + ">";
     }
+
+    //Word abstract and public not needed
     abstract public String activity();
 }
