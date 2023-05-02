@@ -17,7 +17,7 @@ public class HomeWork01 {
 
         for (Employee employee : employees) {
             double monthlySalary = employee.calculatePay() * 4; // assuming 4 weeks in a month
-            System.out.printf("ID: %s, Name: %s, Avg. Monthly Salary: $%.2f%n", employee.employeeId, employee.name, monthlySalary);
+            System.out.printf("ID: %s, Name: %s, Avg. Monthly Salary: $%.2f%n", employee.getEmployeeId(), employee.getName(), monthlySalary);
         }
     }
 }
