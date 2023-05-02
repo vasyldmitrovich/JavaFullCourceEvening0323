@@ -8,7 +8,7 @@ public class Main {
 
     private static final Scanner scanner = new Scanner(System.in);
 
-    public static void main(String[] args) {
+    public static void main(String[] args) {//In general everything is good
         System.out.println("Map");
         Map<Integer,Employee> employeeMap = fullMap();
         System.out.println(employeeMap);
@@ -26,7 +26,7 @@ public class Main {
         if(idOperation == 1){
             System.out.println("Input please id");
             int idForSearch = scanner.nextInt();
-            if(searchNameWithId(idForSearch,employeeMap).contains("Key found and his value") == true){
+            if(searchNameWithId(idForSearch,employeeMap).contains("Key found and his value") == true){//Please del == true
                 System.out.println("Input date for update");
                 Employee employeeForUpdate = getNewEmployee();
                 employeeMap.put(idForSearch,employeeForUpdate);

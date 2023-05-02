@@ -10,6 +10,7 @@ public class Main {
         System.out.println("Task with square rectangle!");
         System.out.println("Input first number");
         int numberOne = 0, numberTwo = 0;
+        //Use try catch for this manipulation
         if(scanner.hasNextInt()){
              numberOne = scanner.nextInt();
         }else throw new NotNumberException("You input not number!");

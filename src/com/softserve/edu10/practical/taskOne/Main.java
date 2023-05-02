@@ -11,7 +11,7 @@ public class Main {
         String strOne = scanner.nextLine();
         System.out.println("Input please two str");
         String strTwo = scanner.nextLine();
-        System.out.println(checkSubstringTwoStr(strOne,strTwo) == true ? "Yes" : "No");
+        System.out.println(checkSubstringTwoStr(strOne,strTwo) == true ? "Yes" : "No");//Del == true, this is not needed
     }
 
     private static boolean checkSubstringTwoStr(String strOne, String strTwo){

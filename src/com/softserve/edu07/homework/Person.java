@@ -29,5 +29,6 @@ public abstract class Person {
         return "First name:"+fullName.getFirstName()+", Last name: "+fullName.getLastName()+", Age: "+age;
     }
 
+    //Do not need words public abstract, java add this words by default
     public abstract String activity();
 }

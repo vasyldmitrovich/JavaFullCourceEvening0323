@@ -16,7 +16,7 @@ public class Main {
         System.out.println("Search name in map with id");
         System.out.println("Input id:");
         int idFromUser = scanner.nextInt();
-        if(checkIdInMap(employeeMap,idFromUser) == false){
+        if(checkIdInMap(employeeMap,idFromUser) == false){//Use ! before method, do not use == false
             System.out.println(searchNameWithId(idFromUser,employeeMap));
         }
         System.out.println("Search id in map with name");

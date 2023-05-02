@@ -11,7 +11,7 @@ public class Main {
         for(int i = 0; i < 10; i++){
             System.out.print("Input number: ");
             int number = scanner.nextInt();
-            readNumber(1,100,number);
+            readNumber(1,100,number);//Add try catch there, and handle this error here if it occurs
         }
     }
 

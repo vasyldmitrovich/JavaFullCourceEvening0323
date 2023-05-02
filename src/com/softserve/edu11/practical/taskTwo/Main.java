@@ -12,6 +12,7 @@ public class Main {
             plants[4] = new Plant(Validation.checkSize(25),Validation.checkColor("WHITE"), Validation.checkType("TREES"));
         }catch (PlantSizeException | ColorException | TypeException e) {
             e.printStackTrace();
+            //Add printing message
         }
     }
 }

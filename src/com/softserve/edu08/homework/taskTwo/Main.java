@@ -24,7 +24,7 @@ public class Main {
         printStudents(arrayListStudent,numberCoursesFromUser);
     }
 
-    private static <T> void printStudents(List<? extends Student> students, int course){
+    private static <T> void printStudents(List<? extends Student> students, int course){//Pleasurably see that you use extends Student
         students.stream().filter(student -> student.getCourse() == course).forEach(student -> System.out.println("Student "+student.getName()+", learn on "+course+" courses"));
     }
 

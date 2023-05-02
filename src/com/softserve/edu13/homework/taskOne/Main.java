@@ -18,6 +18,7 @@ public class Main {
     }
 
     // I full only five because i was very laziness
+    //Do not worry about that, the main thing is how the code is written ;-)
     public static List<Product> getFullList(){
         List<Product> list = Arrays.asList(new Product("Tomate",Category.DRINKS, new Date(System.currentTimeMillis()-1000000),1400),
                 new Product("Iphone 11 pro max", Category.PHONE,new Date(System.currentTimeMillis()-199000000000L),3600),

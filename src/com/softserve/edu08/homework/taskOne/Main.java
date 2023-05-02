@@ -11,7 +11,9 @@ public class Main {
         System.out.println("Full random collection");
         ArrayList<Integer> myCollection = fullRandom();
         myCollection.forEach((number)-> System.out.print(number+" "));
-        System.out.println("");
+        System.out.println("");//Do not need add quotes in System.out.println();
+
+        //Please add spaces after System.out.println(""); for making code easily  for reading
         System.out.println("Swap min amd max value");
         myCollection = swapMaxAndMinElement(myCollection);
         myCollection.forEach((number)-> System.out.print(number+" "));

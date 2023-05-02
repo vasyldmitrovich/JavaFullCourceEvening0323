@@ -11,7 +11,7 @@ public class Main {
         System.out.println("All collection");
         heavyBoxArrayList.forEach((heavyBox -> System.out.println(heavyBox)));
         HeavyBox heavyBoxFirst = heavyBoxArrayList.get(0);
-        heavyBoxFirst.setWeight(changeWeight(heavyBoxFirst));
+        heavyBoxFirst.setWeight(changeWeight(heavyBoxFirst));//Nice
         heavyBoxArrayList.remove(heavyBoxArrayList.size()-1);
         System.out.println("After delete last elem deleted and change weight first element on 1");
         heavyBoxArrayList.forEach((heavyBox -> System.out.println(heavyBox)));

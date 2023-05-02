@@ -1,7 +1,7 @@
 package com.softserve.edu07.homework;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) {//Good
         Student studentOne = new Student(new FullName("Evgen","Brexyn"),21,2);
         Student studentTwo = new Student(new FullName("Mark","Amosov"),25);
         System.out.println(studentOne.info());

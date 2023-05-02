@@ -25,6 +25,7 @@ public class Department {
         return departmentCopy;
     }
 
+    //Move this inner class at the end of class Department, after toString()
     public class Address{
         private String city;
         private String street;

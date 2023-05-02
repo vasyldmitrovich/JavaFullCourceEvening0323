@@ -1,7 +1,7 @@
 package com.softserve.edu07.practical;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) {//Good
         Department department = new Department("StarDepartment",new Department().new Address("Odessa","SeaStreet",20));
         System.out.println(department);
         Department departmentCopyNew = null;

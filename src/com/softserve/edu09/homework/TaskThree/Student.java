@@ -40,7 +40,7 @@ public class Student implements Comparable<Student> {
     }
 
 
-
+    //This method put in main class
     public static void printStudents(List<Student> studentList, int courses){
         ListIterator<Student> studentListIterator = studentList.listIterator();
         while (studentListIterator.hasNext()){

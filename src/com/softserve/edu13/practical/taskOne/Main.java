@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) {//Good
         List<String> list = Arrays.asList("bla","","simp","","second","third","third","sec","blablabla");
         System.out.println("Print how many empty strings are in this list");
         System.out.println(list.stream().filter((s)->s.length() == 0).count());

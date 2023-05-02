@@ -9,12 +9,13 @@ import java.util.stream.Stream;
 
 public class Main {
     public static void main(String[] args) {
+        //Very nice seeing main method like that
         List<Employee> employeeList = fullList();
         System.out.println("List = "+employeeList);
         System.out.println("Most popular name = "+mostPopularName(employeeList.stream()).get());
     }
 
-    public static Optional<String> mostPopularName(Stream<Employee> employeeStream){
+    public static Optional<String> mostPopularName(Stream<Employee> employeeStream){//Good
         Map<String, Long> countByName = employeeStream
                 .collect(Collectors.groupingBy(Employee::getName, Collectors.counting()));
         String key = countByName.entrySet().stream().reduce((count, count2) -> count.getValue() > count2.getValue() ? count : count2).get().getKey();

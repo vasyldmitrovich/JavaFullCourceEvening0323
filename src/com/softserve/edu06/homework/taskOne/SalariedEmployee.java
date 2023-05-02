@@ -29,6 +29,7 @@ public class SalariedEmployee extends Employee implements Payment {
         this.socialSecurityNumber = socialSecurityNumber;
     }
 
+    //Move constructors before getters and setters
     public SalariedEmployee() {
     }
 

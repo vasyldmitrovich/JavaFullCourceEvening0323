@@ -14,6 +14,7 @@ public class Main {
     private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
+        //Need create method where for user show message and this method return data what user input, there call this method
         System.out.println("Task with year leap");
         System.out.println("Input year");
         int year = scanner.nextInt();

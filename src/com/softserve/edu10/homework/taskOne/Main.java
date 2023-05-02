@@ -22,6 +22,7 @@ public class Main {
         }
     }
 
+    //Nice to see that you use reduce ;-)
     private static String foundMaxLengthStr(String[] arrayStr){
         return Arrays.stream(arrayStr).reduce((s1, s2) -> s1.length()>s2.length() ? s1 : s2).get();
     }
