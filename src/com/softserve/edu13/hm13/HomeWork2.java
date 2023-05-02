@@ -5,7 +5,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 
 public class HomeWork2 {
-    //Where this method run???
+
     public static boolean isValidDate(String date) {
         DateFormat dateFormat = new SimpleDateFormat("MM.dd.yy");
         dateFormat.setLenient(false); // to enforce strict date parsing
@@ -15,5 +15,9 @@ public class HomeWork2 {
         } catch (ParseException e) {
             return false;
         }
+    }
+
+    public static void main(String[] args) {
+        isValidDate("12.20.1990");
     }
 }
