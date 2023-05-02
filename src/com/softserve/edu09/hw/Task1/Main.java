@@ -6,6 +6,7 @@ public class Main {
     public static void main(String[] args) {
         ArrayList<Integer> myCollection = new ArrayList<Integer>();
 
+        //Add comments before each methods
         randomFillList(myCollection, 10);
 
         printList(myCollection);

@@ -1,7 +1,9 @@
 package com.softserve.edu12.hw.Task1;
 
 public class Main {
-    public static void main(String[] args) throws ArithmeticException{
+    public static void main(String[] args) throws ArithmeticException{//This is not good
+        //Do not throws ArithmeticException from main method
+        //You should catch exactly this exception in block catch
         double div;
         try {
             div = div(150,0);

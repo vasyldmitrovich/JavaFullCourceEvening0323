@@ -19,6 +19,9 @@ public class Main {
         LocalDate firstMonday = today.with(TemporalAdjusters.firstInMonth(DayOfWeek.MONDAY));
         System.out.println(firstMonday);
 
+
+        //Nice to see that there is an implementation in three different ways, well done
+
         //Write a method for sorting list of Strings using Java 8
         ArrayList<String> list = new ArrayList<>(Arrays.asList("apple", "banana", "watermelon", "kiwi", "orange"));
         //list.sort((o1, o2) -> o1.compareTo(o2));
@@ -37,7 +40,7 @@ public class Main {
         System.out.println(count(arr, functional));
 
     }
-    private static int count(int[] arr, Functional functional){
+    private static int count(int[] arr, Functional functional){//It is good
         int count = 0;
         for (int i : arr) {
             if (functional.check(i)) {

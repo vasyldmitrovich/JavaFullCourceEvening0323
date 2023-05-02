@@ -15,7 +15,7 @@ public class Main {
         }
 
     }
-    private static int squareRectangle(int a, int b){
+    private static int squareRectangle(int a, int b){//Add throws ArithmeticException to signature of method, otherwise your application crashed
         if (a < 0 || b < 0){
             throw new ArithmeticException("U input negative values");
         }

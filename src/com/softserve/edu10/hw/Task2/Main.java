@@ -8,6 +8,7 @@ import java.util.Set;
 public class Main {
     public static void main(String[] args) {
         Map<String, String> personsMap = new HashMap<>();
+        //You can create method and this method return Map<String,String>, there call this method and set to var personsMap
         personsMap.put("Franko", "Ivan");
         personsMap.put("Shevchenko", "Taras");
         personsMap.put("Leontovich", "Mikola");

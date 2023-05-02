@@ -3,7 +3,7 @@ package com.softserve.edu12.pt.Task2;
 import java.util.Arrays;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) {//Ok
         try {
             Plant[] plants = {
                     new Plant(1,colorSet("RED"), typeSet("BUSH")),

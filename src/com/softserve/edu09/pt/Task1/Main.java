@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-
+        //All is good
         ArrayList<HeavyBox> list = new ArrayList<>(Arrays.asList(
                 new HeavyBox(10, "box1"),
                 new HeavyBox(15, "box2"),

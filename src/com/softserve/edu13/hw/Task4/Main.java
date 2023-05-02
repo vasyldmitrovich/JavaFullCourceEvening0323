@@ -3,7 +3,7 @@ package com.softserve.edu13.hw.Task4;
 import java.time.LocalDate;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) {//All is good
         LocalDate birthday = LocalDate.of(2005, 3, 1);
 
         LocalDate localDate1 = birthday.plusMonths(6);

@@ -3,7 +3,7 @@ package com.softserve.edu09.pt.Task3;
 import java.util.*;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) {//All is good well done
         Random random = new Random();
         ArrayList<Integer> myCollection = new ArrayList<>();
         for (int i = 0; i <= 10; i++) {

@@ -8,7 +8,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         String setOfNumbers = "1,2,3,4,5,6,7,8,8,8,8,9,0";
-        String[] splitNumbers = setOfNumbers.split("[,\\s]+");
+        String[] splitNumbers = setOfNumbers.split("[,\\s]+");//Nice
 
         Set<String> uniqueNumbers = new HashSet<>(Arrays.asList(splitNumbers));
 

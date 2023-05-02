@@ -28,6 +28,7 @@ public abstract class Person {
         this.age = age;
     }
 
+    //Do not need write public abstract, java make that by default
     public abstract String activity();
 
     public String info() {

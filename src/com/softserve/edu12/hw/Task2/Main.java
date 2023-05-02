@@ -7,7 +7,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter 10 numbers");
         for (int i = 0; i < 10; i++){
-            readNumber(1,10,scanner.nextInt());
+            readNumber(1,10,scanner.nextInt());//Add try catch there
         }
     }
 

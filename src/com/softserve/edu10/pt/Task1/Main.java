@@ -37,7 +37,7 @@ public class Main {
         return (String) hashMap.getOrDefault(id, "Id is not found in map");
     }
 
-    private static Integer findByName(Map<Integer, String> hashMap, String name) {
+    private static Integer findByName(Map<Integer, String> hashMap, String name) {//Ok
         for (Map.Entry<Integer, String> entry : hashMap.entrySet()) {
             if (name.equalsIgnoreCase(entry.getValue())) {
                 return entry.getKey();

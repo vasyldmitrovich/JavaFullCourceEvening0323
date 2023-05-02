@@ -7,6 +7,8 @@ public class Helicopter extends FlyingVehicle{
     protected Helicopter() {
     }
 
+    //Add getters and setters, how you will have access to field without getters and setters?
+
     @Override
     protected void fly() {
         System.out.println("I`m helicopter from flying vehicle and i can fly");

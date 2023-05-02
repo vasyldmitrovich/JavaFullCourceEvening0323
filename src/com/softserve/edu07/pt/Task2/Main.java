@@ -1,7 +1,7 @@
 package com.softserve.edu07.pt.Task2;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) {//Good
         Person cleaner = new Cleaner("Bob");
         Person teacher = new Teacher("Vasil");
         Person student = new Student("Bozhen");

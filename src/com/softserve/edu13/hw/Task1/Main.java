@@ -1,7 +1,7 @@
 package com.softserve.edu13.hw.Task1;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) {//Good
         String str = "mama";
         int n = 12;
         str = encrypt(str, n);

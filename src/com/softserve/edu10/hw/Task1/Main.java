@@ -16,6 +16,7 @@ public class Main {
         set2.add(10);
         set2.add(14);
 
+        //Good, nice
         Set<Integer> set = union(set1, set2);
         System.out.println("Union: " + set);
         set = intersect(set1, set2);

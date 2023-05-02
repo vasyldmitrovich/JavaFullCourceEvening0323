@@ -64,6 +64,7 @@ public class Student {
                 '}';
     }
 
+    //This and next method must be in Main.java, because those methods are not related to the essence of the student
     public static void removeStudentOrNextCourse(ArrayList<Student> student) {
         double average;
         Student current;

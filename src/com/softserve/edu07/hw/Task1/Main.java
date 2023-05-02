@@ -13,6 +13,7 @@ public class Main {
 
 //        Arrays.sort(array, Comparator.comparingDouble(Employee::calculatePay).reversed());
 
+        //Perfect. Well done
         Arrays.sort(array, new Employee.BySalary());
 
         for (Employee temp : array){

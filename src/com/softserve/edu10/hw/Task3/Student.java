@@ -31,6 +31,7 @@ public class Student implements Comparable<Student> {
         this.course = course;
     }
 
+    //Move this method to class Main.java
     public static void printStudents(ArrayList<Student> students, int course) {
         for (Student student : students) {
             if (student.getCourse() == course) {
