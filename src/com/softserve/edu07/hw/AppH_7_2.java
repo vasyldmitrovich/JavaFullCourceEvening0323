@@ -24,7 +24,7 @@ public class AppH_7_2 {
 
         l1.isSailing();
         System.out.println(l1.getFloors());
-        
+
         h1.fly();
         h1.land();
 
