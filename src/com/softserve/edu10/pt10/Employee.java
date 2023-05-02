@@ -2,10 +2,10 @@ package com.softserve.edu10.pt10;
 
 class Employee {
     //Do not make fields private
-    private final String name;
-    private final String position;
-    private final double salary;
-    private final String dob;
+    final String name;
+    final String position;
+    final double salary;
+    final String dob;
 
     public Employee(String name, String position, double salary, String dob) {
         this.name = name;

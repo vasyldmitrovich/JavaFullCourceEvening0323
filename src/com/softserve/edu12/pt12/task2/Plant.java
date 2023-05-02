@@ -96,24 +96,4 @@ public class Plant {
             throw new TypeException("Invalid type value");
         }
     }
-
-    // Main method
-    public static void main(String[] args) {//Move main method to another class like App.java
-        try {
-            // Create an array of five plants
-            Plant[] plants = new Plant[5];
-            plants[0] = new Plant(10, Color.RED, Type.FLOWER);
-            plants[1] = new Plant(20, Color.GREEN, Type.TREE);
-            plants[2] = new Plant(15, Color.BLUE, Type.SHRUB);
-            plants[3] = new Plant(12, Color.YELLOW, Type.TREE);
-            plants[4] = new Plant(30, null, Type.FLOWER); // This will throw an exception for invalid color value
-            plants[4].verifyColorAndType(); // This will throw an exception for invalid color value
-        } catch (ColorException ce) {
-            out.println(ce.getMessage());
-        } catch (TypeException te) {
-            out.println(te.getMessage());
-        } catch (SizeException se) {
-            out.println(se.getMessage());
-        }
-    }
 }

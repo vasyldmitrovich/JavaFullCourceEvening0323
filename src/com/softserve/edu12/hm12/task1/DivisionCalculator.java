@@ -7,7 +7,8 @@ import static java.lang.System.*;
 public class DivisionCalculator {
     public static void main(String[] args) {
 
-        try (Scanner scanner = new Scanner(in)) {
+        try {
+            Scanner scanner = new Scanner(in);
             out.println("Enter the first number:");
             double num1 = scanner.nextDouble();
             out.println("Enter the first number:");
@@ -18,7 +19,6 @@ public class DivisionCalculator {
             out.println("Error: " + e.getMessage());
         }
     }
-
 
     //method, which calculates the dividing of two double type numbers
     public static double div(double num1, double num2) {
