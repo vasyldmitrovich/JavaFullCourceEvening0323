@@ -17,11 +17,10 @@ public class Main{
         System.out.println("Student 2 Activity: " + student2.activity());
 
         // Clone first student and change course
-        Student student3 = null;
-        student3 = student1.clone();
+        Student student3 = student1.clone();
 
         if (student3 != null) {
-            student3.setCourse(303); // Change course for student3
+            student3.setNumberCourse(303); // Change course for student3
             System.out.println("\nStudent 3 Info (after cloning and changing course):");
             student3.info();
             System.out.println("Student 3 Activity: " + student3.activity());

@@ -30,7 +30,9 @@ abstract class Person implements Cloneable{
     // Abstract method for person's activity
     void info() { };
 
-    public abstract String activity();
+    String activity() {
+        return null;
+    };
 
     @Override
     public Person clone() {

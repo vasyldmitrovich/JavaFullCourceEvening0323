@@ -9,6 +9,14 @@ public class Student extends Person implements Cloneable{
         this.numberCourse = numberCourse;
     }
 
+    public int getNumberCourse() {
+        return numberCourse;
+    }
+
+    public void setNumberCourse(int numberCourse) {
+        this.numberCourse = numberCourse;
+    }
+
     // Override info() method to include course information
     @Override
     public void info(){
