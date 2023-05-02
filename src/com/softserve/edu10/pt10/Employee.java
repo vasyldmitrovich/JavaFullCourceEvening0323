@@ -1,6 +1,7 @@
 package com.softserve.edu10.pt10;
 
 class Employee {
+    //Do not make fields private
     private final String name;
     private final String position;
     private final double salary;

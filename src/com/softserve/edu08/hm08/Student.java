@@ -22,6 +22,7 @@ public class Student extends Person implements Cloneable{
         return "I study at university";
     }
 
+    //Why this method is there???
     public void setCourse(int i) {
     }
 

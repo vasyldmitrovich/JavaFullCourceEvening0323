@@ -53,7 +53,7 @@ public class HomeWork02 {
     }
 
     // Helper method to count occurrences of a value in a map
-    private static <K, V> int countOccurrences(Map<K, V> map, V value) {
+    private static <K, V> int countOccurrences(Map<K, V> map, V value) {//This is good, nice
         int count = 0;
         for (V v : map.values()) {
             if (v.equals(value)) {

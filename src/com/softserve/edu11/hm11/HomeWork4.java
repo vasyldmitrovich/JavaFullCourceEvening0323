@@ -4,7 +4,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class HomeWork4 {
-    public static void main(String[] args) {
+    public static void main(String[] args) {//All is ok
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
         String[] greetingPhrases = { "Hello, %s!", "Hi there, %s!", "Greetings, %s!", "Hey, %s!", "Welcome, %s!" };

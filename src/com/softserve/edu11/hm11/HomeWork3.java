@@ -5,7 +5,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class HomeWork3 {
-    public static void main(String[] args) {
+    public static void main(String[] args) {//Good
         Scanner scanner = new Scanner(System.in);
 
         // Input text from console

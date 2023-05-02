@@ -2,7 +2,7 @@ package com.softserve.edu11.pt11;
 
 import java.util.Scanner;
 public class PracticalTask2 {
-    public static void main(String[] args) {
+    public static void main(String[] args) {//Good, all is good
         // Input last name, first name, and middle name
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter last name: ");

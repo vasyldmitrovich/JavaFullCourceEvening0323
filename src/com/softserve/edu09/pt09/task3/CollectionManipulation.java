@@ -27,7 +27,7 @@ public class CollectionManipulation {
         System.out.println("newCollection: " + newCollection);
 
         // Remove elements greater than 20 from myCollection
-        myCollection.removeIf(num -> num > 20);
+        myCollection.removeIf(num -> num > 20);//It is good
         System.out.println("myCollection after removing elements greater than 20: " + myCollection);
 
         // Insert elements 1, -3, -4 at positions 2, 8, 5 respectively

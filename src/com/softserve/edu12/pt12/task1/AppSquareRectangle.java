@@ -19,7 +19,7 @@ public class AppSquareRectangle {
         String inputA = scanner.nextLine();
         out.print("Enter value for 'b': ");
         String inputB = scanner.nextLine();
-
+        //Ok
         try {
             int a = Integer.parseInt(inputA);
             int b = Integer.parseInt(inputB);

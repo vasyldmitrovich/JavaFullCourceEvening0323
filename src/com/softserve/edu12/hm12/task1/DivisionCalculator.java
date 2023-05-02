@@ -22,7 +22,7 @@ public class DivisionCalculator {
 
     //method, which calculates the dividing of two double type numbers
     public static double div(double num1, double num2) {
-        if (num2 == 0) {
+        if (num2 == 0) {//What will be ie 'b' will be equals -1 ???
             throw new ArithmeticException("Cannot divide by zero");
         }
         return num1 / num2;

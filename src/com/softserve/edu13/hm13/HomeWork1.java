@@ -51,6 +51,7 @@ public class HomeWork1 {
         Scanner scanner = new Scanner(System.in);
         String line = scanner.nextLine();
 
+        //Nice
         System.out.println("Print encrypt line: " + encrypt(line, 4));
         System.out.println("Print encrypt line: " + decrypt(line, 4));
     }

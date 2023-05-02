@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class PracticalTask1 {
-    public static void main(String[] args) {
+    public static void main(String[] args) {//Glad to see main yours main method, perfect
         List<String> list = Arrays.asList("bla", "", "simp", "", "second", "third", "third", "sec", "blablabla");
 
         // Task 1. Print how many empty strings are in this list

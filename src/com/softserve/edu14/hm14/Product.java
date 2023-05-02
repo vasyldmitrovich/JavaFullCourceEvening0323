@@ -3,6 +3,7 @@ package com.softserve.edu14.hm14;
 import java.util.*;
 
 public class Product {
+    //Why this fields is final, how we can manipulate with data in future
     private final String category;
     private final Date productionDate;
     private final double price;
@@ -30,6 +31,7 @@ public class Product {
         return category + " (" + productionDate + ", " + price + ")";
     }
 
+    //Move main method to another class for example App.java
     public static void main(String[] args) {
         List<Product> products = generateProducts();
         System.out.println("All products: " + products);
@@ -38,6 +40,7 @@ public class Product {
         System.out.println("Phone products with price > 3000 and production date > 1 year ago: " + phoneProducts);
     }
 
+    //That and next method move to App.java too
     private static List<Product> generateProducts() {
         String[] categories = {"Phone", "Laptop", "TV", "Smartwatch"};
         List<Product> products = new ArrayList<>();

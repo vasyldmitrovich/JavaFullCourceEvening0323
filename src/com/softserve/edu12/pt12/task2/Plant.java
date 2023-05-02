@@ -51,7 +51,7 @@ public class Plant {
     // Setter methods with exception handling
     public void setSize(int size) throws SizeException {
         if (size < 1 || size > 100) {
-            throw new SizeException("Invalid size value. Size should be between 1 and 100.");
+            throw new SizeException("Invalid size value. Size should be between 1 and 100.");//Good
         }
         this.size = size;
     }
@@ -98,7 +98,7 @@ public class Plant {
     }
 
     // Main method
-    public static void main(String[] args) {
+    public static void main(String[] args) {//Move main method to another class like App.java
         try {
             // Create an array of five plants
             Plant[] plants = new Plant[5];

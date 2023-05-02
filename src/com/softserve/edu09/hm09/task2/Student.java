@@ -39,7 +39,7 @@ public class Student {
         return (double) sum / grades.size();
     }
 
-    public void promoteStudent() {
+    public void promoteStudent() {//Good method
         if (getAverageGrade() >= 3.0) {
             course++;
         }

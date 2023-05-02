@@ -43,7 +43,7 @@ public class HomeWork1 {
     }
 
     // Helper method to reverse a string
-    private static String reverseString(String s) {
+    private static String reverseString(String s) {//Good
         StringBuilder sb = new StringBuilder(s);
         return sb.reverse().toString();
     }

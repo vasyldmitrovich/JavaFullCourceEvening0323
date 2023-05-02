@@ -25,7 +25,7 @@ public class NumberReader {
         int[] numbers = new int[10];
         int start = 1;
         int end = 100;
-        try {
+        try {//Good
             for (int i = 0; i < 10; i++) {
                 numbers[i] = readNumber(start, end);
                 start = numbers[i] + 1; // Ensure numbers are increasing

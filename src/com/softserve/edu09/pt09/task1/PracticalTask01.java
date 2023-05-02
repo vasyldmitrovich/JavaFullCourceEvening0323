@@ -4,7 +4,8 @@ import java.util.ArrayList;
 
 public class PracticalTask01 {
     public static void main(String[] args) {
-// Create an ArrayList to store objects of HeavyBox
+
+        // Create an ArrayList to store objects of HeavyBox
         ArrayList<HeavyBox> heavyBoxes = new ArrayList<HeavyBox>();
 
         // Add HeavyBox objects to the ArrayList

@@ -16,7 +16,7 @@ public class HomeWork01 {
         return result;
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) {//All good
         // Create two pre-filled sets
         Set<Integer> set1 = new HashSet<>();
         set1.add(1);

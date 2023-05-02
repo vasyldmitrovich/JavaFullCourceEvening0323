@@ -39,7 +39,7 @@ public class EmployeeMapV1 {
 
         // Verify that the name exists in the employeeMap and display the corresponding ID
         boolean nameFound = false;
-        for (Map.Entry<Integer, String> entry : employeeMap.entrySet()) {
+        for (Map.Entry<Integer, String> entry : employeeMap.entrySet()) {//Nice
             if (entry.getValue().equals(name)) {
                 System.out.println("ID: " + entry.getKey());
                 nameFound = true;

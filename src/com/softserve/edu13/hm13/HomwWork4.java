@@ -9,7 +9,7 @@ public class HomwWork4 {
     public HomwWork4() {
         // Set the birthday variable to your own birthday
         this.birthday = LocalDate.of(1990, 12, 20); // Replace with your own birthday
-    }
+    }//Glad to see explanation in comments what user should do
 
     public void printDayOfWeek(LocalDate date) {
         DayOfWeek dayOfWeek = date.getDayOfWeek();

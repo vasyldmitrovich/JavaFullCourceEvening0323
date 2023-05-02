@@ -13,7 +13,7 @@ public class PracticalTask3 {
         }
     }
 
-    public static boolean validateUsername(String username) {
+    public static boolean validateUsername(String username) {//Good decision
         // Regular expression pattern for username validation
         String pattern = "^[a-zA-Z0-9_]{3,15}$";
         Pattern regex = Pattern.compile(pattern);

@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 
 public class DateOfWeek {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) {//Good
         //task1
         DateOfWeek example = new DateOfWeek();
         System.out.println("Today is " + example.getDayOfWeek());

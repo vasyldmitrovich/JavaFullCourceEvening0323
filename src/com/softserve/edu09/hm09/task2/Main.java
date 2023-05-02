@@ -23,7 +23,7 @@ public class Main {
         }
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) {//Ok
         // Create a collection to hold all objects
         List<Student> studentList = new ArrayList<>();
 
@@ -56,7 +56,7 @@ public class Main {
 
         // Promote students to next course level
         for (Student student : studentList) {
-            student.promoteStudent();
+            student.promoteStudent();//Nice to see that there you use this method :-)
         }
 
         // Print students enrolled in a specific course

@@ -19,6 +19,7 @@ class Student implements Comparable<Student> {
         return course;
     }
 
+    //Move this method in class where is main method
     public void printStudents(List<Student> students, int courseNumber) {
         System.out.println("Students enrolled in course " + courseNumber + ":");
         for (Student student : students) {
@@ -33,8 +34,10 @@ class Student implements Comparable<Student> {
         return this.name.compareTo(other.name);
     }
 
+    //This variable is good
     public static Comparator<Student> compareByCourse = Comparator.comparingInt(student -> student.course);
 
+    //Move this main method to class like App.java
     public static void main(String[] args) {
         List<Student> students = new ArrayList<>();
         students.add(new Student("John", 1));

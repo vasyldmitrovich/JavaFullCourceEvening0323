@@ -57,6 +57,7 @@ public class Department {
         public void setCity(String city) {
             this.city = city;
         }
+        //Why another getters and setters you did not add
 
         @Override
         public String toString() {
