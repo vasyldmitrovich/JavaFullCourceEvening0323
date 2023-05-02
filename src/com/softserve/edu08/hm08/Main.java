@@ -18,7 +18,7 @@ public class Main{
 
         // Clone first student and change course
         Student student3 = null;
-        student3 = (Student) student1.clone();//Do not write (Student), this object is student, not needed write something like that
+        student3 = student1.clone();
 
         if (student3 != null) {
             student3.setCourse(303); // Change course for student3
