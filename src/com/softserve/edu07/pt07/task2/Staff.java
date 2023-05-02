@@ -14,7 +14,7 @@ public class Staff extends Person{
     }
 
     public void salary() {
-        //Add some message in this method
+        System.out.println("Salary: ");
     }
 
 }
