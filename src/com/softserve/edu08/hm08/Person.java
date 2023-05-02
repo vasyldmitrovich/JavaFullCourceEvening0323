@@ -28,8 +28,7 @@ abstract class Person implements Cloneable{
     }
 
     // Abstract method for person's activity
-    //You should not write words public abstract, java add this words by default
-    public abstract void info();
+    void info() { };
 
     public abstract String activity();
 
