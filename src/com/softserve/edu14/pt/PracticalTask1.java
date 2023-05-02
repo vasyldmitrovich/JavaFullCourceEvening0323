@@ -9,6 +9,7 @@ import java.util.stream.Collectors;
 
 public class PracticalTask1 {
     public static void main(String[] args) {
+        //Good
         List<String> list = Arrays.asList("bla", "", "simp", "", "second", "third", "third", "sec", "blablabla");
         System.out.println(list);
 

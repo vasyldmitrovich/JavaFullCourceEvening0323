@@ -15,6 +15,7 @@ public class HomeWork2 {
         Employee empl3 = new Employee("Sam");
         Employee empl4 = new Employee("Sam");
 
+        //Method getMostPopular should be in this class not in Employee class
         Optional<String> resultMostPopularName = Employee.getMostPopularName(Stream.of(empl1, empl2, empl3, empl4));
         System.out.println(resultMostPopularName);
     }

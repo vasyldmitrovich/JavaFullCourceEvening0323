@@ -10,6 +10,7 @@ import java.util.Random;
 
 public class HomeWork1 {
     public static void main(String[] args) {
+        //Too mach code in main method, divide different logic to separate methods
         List<Integer> myCollection = new ArrayList<>();
         Random random = new Random();
         for (int i = 0; i < 10; i++) {

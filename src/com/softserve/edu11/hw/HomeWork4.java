@@ -5,7 +5,7 @@ import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import static jdk.internal.net.http.common.Utils.isValidName;
+//import static jdk.internal.net.http.common.Utils.isValidName;
 
 public class HomeWork4 {
     public static void main(String[] args) {
@@ -44,7 +44,7 @@ public class HomeWork4 {
         String greeting = greet[random.nextInt(greet.length)];
         System.out.println(greeting + "" + firstName + " " + lastName + "!");
     }
-
+    //Nice
     private static boolean isValidName(String name) {
         return Pattern.matches("[A-Za-z\\-\\s]+", name);
     }

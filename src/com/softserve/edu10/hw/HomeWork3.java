@@ -17,6 +17,7 @@ public class HomeWork3 {
         students.add(new Student("Vasiliy", 5));
 
         System.out.println("Sorted by name: ");
+        //Use there variable type of Comparator is good decision
         Collections.sort(students, nameComparator);
         for (Student student : students) {
             System.out.println(student.getName() + " - " + student.getCourse());

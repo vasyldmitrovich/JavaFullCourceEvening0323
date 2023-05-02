@@ -17,6 +17,7 @@ public class HomeWork1 {
         }
     }
 
+    //What will be if 'b' will be less than 0
     public static double div(double a, double b) throws Exception {
         if (b == 0) {
             throw new Exception("Error! Division by zero.");

@@ -1,6 +1,7 @@
 package com.softserve.edu08.pt;
 
 public class Department implements Cloneable {
+    //Make fields private
     String name;
     Address address;
 
@@ -41,6 +42,8 @@ public class Department implements Cloneable {
     }
 
     class Address {
+        //And there make fields private too, because from another class if object Address will be created another people
+        //will have access to this field, that is not good
         String city;
         String street;
         int building;

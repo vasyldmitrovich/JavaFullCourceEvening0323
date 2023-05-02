@@ -9,7 +9,7 @@ public class HomeWork1 {
         birds[1] = new Swallow("White", 4);
         birds[2] = new Penguin("Black", 0);
         birds[3] = new Kiwi("Green", 0);
-
+        //Ok
         for (Bird bird : birds) {
             System.out.println(bird);
             System.out.println("Feathers " + bird.getFeathers() + " lay " + bird.getLayEggs() + " eggs.");

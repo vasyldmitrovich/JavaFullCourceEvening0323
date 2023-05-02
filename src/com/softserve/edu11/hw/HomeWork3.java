@@ -12,7 +12,7 @@ public class HomeWork3 {
 
         Pattern pattern = Pattern.compile("\\$\\d+\\.\\d{2}");
         Matcher matcher = pattern.matcher(text);
-
+        //Good
         while (matcher.find()) {
             System.out.println(matcher.group());
         }

@@ -21,6 +21,16 @@ public class Student {
         return course;
     }
 
+    /*In entity class could be method like this:
+    *
+    * public double discountPrice(User user) {
+        if (user.getSpend() < 3000) return price;
+        if (user.getSpend() < 1000) return price*0.9;
+        return price*0.8;
+    }//Discount for user if he spend a certain amount money
+    *
+    *
+    * This method move to class where is main method*/
     public void printStudents(List<Student> students, int course) {
         Iterator<Student> iterator = students.iterator();
         while (iterator.hasNext()) {
@@ -31,6 +41,7 @@ public class Student {
         }
     }
 
+    //Nice to see code like that there, good
     public static Comparator<Student> nameComparator = new Comparator<Student>() {
         @Override
         public int compare(Student student1, Student student2) {

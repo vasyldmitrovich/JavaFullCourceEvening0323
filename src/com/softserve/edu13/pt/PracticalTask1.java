@@ -22,7 +22,7 @@ public class PracticalTask1 {
 
         List<String> names = Arrays.asList("Vitaliy", "Oleg", "Alex", "Dima", "Andriy");
         sortStrings(names);
-        System.out.println(names.toString());
+        System.out.println(names.toString());//toString do not need write, it works automatically
         for (String name : names) {
             System.out.println(name);
         }
@@ -36,6 +36,7 @@ public class PracticalTask1 {
         Collections.sort(list);
     }
 
+    //Good method, it is nice
     public static int count(Integer nums[], IntPredicate predicate) {
         int count = 0;
         for (int num : nums) {

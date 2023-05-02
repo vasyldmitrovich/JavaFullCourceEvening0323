@@ -6,7 +6,7 @@ public class HomeWork1 {
     public static void main(String[] args) {
         String myCode = "fbi";
         int n = 3;
-
+        //Ok
         System.out.println("Original code: " + myCode);
         String encryptedCode = encrypt(myCode, n);
         System.out.println("Encrypted code: " + encryptedCode);
