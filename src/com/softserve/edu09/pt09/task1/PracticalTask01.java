@@ -14,7 +14,7 @@ public class PracticalTask01 {
         heavyBoxes.add(new HeavyBox(30, "Box 3"));
 
         // Change the weight of the first box to 1
-        heavyBoxes.get(0).weight = 1;
+        heavyBoxes.get(0).setWeight(1);
 
         // Delete the last box
         heavyBoxes.remove(heavyBoxes.size() - 1);
