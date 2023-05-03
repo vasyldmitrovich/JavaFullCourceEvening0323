@@ -12,7 +12,7 @@ public class Developer extends Employee {
     private String position;
 
     public Developer() {
-        super();
+        super();//Use another constructor from superclass and put data in that constructor there
         this.position = "";
     }
 

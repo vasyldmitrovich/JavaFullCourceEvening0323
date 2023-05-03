@@ -5,6 +5,8 @@ import java.util.Scanner;
 
 public class Hw05 {
     public static void main(String[] args) {
+        //All is good, but
+        //Please separate to method, each task must be in unique method, code will be easily for reading
         //Task_1.1
         System.out.println("Task 1.1");
         System.out.print("Input month number(1..12): ");

@@ -15,6 +15,7 @@ public class Pt07 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        //Delete TO DO and use loop there
         Dog dog = new Dog();
         dog.feed();
         dog.voice();
