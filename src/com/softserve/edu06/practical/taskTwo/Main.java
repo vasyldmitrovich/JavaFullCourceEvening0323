@@ -1,7 +1,7 @@
 package com.softserve.edu06.practical.taskTwo;
 
 public class Main {
-    public static void main(String[] args) {//Ok
+    public static void main(String[] args) {
         Person[] people = new Person[5];
         people[0] = new Cleaner("bob");
         people[1] = new Student("Artur");

@@ -13,11 +13,9 @@ public class Main {
     public static void main(String[] args) {
         ArrayList<Student> arrayListStudent = fullArrayForTask();
         arrayListStudent.forEach(System.out::print);
-        System.out.println("");
-        System.out.println("Check grades for students");
+        System.out.println("Check grades for students\n");
         arrayListStudent = checkGradesStudents(arrayListStudent);
         arrayListStudent.forEach(System.out::print);
-        System.out.println("");
         System.out.println("Task with show students for courses");
         System.out.println("Input please courses from 1 to 5");
         int numberCoursesFromUser = scanner.nextInt();

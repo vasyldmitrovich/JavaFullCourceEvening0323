@@ -8,7 +8,7 @@ public class Main {
 
     private static final Scanner scanner = new Scanner(System.in);
 
-    public static void main(String[] args) {//Good
+    public static void main(String[] args) {
         System.out.println("Task with format Dollar");
         Pattern pattern = Pattern.compile("\\$\\d+\\.\\d{2}");
         System.out.println("Input please sentence");

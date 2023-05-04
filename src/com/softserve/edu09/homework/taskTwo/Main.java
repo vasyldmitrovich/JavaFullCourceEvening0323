@@ -24,7 +24,6 @@ public class Main {
         return mapFullName;
     }
 
-    //You use Optional class, good it is good
     private static Optional<String> foundKeyForValue(HashMap<String,String> mapFullName, String name){
         for(Map.Entry<String,String> maps : mapFullName.entrySet()){
             if(maps.getValue().equals(name)){

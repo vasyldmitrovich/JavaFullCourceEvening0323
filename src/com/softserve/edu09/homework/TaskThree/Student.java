@@ -39,18 +39,6 @@ public class Student implements Comparable<Student> {
         this.courses = courses;
     }
 
-
-    //This method put in main class
-    public static void printStudents(List<Student> studentList, int courses){
-        ListIterator<Student> studentListIterator = studentList.listIterator();
-        while (studentListIterator.hasNext()){
-            Student student = studentListIterator.next();
-            if(student.getCourses() == courses){
-                System.out.println("Student with name "+student.getName()+" learn on "+student.getCourses()+" courses");
-            }
-        }
-    }
-
     @Override
     public boolean equals(Object obj) {
         if(this == obj)return true;

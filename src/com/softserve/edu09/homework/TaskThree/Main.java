@@ -3,6 +3,7 @@ package com.softserve.edu09.homework.TaskThree;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.ListIterator;
 
 public class Main {
     public static void main(String[] args) {
@@ -14,5 +15,15 @@ public class Main {
         listStudent.add(new Student("Sanya",5));
         Collections.sort(listStudent);
         System.out.println(listStudent);
+    }
+
+    public static void printStudents(List<Student> studentList, int courses){
+        ListIterator<Student> studentListIterator = studentList.listIterator();
+        while (studentListIterator.hasNext()){
+            Student student = studentListIterator.next();
+            if(student.getCourses() == courses){
+                System.out.println("Student with name "+student.getName()+" learn on "+student.getCourses()+" courses");
+            }
+        }
     }
 }

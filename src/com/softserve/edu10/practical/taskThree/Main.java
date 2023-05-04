@@ -8,7 +8,7 @@ public class Main {
 
     private static final Scanner scanner = new Scanner(System.in);
 
-    public static void main(String[] args) {//Good
+    public static void main(String[] args) {
         System.out.println("Task with check username");
         for(int i=0; i < 5; i++){
             System.out.println("Input please username for "+i+" element");

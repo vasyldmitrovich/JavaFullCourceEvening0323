@@ -9,7 +9,6 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Input set numbers");
         String setNumbers = scanner.nextLine();
-        //Good
         Arrays.stream(setNumbers.split(" ")).distinct().map((s -> s.replace(',',' '))).forEach(System.out::print);
     }
 }

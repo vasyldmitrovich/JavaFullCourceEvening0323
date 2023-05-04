@@ -9,7 +9,6 @@ import java.util.stream.Stream;
 
 public class Main {
     public static void main(String[] args) {
-        //Very nice seeing main method like that
         List<Employee> employeeList = fullList();
         System.out.println("List = "+employeeList);
         System.out.println("Most popular name = "+mostPopularName(employeeList.stream()).get());

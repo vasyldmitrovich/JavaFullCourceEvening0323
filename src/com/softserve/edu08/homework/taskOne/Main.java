@@ -8,24 +8,19 @@ public class Main {
     private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        System.out.println("Full random collection");
+        System.out.println("Full random collection\n");
         ArrayList<Integer> myCollection = fullRandom();
         myCollection.forEach((number)-> System.out.print(number+" "));
-        System.out.println("");//Do not need add quotes in System.out.println();
-
-        //Please add spaces after System.out.println(""); for making code easily  for reading
         System.out.println("Swap min amd max value");
         myCollection = swapMaxAndMinElement(myCollection);
         myCollection.forEach((number)-> System.out.print(number+" "));
         System.out.println("");
         myCollection = setThreeDigitNumberBeforeFirstNegativeNumber(myCollection);
-        System.out.println("Set number before first negative number");
+        System.out.println("Set number before first negative number\n");
         myCollection.forEach((number)-> System.out.print(number+" "));
-        System.out.println("");
-        System.out.println("Insert zero number between numbers where have different sign");
+        System.out.println("Insert zero number between numbers where have different sign\n");
         myCollection = insertZeroBetweenNumbersWhereHaveDifferentSign(myCollection);
         myCollection.forEach((number)-> System.out.print(number+" "));
-        System.out.println(" ");
         System.out.println("Copy parts myCollection in other collection");
         System.out.println("Input please index k for div list");
         int numberForDiv = scanner.nextInt();
@@ -38,12 +33,10 @@ public class Main {
         System.out.println("List 2");
         list2.forEach((number)-> System.out.print(number+" "));
         System.out.println("");
-        System.out.println("Delete last even number in myCollection");
+        System.out.println("Delete last even number in myCollection\n");
         myCollection.forEach((number)-> System.out.print(number+" "));
-        System.out.println("");
         myCollection = deleteEvenLastNumber(myCollection);
         myCollection.forEach((number)-> System.out.print(number+" "));
-        System.out.println("");
         System.out.println("Delete number after first min element in myCollection");
         myCollection.forEach((number)-> System.out.print(number+" "));
         myCollection = removeAllElementsAfterFirstMinElement(myCollection);

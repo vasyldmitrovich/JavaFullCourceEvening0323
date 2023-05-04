@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Main {
-    public static void main(String[] args) {//All good
+    public static void main(String[] args) {
         List<Integer> primes = Arrays.asList(2,3,5,7,11,13,17,19,23,29);
         System.out.println("I have collection with elements: \n"+primes);
         long count = primes.stream().count();

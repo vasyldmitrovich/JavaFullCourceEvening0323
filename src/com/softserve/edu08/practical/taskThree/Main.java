@@ -5,18 +5,15 @@ import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Random full myCollection");
+        System.out.println("Random full myCollection\n");
         ArrayList<Integer> myCollection = fullRandom();
         myCollection.forEach((number)-> System.out.print(number+" "));
         LinkedList<Integer> newMyCollection = createNewCollection(myCollection);
-        System.out.println("");
         System.out.println("Create newMyCollection");
-        newMyCollection.forEach((number)-> System.out.print(number+" "));
-        System.out.println("");
+        newMyCollection.forEach((number)-> System.out.println(number+" "));
         System.out.println("Delete number from myCollection where more then 20");
         myCollection = deleteNumberMoreTwenty(myCollection);
-        myCollection.forEach((number)-> System.out.print(number+" "));
-        System.out.println("");
+        myCollection.forEach((number)-> System.out.println(number+" "));
         System.out.println("Result after insert elements");
         myCollection = insertNewValues(myCollection);
         outputList(myCollection);

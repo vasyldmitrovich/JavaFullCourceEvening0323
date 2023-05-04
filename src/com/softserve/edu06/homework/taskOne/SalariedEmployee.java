@@ -5,6 +5,23 @@ public class SalariedEmployee extends Employee implements Payment {
     private int countHours;
     private String socialSecurityNumber;
 
+    public SalariedEmployee() {
+    }
+
+    public SalariedEmployee(String employeeId, String name, double hourPay, int countHours, String socialSecurityNumber) {
+        super(employeeId, name);
+        this.hourPay = hourPay;
+        this.countHours = countHours;
+        this.socialSecurityNumber = socialSecurityNumber;
+    }
+
+    public SalariedEmployee(String employeeId, String name, int countHours, String socialSecurityNumber) {
+        super(employeeId, name);
+        hourPay = 5.6;
+        this.countHours = countHours;
+        this.socialSecurityNumber = socialSecurityNumber;
+    }
+
     public double getHourPay() {
         return hourPay;
     }
@@ -26,24 +43,6 @@ public class SalariedEmployee extends Employee implements Payment {
     }
 
     public void setSocialSecurityNumber(String socialSecurityNumber) {
-        this.socialSecurityNumber = socialSecurityNumber;
-    }
-
-    //Move constructors before getters and setters
-    public SalariedEmployee() {
-    }
-
-    public SalariedEmployee(String employeeId, String name, double hourPay, int countHours, String socialSecurityNumber) {
-        super(employeeId, name);
-        this.hourPay = hourPay;
-        this.countHours = countHours;
-        this.socialSecurityNumber = socialSecurityNumber;
-    }
-
-    public SalariedEmployee(String employeeId, String name, int countHours, String socialSecurityNumber) {
-        super(employeeId, name);
-        hourPay = 5.6;
-        this.countHours = countHours;
         this.socialSecurityNumber = socialSecurityNumber;
     }
 

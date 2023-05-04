@@ -25,7 +25,30 @@ public class Department {
         return departmentCopy;
     }
 
-    //Move this inner class at the end of class Department, after toString()
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
+    }
+
+    @Override
+    public String toString() {
+        return "Department{" +
+                "name='" + name + '\'' +
+                ", address=" + address +
+                '}';
+    }
+
     public class Address{
         private String city;
         private String street;
@@ -78,29 +101,5 @@ public class Department {
                     ", building=" + building +
                     '}';
         }
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public Address getAddress() {
-        return address;
-    }
-
-    public void setAddress(Address address) {
-        this.address = address;
-    }
-
-    @Override
-    public String toString() {
-        return "Department{" +
-                "name='" + name + '\'' +
-                ", address=" + address +
-                '}';
     }
 }

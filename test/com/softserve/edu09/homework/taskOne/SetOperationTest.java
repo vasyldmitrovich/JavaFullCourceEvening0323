@@ -9,7 +9,7 @@ import java.util.Set;
 
 import static org.junit.Assert.*;
 
-public class SetOperationTest {// Perfect, respect
+public class SetOperationTest {
 
     private static Set<Integer> setOne;
     
