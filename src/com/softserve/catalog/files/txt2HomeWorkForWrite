@@ -1,0 +1,14 @@
+class Child extends Person{
+    private String childIDNumber;
+    private Child(int age, String healthInfo, String name, String childIDNumber) {
+        super(age, healthInfo, name);
+        this.childIDNumber = childIDNumber;
+    }
+}
+class Adult extends Person{
+    private String passportNumber;
+    private Adult(int age, String healthInfo, String name, String passportNumber) {
+        super(age, healthInfo, name);
+        this.passportNumber = passportNumber;
+    }
+}

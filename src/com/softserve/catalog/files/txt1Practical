@@ -1,0 +1,5 @@
+Local variable declarations can make code more readable by eliminating redundant information. However, it can also make code less readable by omitting useful information.
+Consequently, use this feature with judgment; no strict rule exists about when it should and shouldn't be used.
+Local variable declarations don't exist in isolation; the surrounding code can affect or even overwhelm the effects of var declarations.
+Local Variable Type Inference:
+Style Guidelines examines the impact that surrounding code has on var declarations, explains tradeoffs between explicit and implicit type declarations, and provides guidelines for the effective use of var declarations
