@@ -1,0 +1,4 @@
+Prepare mytext.txt file with a lot of text inside. Read context from file into array of strings. Each array item contains one line from file. Complete next tasks:
+ count and write the number of symbols in every line.
+ find the longest and the shortest line.
+ find and write only that lines, which consist of word var
