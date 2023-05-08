@@ -23,9 +23,13 @@ public class NumberOperation {
         return "";
     }
 
+    public static boolean checkPalindrome(String str){
+        String stringReverse = new StringBuilder(str).reverse().toString();
+        return str.equals(stringReverse);
+    }
 
 
     public static void main(String[] args) {
-        System.out.println(returnNumberEnglish(11));
+        System.out.println(checkPalindrome("sdfs"));
     }
 }
