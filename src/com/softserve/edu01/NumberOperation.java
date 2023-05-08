@@ -28,8 +28,22 @@ public class NumberOperation {
         return str.equals(stringReverse);
     }
 
-
-    public static void main(String[] args) {
-        System.out.println(checkPalindrome("sdfs"));
+    public static int checkNumberStep(int number){
+        int count = 0;
+        while (true){
+            if(number % 2 == 0){
+                number = number / 2;
+                count++;
+            }else{
+                number = number * 3 + 1;
+                count++;
+            }
+            if(number == 1){
+                return count;
+            }
+        }
     }
+
+
+
 }
