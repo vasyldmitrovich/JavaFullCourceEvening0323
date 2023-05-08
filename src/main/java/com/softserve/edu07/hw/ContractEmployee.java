@@ -1,6 +1,7 @@
 package com.softserve.edu07.hw;
 
 public class ContractEmployee extends Employee implements Payment {
+    //Make fields private
     String federalTaxIdmember;
     double hourlyRate;
     double hoursWorked;
@@ -11,6 +12,7 @@ public class ContractEmployee extends Employee implements Payment {
         this.hoursWorked = hoursWorked;
     }
 
+    //Move this method in the end of class, after toString()
     @Override
     public double calculatePay() {
         double monthlySalary = hourlyRate * hoursWorked;

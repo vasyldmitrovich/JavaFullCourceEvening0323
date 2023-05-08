@@ -11,6 +11,7 @@ public class HomeWork2 {
         System.out.println(isValid);
     }
 
+    //Perfect
     public static boolean isValidDate(String dateStr) {
         if (dateStr.length() != 8) {
             return false;

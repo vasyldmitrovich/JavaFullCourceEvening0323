@@ -41,7 +41,7 @@ public class HomeWork4 {
         String greeting = greet[random.nextInt(greet.length)];
         System.out.println(greeting + "" + firstName + " " + lastName + "!");
     }
-
+    //Nice
     private static boolean isValidName(String name) {
         return Pattern.matches("[A-Za-z\\-\\s]+", name);
     }

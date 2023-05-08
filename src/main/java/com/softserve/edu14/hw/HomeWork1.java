@@ -9,6 +9,7 @@ import java.util.stream.Collectors;
 
 public class HomeWork1 {
     public static void main(String[] args) {
+        //Create some method which return List<Product>
         List<Product> products = new ArrayList<>();
         products.add(new Product("Apple", "Phone", LocalDate.of(2020, 5, 20), 50000));
         products.add(new Product("Apple", "Notebook", LocalDate.of(2020, 5, 20), 80000));
@@ -31,6 +32,7 @@ public class HomeWork1 {
         products.add(new Product("Dell", "Notebook", LocalDate.of(2021, 12, 12), 30000));
         products.add(new Product("Lenovo", "Notebook", LocalDate.of(2020, 10, 15), 19000));
 
+        //Good
         List<Product> filteredPhoneList = products.stream()
                 .filter(p -> p.getCategory().equals("Phone"))
                 .filter(p -> p.getPrice() > 3000)

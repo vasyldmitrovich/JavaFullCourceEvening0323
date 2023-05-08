@@ -1,6 +1,7 @@
 package com.softserve.edu07.hw;
 
 public abstract class Employee {
+    //Make field private
     String employeeId;
 
     public Employee(String employeeId) {

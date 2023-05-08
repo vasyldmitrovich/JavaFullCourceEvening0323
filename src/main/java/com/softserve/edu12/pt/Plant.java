@@ -14,6 +14,7 @@ public class Plant {
         this.type = converteToTypeEnum(type);
     }
 
+    //Perfect decision use method for check is String correct or not
     public Color converteToColorEnum(String color) throws ColorException {
         switch (color.toUpperCase()) {
             case "GREEN":
