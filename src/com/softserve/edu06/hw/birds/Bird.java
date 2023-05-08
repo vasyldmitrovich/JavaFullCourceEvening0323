@@ -29,6 +29,7 @@ public abstract class Bird {
         this.layEggs = layEggs;
     }
 
+    //Add worlds public and abstract not needed because java add this words by default
     public abstract void fly();
 
     @Override

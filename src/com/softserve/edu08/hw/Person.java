@@ -35,6 +35,7 @@ public abstract class Person {
         return info;
     }
 
+    //Without words public and abstract
     public abstract String activity();
 
     @Override

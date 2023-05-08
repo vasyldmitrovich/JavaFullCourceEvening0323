@@ -8,7 +8,7 @@ public class PersonApp {
                 new Student(),
                 new Teacher(),
                 new Cleaner()};
-
+        //Good
         for (Person p: persons) {
             p.print();
             if (p instanceof Cleaner || p instanceof Teacher) {

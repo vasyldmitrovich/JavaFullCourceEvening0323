@@ -6,6 +6,7 @@ import java.util.List;
 public class StudentListApp {
 
     public static void main(String[] args) {
+        //Move all this student to some method and there call this method witch return List<Student>
         Student student1 = new Student("Olga", "PZ-02-2", 4, 4.9);
         Student student2 = new Student("Katya", "PZ-02-2", 4, 1.9);
         Student student3 = new Student("Maria", "PZ-02-1", 3, 3.9);
@@ -21,6 +22,7 @@ public class StudentListApp {
         students.removeAll(notGoodStudent);
         promoteToNextCourseLevel(students);
 
+        //Nice decision separate logic to methods. Very well
         printStudents(students, 1);
         printStudents(students, 2);
         printStudents(students, 3);
@@ -29,6 +31,7 @@ public class StudentListApp {
 
     }
 
+    //Good decision
     public static List<Student> getNotGoodStudents(List<Student> students) {
         List<Student> notGoodStudents = new ArrayList<>();
         for(Student stud: students) {
