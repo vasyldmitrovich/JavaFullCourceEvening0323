@@ -2,10 +2,7 @@ package com.softserve.edu11.hw;
 
 import java.util.Random;
 import java.util.Scanner;
-import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
-import static jdk.internal.net.http.common.Utils.isValidName;
 
 public class HomeWork4 {
     public static void main(String[] args) {
