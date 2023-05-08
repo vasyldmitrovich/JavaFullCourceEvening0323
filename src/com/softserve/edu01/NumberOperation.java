@@ -26,6 +26,6 @@ public class NumberOperation {
 
 
     public static void main(String[] args) {
-        System.out.println(returnNumberEnglish(100));
+        System.out.println(returnNumberEnglish(11));
     }
 }
