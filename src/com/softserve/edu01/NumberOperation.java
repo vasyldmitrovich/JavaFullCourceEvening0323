@@ -1,7 +1,6 @@
 package com.softserve.edu01;
 
 public class NumberOperation {
-    
 
     public static String returnNumberEnglish(int number){
         String[] units = {
@@ -29,4 +28,19 @@ public class NumberOperation {
         return str.equals(stringReverse);
     }
 
+    public static int checkNumberStep(int number){
+        int count = 0;
+        while (true){
+            if(number % 2 == 0){
+                number = number / 2;
+                count++;
+            }else{
+                number = number * 3 + 1;
+                count++;
+            }
+            if(number == 1){
+                return count;
+            }
+        }
+    }
 }
