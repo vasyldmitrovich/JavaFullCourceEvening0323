@@ -3,6 +3,7 @@ package com.softserve.edu01;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class Task1 {
     public static List<Integer> generateFibonacci(int num) {
         List<Integer> fib = new ArrayList<>();
