@@ -1,6 +1,7 @@
 package com.softserve.edu01;
 
 public class NumberOperation {
+    
 
     public static String returnNumberEnglish(int number){
         String[] units = {
@@ -28,8 +29,4 @@ public class NumberOperation {
         return str.equals(stringReverse);
     }
 
-
-    public static void main(String[] args) {
-        System.out.println(checkPalindrome("sdfs"));
-    }
 }

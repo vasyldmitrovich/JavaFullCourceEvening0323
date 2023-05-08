@@ -6,8 +6,4 @@ public class Task3 {
         dollars = grivnas / kurs;
         return dollars;
     }
-
-    public static void main(String[] args) {
-        System.out.println(dollarConvert(40, 1000));
-    }
 }
