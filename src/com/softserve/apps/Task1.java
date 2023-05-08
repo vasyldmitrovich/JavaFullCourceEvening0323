@@ -2,7 +2,7 @@ package com.softserve.apps;
 
 import java.util.Scanner;
 
-public class Task_1 {
+public class Task1 {
     public static void Fibonachi() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter number: ");
@@ -23,7 +23,4 @@ public class Task_1 {
 
     }
 
-    public static void main(String[] args) {
-        Fibonachi();
-    }
-}
+

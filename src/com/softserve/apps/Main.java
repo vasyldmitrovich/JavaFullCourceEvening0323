@@ -8,6 +8,11 @@ public class Main {
         System.out.print("Enter the number of task --> ");
         int selectTask = sc.nextInt();
         switch (selectTask){
+            case 1:
+                Task1.Fibonachi();
+                break;
+            case 2:
+                
             case 3:
                Task3.print();
                break;
