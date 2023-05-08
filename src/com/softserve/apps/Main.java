@@ -29,6 +29,9 @@ public class Main {
             case 7:
                 Task7.print();
                 break;
+            case 9:
+                
+                break;
             case 10:
                 Task10.print();
                 break;
