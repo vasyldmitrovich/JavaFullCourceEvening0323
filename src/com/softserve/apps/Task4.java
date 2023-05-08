@@ -2,7 +2,7 @@ package com.softserve.apps;
 
 import java.util.Scanner;
 
-public class Task_4 {
+public class Task4 {
     public static void Vowels() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter text: ");
