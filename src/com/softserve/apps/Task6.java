@@ -19,4 +19,14 @@ public class Task6 {
         String[] words = text.split("\\s+");
         return words.length;
     }
+    public static void print(){
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter some text: ");
+        String text = scanner.nextLine();
+
+        int wordCount = countWords(text);
+
+        System.out.printf("Word count: %d%n", wordCount);
+    }
 }
