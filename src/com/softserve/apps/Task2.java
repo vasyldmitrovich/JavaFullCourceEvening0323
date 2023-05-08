@@ -11,6 +11,7 @@ public class Task2 {
     }
 
     public static void print(int number) {
+
         System.out.print("Prime factorization of " + number + ": ");
         for (int i = 2; i <= number; i++) {
             int count = 0;

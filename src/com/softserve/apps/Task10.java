@@ -24,5 +24,11 @@ public class Task10 {
         }
         return steps;
     }
-
+ public static void print(){
+     Scanner sc = new Scanner(System.in);
+     System.out.print("Enter a natural number greater than one: ");
+     int n = sc.nextInt();
+     int steps = findStepsToReachOne(n);
+     System.out.println("Number of steps to reach 1: " + steps);
+ }
 }
