@@ -30,11 +30,14 @@ public class App {
 				System.out.println(Task1.generateFibonacci(66));
 			break;
 			case 3:
-				System.out.println(Task3.dollarConvert(40.8, 20.6));
+				System.out.println(Task3.dollarConvert(40.8, 200.6));
 			break;
 			case 6:
 				System.out.println(Task6.countWords("Text"));
 			break;
+			case 5:
+				System.out.println(NumberOperation.checkPalindrome("aba"));
+				break;
 			case 7: Task7.calculateFactorial();
 			break;
 			case 8:
@@ -43,6 +46,9 @@ public class App {
 			case 9:
 				System.out.println(Task9.countOnes(8));
 			break;
+			case 10:
+				System.out.println(NumberOperation.checkNumberStep(4));
+				break;
 			case 12:
 				System.out.println(Task12.sumOfAllTheMultiples());
 			break;
