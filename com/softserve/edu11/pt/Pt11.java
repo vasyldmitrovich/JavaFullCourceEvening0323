@@ -10,14 +10,14 @@ public class Pt11 {
     public static void main(String[] args) {
         System.out.println("Task 1");
         Scanner input = new Scanner(System.in);
-//        System.out.print("Please input first string: ");
-//        String firstString = input.nextLine();
-//        System.out.print("Please input second string: ");
-//        String secondString = input.nextLine();
-//        Pattern p = Pattern.compile(firstString);
-//        Matcher m = p.matcher(secondString);
-//        String result = m.find() ? "String 2 contain string 1" : "String 2 does not contain string 1";
-//        System.out.println(result);
+        System.out.print("Please input first string: ");
+        String firstString = input.nextLine();
+        System.out.print("Please input second string: ");
+        String secondString = input.nextLine();
+        Pattern p = Pattern.compile(firstString);
+        Matcher m1 = p.matcher(secondString);
+        String result = m1.find() ? "String 2 contain string 1" : "String 2 does not contain string 1";
+        System.out.println(result);
 
         System.out.println("Task 2");
         System.out.println("Please input the last name, first name, and middle name in line: ");
