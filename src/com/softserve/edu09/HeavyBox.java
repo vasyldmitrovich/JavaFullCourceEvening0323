@@ -1,4 +1,4 @@
-package com.softserve.edu09.pt;
+package com.softserve.edu09;
 
 public class HeavyBox {
     protected int weight;
