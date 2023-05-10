@@ -1,11 +1,13 @@
 package com.softserve.edu11.pt;
 
+import java.util.Arrays;
+import java.util.List;
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Pt11 {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         System.out.println("Task 1");
         Scanner input = new Scanner(System.in);
 //        System.out.print("Please input first string: ");
@@ -54,5 +56,5 @@ public class Pt11 {
         }
     }
 
-    }
 }
+

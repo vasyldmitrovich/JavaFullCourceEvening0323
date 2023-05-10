@@ -1,7 +1,5 @@
 package com.softserve.edu15.hw;
 
-import com.softserve.edu15.pt.MyRunnable;
-
 import static java.lang.Thread.State.TERMINATED;
 
 public class Hw15 {
