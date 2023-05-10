@@ -18,15 +18,41 @@ public class Pt11 {
 //        System.out.println(result);
 
         System.out.println("Task 2");
-        System.out.print("Please input the last name, first name, and middle name in line: ");
+        System.out.println("Please input the last name, first name, and middle name in line: ");
         //String fioString = input.nextLine();
         String fioString = "Gonchar Roman Sergeevich";
-        String pattern = "\\b\\w+.\\b\\w+.\\b\\w+";
+        System.out.println("FIO string: " + fioString);
+        String pattern = "(\\b\\w+)+\\s+(\\b\\w+)+\\s+(\\b\\w+)";
         Pattern patfio = Pattern.compile(pattern);
         Matcher matcherfio = patfio.matcher(fioString);
         if (matcherfio.matches()) {
-            System.out.println(matcherfio.group(0));
+            System.out.println("First name: " + matcherfio.group(2));
+            System.out.println("First name, middle name, last name: "
+                    + matcherfio.group(2) + " "
+                    + matcherfio.group(3) + " "
+                    + matcherfio.group(1)
+            );
         }
+
+        String patternInitials = "(\\b\\w+)+\\s+(\\w)\\w+\\s+(\\w)";
+        Pattern patInitials = Pattern.compile(patternInitials);
+        Matcher matcherInitials = patInitials.matcher(fioString);
+        if (matcherInitials.lookingAt()) {
+            System.out.println("Last name and initials: " + matcherInitials.group(1) + " "
+                    + matcherInitials.group(2) + ". "
+                    + matcherInitials.group(3) + "."
+            );
+        }
+
+        System.out.println("Task 3");
+        List<String> userNames = Arrays.asList("user_1", "us", "asdfasdfasfsdfasfsdfsup3", "use.r", "userName");
+        String patternUname = "\\w{3,15}";
+        Pattern patUname = Pattern.compile(patternUname);
+        for (String userName : userNames) {
+            Matcher m = patUname.matcher(userName);
+            System.out.println(userName + " " + m.matches());
+        }
+    }
 
     }
 }
