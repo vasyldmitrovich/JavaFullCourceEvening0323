@@ -3,12 +3,14 @@ package com.softserve.MyProject;
 import java.util.Scanner;
 
 public class MoneyConverter {
+    private static ExchangeService exchangeService = new ExchangeService();
+
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        double exchangeUSD = 36.6;
-        double exchangeEUR = 40.0;
-        double exchangePLN = 8.5;
+        double exchangeUSD = exchangeService.getCurrencyRate("USD");
+        double exchangeEUR = exchangeService.getCurrencyRate("EUR");
+        double exchangePLN = exchangeService.getCurrencyRate("PLN");
 
         String choice = "Y";
 
