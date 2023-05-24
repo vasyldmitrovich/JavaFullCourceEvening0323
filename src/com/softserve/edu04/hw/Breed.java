@@ -1,7 +1,7 @@
 package com.softserve.edu04.hw;
 
 //Name without ending ***s
-public enum Breeds {
+public enum Breed {
 
     FRENCH_BULLDOG("French bulldog"),
     LABRADOR("Labrador"),
@@ -12,7 +12,7 @@ public enum Breeds {
     AKITA_INU("Akita inu");
 
     private String name;
-    private Breeds(String name){
+    private Breed(String name){
         this.name = name;
     }
 
